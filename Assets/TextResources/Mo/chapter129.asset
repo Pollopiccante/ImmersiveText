@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter129
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 130,   The Hat
+  content: "\n  \"HIST! Did you hear that noise, Cabaco?\n  It was the middle-watch:
+    a fair moonlight; the seamen were\nstanding in a cordon, extending from one of
+    the fresh-water butts in\nthe waist, to the scuttle-butt near the taffrail. In
+    this manner, they\npassed the buckets to fill the scuttle-butt. Standing, for
+    the most\npart, on the hallowed precincts of the quarter-deck, they were careful\nnot
+    to speak or rustle their feet. From hand to hand, the buckets went\nin the deepest
+    silence, only broken by the occasional flap of a\nsail, and the steady hum of
+    the unceasingly advancing keel.\n  It was in the midst of this repose, that Archy,
+    one of the cordon,\nwhose post was near the after-hatches, whispered to his neighbor,
+    a\nCholo, the words above.\n  \"Hist! did you hear that noise, Cabaco?\"\n  \"Take
+    the bucket, will ye, Archy? what noise d'ye mean?\"\n  \"There it is again- under
+    the hatches- don't you hear it- a cough-\nit sounded like a cough.\"\n  \"Cough
+    be damned! Pass along that return bucket.\"\n  \"There again- there it is!- it
+    sounds like two or three sleepers\nturning over, now!\"\n  \"Caramba! have done,
+    shipmate, will ye? It's the three soaked\nbiscuits ye eat for supper turning
+    over inside of ye- nothing else.\nLook to the bucket!\"\n  \"Say what ye will,
+    shipmate; I've sharp ears.\"\n  \"Aye, you are the chap, ain't ye, that heard
+    the hum of the old\nQuakeress's knitting-needles fifty miles at sea from Nantucket;
+    you're\nthe chap.\"\n  \"Grin away; we'll see what turns up. Hark ye, Cabaco,
+    there is\nsomebody down in the after-hold that has not yet been seen on deck;\nand
+    I suspect our old Mogul knows something of it too. I heard Stubb\ntell Flask,
+    one morning watch, that there was something of that sort\nin the wind.\"\n  \"Tish!
+    the bucket!\"\n  "

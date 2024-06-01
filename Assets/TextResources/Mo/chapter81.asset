@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter81
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 82,   The Honor and Glory of Whaling
+  content: "\n  Stubb was the second mate. He was a native of Cape Cod; and hence,\naccording
+    to local usage, was called a Cape-Cod-man. A happy-go-lucky;\nneither craven
+    nor valiant; taking perils as they came with an\nindifferent air; and while engaged
+    in the most imminent crisis of\nthe chase, toiling away, calm and collected as
+    a journeyman joiner\nengaged for the year. Good-humored, easy, and careless,
+    he presided\nover his whaleboat as if the most deadly encounter were but a\ndinner,
+    and his crew all invited guests. He was as particular about\nthe comfortable
+    arrangements of his part of the boat, as an old\nstage-driver is about the snugness
+    of his box. When close to the\nwhale, in the very death-lock of the fight, he
+    handled his unpitying\nlance coolly and off-handedly, as a whistling tinker his
+    hammer. He\nwould hum over his old rigadig tunes while flank and flank with the\nmost
+    exasperated monster. Long usage had, for this Stubb, converted\nthe jaws of death
+    into an easy chair. What he thought of death itself,\nthere is no telling. Whether
+    he ever thought of it at all, might be\na question; but, if he ever did chance
+    to cast his mind that way after\na comfortable dinner, no doubt, like a good
+    sailor, he took it to be a\nsort of call of the watch to tumble aloft, and bestir
+    themselves\nthere, about something which he would find out when he obeyed the\norder,
+    and not sooner.\n  What, perhaps, with other things, made Stubb such an easy-going,\nunfearing
+    man, so cheerily trudging off with the burden of life in a\nworld fail of grave
+    peddlers, all bowed to the ground with their\npacks; what helped to bring about
+    that almost impious good-humor of\nhis; that thing must have been his pipe. For,
+    like his nose, his\nshort, black little pipe was one of the regular features
+    of his\nface. You would almost as soon have expected him to turn out of his\nbunk
+    without his nose as without his pipe. He kept a whole row of\npipes there ready
+    loaded, stuck in a rack, within easy reach of his\nhand; and, whenever he turned
+    in, he smoked them all out in\nsuccession, lighting one from the other to the
+    end of the chapter;\nthen loading them again to be in readiness anew. For, when
+    Stubb\ndressed, instead of first putting his legs into his trowsers, he put\nhis
+    pipe into his mouth.\n  I say this continual smoking must have been one cause,
+    at least of\nhis peculiar disposition; for every one knows that this early air,\nwhether
+    ashore or afloat, is terribly infected with the nameless\nmiseries of the numberless
+    mortals who have died exhaling it; and as\nin time of the cholera, some people
+    go about with a camphorated\nhandkerchief to their mouths; so, likewise, against
+    all mortal\ntribulations, Stubb's tobacco smoke might have operated as a sort
+    of\ndisinfecting agent.\n  The third mate was Flask, a native of Tisbury, in
+    Martha's Vineyard.\nA short, stout, ruddy young fellow, very pugnacious concerning
+    whales,\nwho somehow seemed to think that the great Leviathans had personally\nand
+    hereditarily affronted him; and therefore it was a sort of point\nof honor with
+    him, to destroy them whenever encountered. So utterly\nlost was he to all sense
+    of reverence for the many marvels of their\nmajestic bulk and mystic ways; and
+    so dead to anything like an\napprehension of any possible danger encountering
+    them; that in his\npoor opinion, the wondrous whale was but a species of magnified
+    mouse,\nor at least water-rat, requiring only a little circumvention and\nsome
+    small application of time and trouble in order to kill and\nboil. This ignorant,
+    unconscious fearlessness of his made him a little\nwaggish in the matter of whales;
+    he followed these fish for the fun of\nit; and a three years' voyage round Cape
+    Horn was only a jolly joke\nthat lasted that length of time. As a carpenter's
+    nails are divided\ninto wrought nails and cut nails; so mankind may be similarly
+    divided.\nLittle Flask was one of the wrought ones; made to clinch tight and\nlast
+    long. They called him King-Post on board of the Pequod;\nbecause, in form, he
+    could be well likened to the short, square timber\nknown by that name in Arctic
+    whalers; and which by the means of many\nradiating side timbers inserted into
+    it, serves to brace the ship\nagainst the icy concussions of those battering
+    seas.\n  Now these three mates- Starbuck, Stubb and Flask, were momentous\nmen.
+    They was who by universal prescription commanded three of the\nPequod's boats
+    as headsmen. In that grand order of battle in which\nCaptain Ahab would probably
+    marshal his forces to descend on the\nwhales, these three headsmen were as captains
+    of companies. Or,\nbeing armed with their long keen whaling spears, they were
+    as a picked\ntrio of lancers; even as the harpooneers were flingers of javelins.\n 
+    And since in this famous fishery, each mate or headsman, like a\nGothic Knight
+    of old, is always accompanied by his boat-steerer or\nharpooneer, who in certain
+    conjunctures provides him with a fresh\nlance, when the former one has been badly
+    twisted, or elbowed in the\nassault; and moreover, as there generally subsists
+    between the two,\na close intimacy and friendliness; it is therefore but meet,
+    that in\nthis place we set down who the Pequod's harpooneers were, and to\nwhat
+    headsman each of them belonged.\n  First of all was Queequeg, whom Starbuck,
+    the chief mate, had\nselected for his squire. But Queequeg is already known.\n 
+    Next was Tashtego, an unmixed Indian from Gay Head, the most\nwesterly promontory
+    of Martha's Vineyard, where there still exists the\nlast remnant of a village
+    of red men, which has long supplied the\nneighboring island of Nantucket with
+    many of her most daring\nharpooneers. In the fishery, they usually go by the
+    generic name of\nGay-Headers. Tashtego's long, lean, sable hair, his high cheek\nbones,
+    and black rounding eyes- for an Indian, Oriental in their\nlargeness, but Antarctic
+    in their glittering expression- all this\nsufficiently proclaimed him an inheritor
+    of the unvitiated blood of\nthose proud warrior hunters, who, in quest of the
+    great New England\nmoose, had scoured, bow in hand, the aboriginal forests of
+    the main.\nBut no longer snuffing in the trail of the wild beasts of the\nwoodland,
+    Tashtego now hunted in the wake of the great whales of the\nsea; the unerring
+    harpoon of the son fitly replacing the infallible\narrow of the sires. To look
+    at the tawny brawn of his lithe snaky\nlimbs, you would almost have credited
+    the superstitions of some of the\nearlier Puritans and half-believed this wild
+    Indian to be a son of the\nPrince of the Powers of the Air. Tashtego was Stubb
+    the second\nmate's squire.\n  Third among the harpooneers was Daggoo, a gigantic,
+    coal-black\nnegro-savage, with a lion-like tread- an Ahasuerus to behold.\nSuspended
+    from his ears were two golden hoops, so large that the\nsailors called them ringbolts,
+    and would talk of securing the top-sail\nhalyards to them. In his youth Daggoo
+    had voluntarily shipped on board\nof a whaler, lying in a lonely bay on his native
+    coast. And never\nhaving been anywhere in the world but in Africa, Nantucket,
+    and the\npagan harbors most frequented by the whalemen; and having now led\nfor
+    many years the bold life of the fishery in the ships of owners\nuncommonly heedful
+    of what manner of men they shipped; Daggoo retained\nall his barbaric virtues,
+    and erect as a giraffe, moved about the\ndecks in all the pomp of six feet five
+    in his socks. There was a\ncorporeal humility in looking up at him; and a white
+    man standing\nbefore him seemed a white flag come to beg truce of a fortress.\nCurious
+    to tell, this imperial negro, Ahasuerus Daggoo, was the Squire\nof little Flask,
+    who looked like a chess-man beside him. As for the\nresidue of the Pequod's company,
+    be it said, that at the present day\nnot one in two of the many thousand men
+    before the mast employed in\nthe American whale fishery, are Americans born,
+    though pretty nearly\nall the officers are. Herein it is the same with the American
+    whale\nfishery as with the American army and military and merchant navies,\nand
+    the engineering forces employed in the construction of the\nAmerican Canals and
+    Railroads. The same, I say, because in all these\ncases the native American literally
+    provides the brains, the rest of\nthe world as generously supplying the muscles.
+    No small number of\nthese whaling seamen belong to the Azores, where the outward
+    bound\nNantucket whalers frequently touch to augment their crews from the\nhardy
+    peasants of those rocky shores. In like manner, the Greenland\nwhalers sailing
+    out of Hull or London, put in at the Shetland Islands,\nto receive the full complement
+    of their crew. Upon the passage\nhomewards, they drop them there again. How it
+    is, there is no telling,\nbut Islanders seem to make the best whalemen. They
+    were nearly all\nIslanders in the Pequod, Isolatoes too, I call such, not acknowledging\nthe
+    common continent of men, but each Isolato living on a separate\ncontinent of
+    his own. Yet now, federated along one keel, what a set\nthese Isolatoes were!
+    An Anacharsis Clootz deputation from all the\nisles of the sea, and all the ends
+    of the earth, accompanying Old Ahab\nin the Pequod to lay the world's grievances
+    before that bar from which\nnot very many of them ever come back. Black Little
+    Pip- he never\ndid- oh, no! he went before. Poor Alabama boy! On the grim Pequod's\nforecastle,
+    ye shall ere long see him, beating his tambourine;\nprelusive of the eternal
+    time, when sent for, to the great\nquarter-deck on high, he was bid strike in
+    with angels, and beat his\ntambourine in glory; called a coward here, hailed
+    a hero there!\n  "

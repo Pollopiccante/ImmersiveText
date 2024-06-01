@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter102
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 103,   Measurement of The Whale's Skeleton
+  content: "\n  It is noon; and Dough-Boy, the steward, thrusting his pale\nloaf-of-bread
+    face from the cabin-scuttle, announces dinner to his\nlord and master who, sitting
+    in the lee quarter-boat, has just been\ntaking an observation of the sun; and
+    is now mutely reckoning the\nlatitude on the smooth, medallion-shaped tablet,
+    reserved for that\ndaily purpose on the upper part of his ivory leg. From his
+    complete\ninattention to the tidings, you would think that moody Ahab had not\nheard
+    his menial. But presently, catching hold of the mizen shrouds,\nhe swings himself
+    to the deck, and in an even, unexhilarated voice,\nsaying, \"Dinner, Mr. Starbuck,\"
+    disappears into the cabin.\n  When the last echo of his sultan's step has died
+    away, and Starbuck,\nthe first Emir, has every reason to suppose that he is seated,
+    then\nStarbuck rouses from his quietude, takes a few turns along the planks,\nand,
+    after a grave peep into the binnacle, says, with some touch of\npleasantness,
+    \"Dinner, Mr. Stubb,\" and descends the scuttle. The\nsecond Emir lounges about
+    the rigging awhile, and then slightly\nshaking the main brace, to see whether
+    it will be all right with\nthat important rope, he likewise takes up the old
+    burden, and with a\nrapid \"Dinner, Mr. Flask,\" follows after his predecessors.\n 
+    But the third Emir, now seeing himself all alone on the\nquarter-deck, seems
+    to feel relieved from some curious restraint; for,\ntipping all sorts of knowing
+    winks in all sorts of directions, and\nkicking off his shoes, he strikes into
+    a sharp but noiseless squall of\na hornpipe right over the Grand Turk's head;
+    and then, by a\ndexterous sleight, pitching his cap up into the mizentop for
+    a\nshelf, he goes down rollicking so far at least as he remains visible\nfrom
+    the deck, reversing all other processions, by bringing up the\nrear with music.
+    But ere stepping into the cabin doorway below, he\npauses, ships a new face altogether,
+    and, then, independent, hilarious\nlittle Flask enters King Ahab's presence,
+    in the character of\nAbjectus, or the Slave.\n  It is not the least among the
+    strange things bred by the intense\nartificialness of sea-usages, that while
+    in the open air of the deck\nsome officers will, upon provocation, bear themselves
+    boldly and\ndefyingly enough towards their commander; yet, ten to one, let those\nvery
+    officers the next moment go down to their customary dinner in\nthat same commander's
+    cabin, and straightway their inoffensive, not to\nsay deprecatory and humble
+    air towards him, as he sits at the head\nof the table; this is marvellous, sometimes
+    most comical. Wherefore\nthis difference? A problem? Perhaps not. To have been
+    Belshazzar, King\nof Babylon; and to have been Belshazzar, not haughtily but\ncourteously,
+    therein certainly must have been some touch of mundane\ngrandeur. But he who
+    in the rightly regal and intelligent spirit\npresides over his own private dinner-table
+    of invited guests, that\nman's unchallenged power and dominion of individual
+    influence for\nthe time; that man's royalty of state transcends Belshazzar's,
+    for\nBelshazzar was not the greatest. Who has but once dined his friends,\nhas
+    tasted what it is to be Caesar. It is a witchery of social\nczarship which there
+    is no withstanding. Now, if to this consideration\nyou super-add the official
+    supremacy of a ship-master, then, by\ninference, you will derive the cause of
+    that peculiarity of sea-life\njust mentioned.\n  Over his ivory-inlaid table,
+    Ahab presided like a mute, maned\nsea-lion on the white coral beach, surrounded
+    by his war-like but\nstill deferential cubs. In his own proper turn, each officer
+    waited to\nbe served. They were as little children before Ahab; and yet, in Ahab,\nthere
+    seemed not to lurk the smallest social arrogance. With one mind,\ntheir intent
+    eyes all fastened upon the old man's knife, as he\ncarved the chief dish before
+    him. I do not suppose that for the\nworld they would have profaned that moment
+    with the slightest\nobservation, even upon so neutral a topic as the weather.
+    No! And when\nreaching out his knife and fork, between which the slice of beef
+    was\nlocked, Ahab thereby motioned Starbuck's plate towards him, the mate\nreceived
+    his meat as though receiving alms; and cut it tenderly; and a\nlittle started
+    if, perchance, the knife grazed against the plate;\nand chewed it noiselessly;
+    and swallowed it, not without\ncircumspection. For, like the Coronation banquet
+    at Frankfort, where\nthe German Emperor profoundly dines with the seven imperial\nelectors,
+    so these cabin meals were somehow solemn meals, eaten in\nawful silence; and
+    yet at table old Ahab forbade not conversation;\nonly he himself was dumb. What
+    a relief it was to choking Stubb,\nwhen a rat made a sudden racket in the hold
+    below. And poor little\nFlask, he was the youngest son, and little boy of this
+    weary family\nparty. His were the shin-bones of the saline beef; his would have
+    been\nthe drumsticks. For Flask to have presumed to help himself, this\nmust
+    have seemed to him tantamount to larceny in the first degree. Had\nhe helped
+    himself at the table, doubtless, never more would he have\nbeen able to hold
+    his head up in this honest world; nevertheless,\nstrange to say, Ahab never forbade
+    him. And had Flask helped\nhimself, the chances were Ahab had never so much as
+    noticed it.\nLeast of all, did Flask presume to help himself to butter. Whether\nhe
+    thought the owners of the ship denied it to him, on account of\nits clotting
+    his clear, sunny complexion; or whether he deemed that,\non so long a voyage
+    in such marketless waters, butter was at a\npremium, and therefore was not for
+    him, a subaltern; however it was,\nFlask, alas! was a butterless man!\n  Another
+    thing. Flask was the last person down at the dinner, and\nFlask is the first
+    man up. Consider! For hereby Flask's dinner was\nbadly jammed in point of time.
+    Starbuck and Stubb both had the start\nof him; and yet they also have the privilege
+    of lounging in the\nrear. If Stubb even, who is but a peg higher than Flask,
+    happens to\nhave but a small appetite, and soon shows symptoms of concluding
+    his\nrepast, then Flask must bestir himself, he will not get more than\nthree
+    mouthfuls that day; for it is against holy usage for Stubb to\nprecede Flask
+    to the deck. Therefore it was that Flask once admitted\nin private, that ever
+    since he had arisen to the dignity of an\nofficer, from that moment he had never
+    known what it was to be\notherwise than hungry, more or less. For what he ate
+    did not so much\nrelieve his hunger, as keep it immortal in him. Peace and\nsatisfaction,
+    thought Flask, have for ever departed from my stomach. I\nam an officer; but,
+    how I wish I could fish a bit of old-fashioned\nbeef in the fore-castle, as I
+    used to when I was before the mast.\nThere's the fruit of promotion now; there's
+    the vanity of glory:\nthere's the insanity of life! Besides, if it were so that
+    any mere\nsailor of the Pequod had a grudge against Flask in Flask's official\ncapacity,
+    all that sailor had to do, in order to obtain ample\nvengeance, was to go aft
+    at dinnertime, and get a peep at Flask\nthrough the cabin sky-light, sitting
+    silly and dumfoundered before\nawful Ahab.\n  Now, Ahab and his three mates formed
+    what may be called the first\ntable in the Pequod's cabin. After their departure,
+    taking place in\ninverted order to their arrival, the canvas cloth was cleared,
+    or\nrather was restored to some hurried order by the pallid steward. And\nthen
+    the three harpooneers were bidden to the feast, they being its\nresiduary legatees.
+    They made a sort of temporary servants' hall of\nthe high and mighty cabin.\n 
+    In strange contrast to the hardly tolerable constraint and\nnameless invisible
+    domineerings of the captain's table, was the entire\ncare-free license and ease,
+    the almost frantic democracy of those\ninferior fellows the harpooneers. While
+    their masters, the mates,\nseemed afraid of the sound of the hinges of their
+    own jaws, the\nharpooneers chewed their food with such a relish that there was
+    a\nreport to it. They dined like lords; they filled their bellies like\nIndian
+    ships all day loading with spices. Such portentous appetites\nhad Queequeg and
+    Tashtego, that to fill out the vacancies made by\nthe previous repast, often
+    the pale Dough-Boy was fain to bring on a\ngreat baron of salt-junk, seemingly
+    quarried out of the solid ox.\nAnd if he were not lively about it, if he did
+    not go with a nimble\nhop-skip-and-jump, then Tashtego had an ungentlemanly way
+    of\naccelerating him by darting a fork at his back, harpoon-wise. And once\nDaggoo,
+    seized with a sudden humor, assisted Dough-Boy's memory by\nsnatching him up
+    bodily, and thrusting his head into a great empty\nwooden trencher, while Tashtego,
+    knife in hand, began laying out the\ncircle preliminary to scalping him. He was
+    naturally a very nervous,\nshuddering sort of little fellow, this bread-faced
+    steward; the\nprogeny of a bankrupt baker and a hospital nurse. And what with
+    the\nstanding spectacle of the black terrific Ahab, and the periodical\ntumultuous
+    visitations of these three savages, Dough-Boy's whole\nlife was one continual
+    lip-quiver. Commonly, after seeing the\nharpooneers furnished with all things
+    they demanded, he would escape\nfrom their clutches into his little pantry adjoining,
+    and fearfully\npeep out at them through the blinds of its door, till all was
+    over.\n  It was a sight to see Queequeg seated over against Tashtego,\nopposing
+    his filed teeth to the Indian's; crosswise to them, Daggoo\nseated on the floor,
+    for a bench would have brought his\nhearse-plumed head to the low carlines; at
+    every motion of his\ncolossal limbs, making the low cabin framework to shake,
+    as when an\nAfrican elephant goes passenger in a ship. But for all this, the
+    great\nnegro was wonderfully abstemious, not to say dainty. It seemed\nhardly
+    possible that by such comparatively small mouthfuls he could\nkeep up the vitality
+    diffused through so broad, baronial, and superb a\nperson. But, doubtless, this
+    noble savage fed strong and drank deep of\nthe abounding element of air; and
+    through his dilated nostrils snuffed\nin the sublime life of the worlds. Not
+    by beef or by bread, are giants\nmade or nourished. But Queequeg, he had a mortal,
+    barbaric smack of\nthe lip in eating- an ugly sound enough- so much so, that
+    the\ntrembling Dough-Boy almost looked to see whether any marks of teeth\nlurked
+    in his own lean arms. And when he would hear Tashtego singing\nout for him to
+    produce himself, that his bones might be picked, the\nsimple-witted steward all
+    but shattered the crockery hanging round him\nin the pantry, by his sudden fits
+    of the palsy. Nor did the\nwhetstone which the harpooneers carried in their pockets,
+    for their\nlances and other weapons; and with which whetstones, at dinner, they\nwould
+    ostentatiously sharpen their knives; that grating sound did\nnot at all tend
+    to tranquillize poor Dough-Boy. How could he forget\nthat in his Island days,
+    Queequeg, for one, must certainly have been\nguilty of some murderous, convivial
+    indiscretion. Alas! Dough-Boy!\nhard fares the white waiter who waits upon cannibals.
+    Not a napkin\nshould he carry on his arm, but a buckler. In good time, though,
+    to\nhis great delight, the three salt-sea warriors would rise and\ndepart; to
+    his credulous, fable-mongering ears, all their martial\nbones jingling in them
+    at every step, like Moorish scimetars in\nscabbards.\n  But, though these barbarians
+    dined in the cabin, and nominally lived\nthere; still, being anything but sedentary
+    in their habits, they\nwere scarcely ever in it except at mealtimes, and just
+    before\nsleeping-time, when they passed through it to their own peculiar\nquarters.\n 
+    In this one matter, Ahab seemed no exception to most American\nwhale captains,
+    who, as a set, rather incline to the opinion that by\nrights the ship's cabin
+    belongs to them; and that it is by courtesy\nalone that anybody else is, at any
+    time, permitted there. So that,\nin real truth, the mates and harpooneers of
+    the Pequod might more\nproperly be said to have lived out of the cabin than in
+    it. For when\nthey did enter it, it was something as a streetdoor enters a house;\nturning
+    inwards for a moment, only to be turned out the next; and,\nas a permanent thing,
+    residing in the open air. Nor did they lose much\nhereby; in the cabin was no
+    companionship; socially, Ahab was\ninaccessible. Though nominally included in
+    the census of\nChristendom, he was still an alien to it. He lived in the world,
+    as\nthe last of the Grisly Bears lived in settled Missouri. And as when\nSpring
+    and Summer had departed, that wild Logan of the woods,\nburying himself in the
+    hollow of a tree, lived out the winter there,\nsucking his own paws; so, in his
+    inclement, howling old age, Ahab's\nsoul, shut up in the caved trunk of his body,
+    there fed upon the\nsullen paws of its gloom!\n  "

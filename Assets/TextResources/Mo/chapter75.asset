@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter75
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 76,   The Battering-Ram
+  content: "\n  In behalf of the dignity of whaling, I would fain advance naught
+    but\nsubstantiated facts. But after embattling his facts, an advocate who\nshould
+    wholly suppress a not unreasonable surmise, which might tell\neloquently upon
+    his cause- such an advocate, would he not be\nblame-worthy?\n  It is well known
+    that at the coronation of kings and queens, even\nmodern ones, a certain curious
+    process of seasoning them for their\nfunctions is gone through. There is a saltcellar
+    of state, so\ncalled, and there may be a castor of state. How they use the salt,\nprecisely-
+    who knows? Certain I am, however, that a king's head is\nsolemnly oiled at his
+    coronation, even as a head of salad. Can it\nbe, though, that they anoint it
+    with a view of making its interior run\nwell, as they anoint machinery? Much
+    might be ruminated here,\nconcerning the essential dignity of this regal process,
+    because in\ncommon life we esteem but meanly and contemptibly a fellow who anoints\nhis
+    hair, and palpably smells of that anointing. In truth, a mature\nman who uses
+    hairoil, unless medicinally, that man has probably got\na quoggy spot in him
+    somewhere. As a general rule, he can't amount\nto much in his totality.\n  But
+    the only thing to be considered here is this- what kind of oil\nis used at coronations?
+    Certainly it cannot be olive oil, nor macassar\noil, nor castor oil, nor bear's
+    oil, nor train oil, nor cod-liver oil.\nWhat then can it possibly be, but the
+    sperm oil in its unmanufactured,\nunpolluted state, the sweetest of all oils?\n 
+    Think of that, ye loyal Britons! we whalemen supply your kings and\nqueens with
+    coronation stuff!\n  "

@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter3
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 4,   The Counterpane
+  content: "\n  Call me Ishmael. Some years ago- never mind how long precisely-\nhaving
+    little or no money in my purse, and nothing particular to\ninterest me on shore,
+    I thought I would sail about a little and see\nthe watery part of the world.
+    It is a way I have of driving off the\nspleen and regulating the circulation.
+    Whenever I find myself\ngrowing grim about the mouth; whenever it is a damp,
+    drizzly\nNovember in my soul; whenever I find myself involuntarily pausing\nbefore
+    coffin warehouses, and bringing up the rear of every funeral\nI meet; and especially
+    whenever my hypos get such an upper hand of me,\nthat it requires a strong moral
+    principle to prevent me from\ndeliberately stepping into the street, and methodically
+    knocking\npeople's hats off- then, I account it high time to get to sea as\nsoon
+    as I can. This is my substitute for pistol and ball. With a\nphilosophical flourish
+    Cato throws himself upon his sword; I quietly\ntake to the ship. There is nothing
+    surprising in this. If they but\nknew it, almost all men in their degree, some
+    time or other, cherish\nvery nearly the same feelings towards the ocean with
+    me.\n  There now is your insular city of the Manhattoes, belted round by\nwharves
+    as Indian isles by coral reefs- commerce surrounds it with her\nsurf. Right and
+    left, the streets take you waterward. Its extreme\ndowntown is the battery, where
+    that noble mole is washed by waves, and\ncooled by breezes, which a few hours
+    previous were out of sight of\nland. Look at the crowds of water-gazers there.\n 
+    Circumambulate the city of a dreamy Sabbath afternoon. Go from\nCorlears Hook
+    to Coenties Slip, and from thence, by Whitehall,\nnorthward. What do you see?-
+    Posted like silent sentinels all around\nthe town, stand thousands upon thousands
+    of mortal men fixed in\nocean reveries. Some leaning against the spiles; some
+    seated upon\nthe pier-heads; some looking over the bulwarks of ships from China;\nsome
+    high aloft in the rigging, as if striving to get a still better\nseaward peep.
+    But these are all landsmen; of week days pent up in lath\nand plaster- tied to
+    counters, nailed to benches, clinched to desks.\nHow then is this? Are the green
+    fields gone? What do they here?\n  But look! here come more crowds, pacing straight
+    for the water,\nand seemingly bound for a dive. Strange! Nothing will content
+    them but\nthe extremest limit of the land; loitering under the shady lee of\nyonder
+    warehouses will not suffice. No. They must get just as nigh the\nwater as they
+    possibly can without falling And there they stand- miles\nof them- leagues. Inlanders
+    all, they come from lanes and alleys,\nstreets avenues- north, east, south, and
+    west. Yet here they all\nunite. Tell me, does the magnetic virtue of the needles
+    of the\ncompasses of all those ships attract them thither?\n  Once more. Say
+    you are in the country; in some high land of lakes.\nTake almost any path you
+    please, and ten to one it carries you down in\na dale, and leaves you there by
+    a pool in the stream. There is magic\nin it. Let the most absent-minded of men
+    be plunged in his deepest\nreveries- stand that man on his legs, set his feet
+    a-going, and he\nwill infallibly lead you to water, if water there be in all
+    that\nregion. Should you ever be athirst in the great American desert, try\nthis
+    experiment, if your caravan happen to be supplied with a\nmetaphysical professor.
+    Yes, as every one knows, meditation and\nwater are wedded for ever.\n  But here
+    is an artist. He desires to paint you the dreamiest,\nshadiest, quietest, most
+    enchanting bit of romantic landscape in all\nthe valley of the Saco. What is
+    the chief element he employs? There\nstand his trees, each with a hollow trunk,
+    as if a hermit and a\ncrucifix were within; and here sleeps his meadow, and there
+    sleep\nhis cattle; and up from yonder cottage goes a sleepy smoke. Deep\ninto
+    distant woodlands winds a mazy way, reaching to overlapping spurs\nof mountains
+    bathed in their hill-side blue. But though the picture\nlies thus tranced, and
+    though this pine-tree shakes down its sighs\nlike leaves upon this shepherd's
+    head, yet all were vain, unless the\nshepherd's eye were fixed upon the magic
+    stream before him. Go visit\nthe Prairies in June, when for scores on scores
+    of miles you wade\nknee-deep among Tiger-lilies- what is the one charm wanting?-
+    Water-\nthere is not a drop of water there! Were Niagara but a cataract of\nsand,
+    would you travel your thousand miles to see it? Why did the poor\npoet of Tennessee,
+    upon suddenly receiving two handfuls of silver,\ndeliberate whether to buy him
+    a coat, which he sadly needed, or invest\nhis money in a pedestrian trip to Rockaway
+    Beach? Why is almost\nevery robust healthy boy with a robust healthy soul in
+    him, at some\ntime or other crazy to go to sea? Why upon your first voyage as
+    a\npassenger, did you yourself feel such a mystical vibration, when first\ntold
+    that you and your ship were now out of sight of land? Why did the\nold Persians
+    hold the sea holy? Why did the Greeks give it a\nseparate deity, and own brother
+    of Jove? Surely all this is not\nwithout meaning. And still deeper the meaning
+    of that story of\nNarcissus, who because he could not grasp the tormenting, mild
+    image\nhe saw in the fountain, plunged into it and was drowned. But that same\nimage,
+    we ourselves see in all rivers and oceans. It is the image of\nthe ungraspable
+    phantom of life; and this is the key to it all.\n  Now, when I say that I am
+    in the habit of going to sea whenever I\nbegin to grow hazy about the eyes, and
+    begin to be over conscious of\nmy lungs, I do not mean to have it inferred that
+    I ever go to sea as a\npassenger. For to go as a passenger you must needs have
+    a purse, and a\npurse is but a rag unless you have something in it. Besides,\npassengers
+    get sea-sick- grow quarrelsome- don't sleep of nights- do\nnot enjoy themselves
+    much, as a general thing;- no, I never go as a\npassenger; nor, though I am something
+    of a salt, do I ever go to sea\nas a Commodore, or a Captain, or a Cook. I abandon
+    the glory and\ndistinction of such offices to those who like them. For my part,
+    I\nabominate all honorable respectable toils, trials, and tribulations of\nevery
+    kind whatsoever. It is quite as much as I can do to take care of\nmyself, without
+    taking care of ships, barques, brigs, schooners, and\nwhat not. And as for going
+    as cook,- though I confess there is\nconsiderable glory in that, a cook being
+    a sort of officer on\nship-board- yet, somehow, I never fancied broiling fowls;-
+    though once\nbroiled, judiciously buttered, and judgmatically salted and\npeppered,
+    there is no one who will speak more respectfully, not to say\nreverentially,
+    of a broiled fowl than I will. It is out of the\nidolatrous dotings of the old
+    Egyptians upon broiled ibis and\nroasted river horse, that you see the mummies
+    of those creatures in\ntheir huge bakehouses the pyramids.\n  No, when I go to
+    sea, I go as a simple sailor, right before the\nmast, plumb down into the fore-castle,
+    aloft there to the royal\nmast-head. True, they rather order me about some, and
+    make me jump\nfrom spar to spar, like a grasshopper in a May meadow. And at first,\nthis
+    sort of thing is unpleasant enough. It touches one's sense of\nhonor, particularly
+    if you come of an old established family in the\nland, the Van Rensselaers, or
+    Randolphs, or Hardicanutes. And more\nthan all, if just previous to putting your
+    hand into the tar-pot,\nyou have been lording it as a country schoolmaster, making
+    the tallest\nboys stand in awe of you. The transition is a keen one, I assure\nyou,
+    from a schoolmaster to a sailor, and requires a strong\ndecoction of Seneca and
+    the Stoics to enable you to grin and bear\nit. But even this wears off in time.\n 
+    What of it, if some old hunks of a sea-captain orders me to get a\nbroom and
+    sweep down the decks? What does that indignity amount to,\nweighed, I mean, in
+    the scales of the New Testament? Do you think\nthe archangel Gabriel thinks anything
+    the less of me, because I\npromptly and respectfully obey that old hunks in that
+    particular\ninstance? Who ain't a slave? Tell me that. Well, then, however the
+    old\nsea-captains may order me about- however they may thump and punch me\nabout,
+    I have the satisfaction of knowing that it is all right; that\neverybody else
+    is one way or other served in much the same way- either\nin a physical or metaphysical
+    point of view, that is; and so the\nuniversal thump is passed round, and all
+    hands should rub each other's\nshoulder-blades, and be content.\n  Again, I always
+    go to sea as a sailor, because they make a point\nof paying me for my trouble,
+    whereas they never pay passengers a\nsingle penny that I ever heard of. On the
+    contrary, passengers\nthemselves must pay. And there is all the difference in
+    the world\nbetween paying and being paid. The act of paying is perhaps the most\nuncomfortable
+    infliction that the two orchard thieves entailed upon\nus. But being paid,- what
+    will compare with it? The urbane activity\nwith which a man receives money is
+    really marvellous, considering that\nwe so earnestly believe money to be the
+    root of all earthly ills,\nand that on no account can a monied man enter heaven.
+    Ah! how\ncheerfully we consign ourselves to perdition!\n  Finally, I always go
+    to sea as a sailor, because of the wholesome\nexercise and pure air of the fore-castle
+    deck. For as in this world,\nhead winds are far more prevalent than winds from
+    astern (that is,\nif you never violate the Pythagorean maxim), so for the most
+    part\nthe Commodore on the quarter-deck gets his atmosphere at second hand\nfrom
+    the sailors on the forecastle. He thinks he breathes it first;\nbut not so. In
+    much the same way do the commonalty lead their\nleaders in many other things,
+    at the same time that the leaders little\nsuspect it. But wherefore it was that
+    after having repeatedly smelt\nthe sea as a merchant sailor, I should now take
+    it into my head to\ngo on a whaling voyage; this the invisible police officer
+    of the\nFates, who has the constant surveillance of me, and secretly dogs\nme,
+    and influences me in some unaccountable way- he can better\nanswer than any one
+    else. And, doubtless, my going on this whaling\nvoyage, formed part of the grand
+    programme of Providence that was\ndrawn up a long time ago. It came in as a sort
+    of brief interlude\nand solo between more extensive performances. I take it that
+    this part\nof the bill must have run something like this:\n\n  \"Grand Contested
+    Election for the Presidency of the United States.\n                 \"WHALING
+    VOYAGE BY ONE ISHMAEL.\"\n                 \"BLOODY BATTLE IN AFFGHANISTAN.\"\n\n 
+    Though I cannot tell why it was exactly that those stage managers,\nthe Fates,
+    put me down for this shabby part of a whaling voyage,\nwhen others were set down
+    for magnificent parts in high tragedies, and\nshort and easy parts in genteel
+    comedies, and jolly parts in farces-\nthough I cannot tell why this was exactly;
+    yet, now that I recall\nall the circumstances, I think I can see a little into
+    the springs and\nmotives which being cunningly presented to me under various
+    disguises,\ninduced me to set about performing the part I did, besides cajoling
+    me\ninto the delusion that it was a choice resulting from my own\nunbiased freewill
+    and discriminating judgment.\n  Chief among these motives was the overwhelming
+    idea of the great\nwhale himself. Such a portentous and mysterious monster roused
+    all\nmy curiosity. Then the wild and distant seas where he rolled his\nisland
+    bulk; the undeliverable, nameless perils of the whale; these,\nwith all the attending
+    marvels of a thousand Patagonian sights and\nsounds, helped to sway me to my
+    wish. With other men, perhaps, such\nthings would not have been inducements;
+    but as for me, I am\ntormented with an everlasting itch for things remote. I
+    love to sail\nforbidden seas, and land on barbarous coasts. Not ignoring what
+    is\ngood, I am quick to perceive a horror, and could still be social\nwith it-
+    would they let me- since it is but well to be on friendly\nterms with all the
+    inmates of the place one lodges in.\n  By reason of these things, then, the whaling
+    voyage was welcome; the\ngreat flood-gates of the wonder-world swung open, and
+    in the wild\nconceits that swayed me to my purpose, two and two there floated\ninto
+    my inmost soul, endless processions of the whale, and, mid most\nof them all,
+    one grand hooded phantom, like a snow hill in the air.\n  "

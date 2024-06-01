@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter6
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 7,   The Chapel
+  content: "\n  I stuffed a shirt or two into my old carpet-bag, tucked it under\nmy
+    arm, and started for Cape Horn and the Pacific. Quitting the good\ncity of old
+    Manhatto, I duly arrived in New Bedford. It was a Saturday\nnight in December.
+    Much was I disappointed upon learning that the\nlittle packet for Nantucket had
+    already sailed, and that no way of\nreaching that place would offer, till the
+    following Monday.\n  As most young candidates for the pains and penalties of
+    whaling stop\nat this same New Bedford, thence to embark on their voyage, it
+    may\nas well be related that I, for one, had no idea of so doing. For my\nmind
+    was made up to sail in no other than a Nantucket craft, because\nthere was a
+    fine, boisterous something about everything connected with\nthat famous old island,
+    which amazingly pleased me. Besides though New\nBedford has of late been gradually
+    monopolizing the business of\nwhaling, and though in this matter poor old Nantucket
+    is now much\nbehind her, yet Nantucket was her great original- the Tyre of this\nCarthage;-
+    the place where the first dead American whale was stranded.\nWhere else but from
+    Nantucket did those aboriginal whalemen, the\nRed-Men, first sally out in canoes
+    to give chase to the Leviathan? And\nwhere but from Nantucket, too, did that
+    first adventurous little sloop\nput forth, partly laden with imported cobblestones-
+    so goes the story-\nto throw at the whales, in order to discover when they were
+    nigh\nenough to risk a harpoon from the bowsprit?\n  Now having a night, a day,
+    and still another night following\nbefore me in New Bedford, ere could embark
+    for my destined port, it\nbecame a matter of concernment where I was to eat and
+    sleep meanwhile.\nIt was a very dubious-looking, nay, a very dark and dismal
+    night,\nbitingly cold and cheerless. I knew no one in the place. With\nanxious
+    grapnels I had sounded my pocket, and only brought up a few\npieces of silver,-
+    So, wherever you go, Ishmael, said I to myself,\nas I stood in the middle of
+    a dreary street shouldering my bag, and\ncomparing the towards the north with
+    the darkness towards the south-\nwherever in your wisdom you may conclude to
+    lodge for the night, my\ndear Ishmael, be sure to inquire the price, and don't
+    be too\nparticular.\n  With halting steps I paced the streets, and passed the
+    sign of\n\"The Crossed Harpoons\"- but it looked too expensive and jolly there.\nFurther
+    on, from the bright red windows of the \"Sword-Fish Inn,\" there\ncame such fervent
+    rays, that it seemed to have melted the packed\nsnow and ice from before the
+    house, for everywhere else the\ncongealed frost lay ten inches thick in a hard,
+    asphaltic pavement,-\nrather weary for me, when I struck my foot against the
+    flinty\nprojections, because from hard, remorseless service the soles of my\nboots
+    were in a most miserable plight. Too expensive and jolly,\nagain thought I, pausing
+    one moment to watch the broad glare in the\nstreet, and hear the sounds of the
+    tinkling glasses within. But go on,\nIshmael, said I at last; don't you hear?
+    get away from before the\ndoor; your patched boots are stopping the way. So on
+    I went. I now\nby instinct followed the streets that took me waterward, for there,\ndoubtless,
+    were the cheapest, if not the cheeriest inns.\n  Such dreary streets! blocks
+    of blackness, not houses, on either\nhand, and here and there a candle, like
+    a candle moving about in a\ntomb. At this hour of the night, of the last day
+    of the week, that\nquarter of the town proved all but deserted. But presently
+    I came to a\nsmoky light proceeding from a low, wide building, the door of which\nstood
+    invitingly open. It had a careless look, as if it were meant for\nthe uses of
+    the public; so, entering, the first thing I did was to\nstumble over an ash-box
+    in the porch. Ha! thought I, ha, as the flying\nparticles almost choked me, are
+    these ashes from that destroyed\ncity, Gomorrah? But \"The Crossed Harpoons,\"
+    and the \"The Sword-Fish?\"-\nthis, then must needs be the sign of \"The Trap.\"
+    However, I picked\nmyself up and hearing a loud voice within, pushed on and opened
+    a\nsecond, interior door.\n  It seemed the great Black Parliament sitting in
+    Tophet. A hundred\nblack faces turned round in their rows to peer; and beyond,
+    a black\nAngel of Doom was beating a book in a pulpit. It was a negro church;\nand
+    the preacher's text was about the blackness of darkness, and the\nweeping and
+    wailing and teeth-gnashing there. Ha, Ishmael, muttered I,\nbacking out, Wretched
+    entertainment at the sign of 'The Trap!'\n  Moving on, I at last came to a dim
+    sort of light not far from the\ndocks, and heard a forlorn creaking in the air;
+    and looking up, saw\na swinging sign over the door with a white painting upon
+    it, faintly\nrepresenting tall straight jet of misty spray, and these words\nunderneath-
+    \"The Spouter Inn:- Peter Coffin.\"\n  Coffin?- Spouter?- Rather ominous in that
+    particular connexion,\nthought I. But it is a common name in Nantucket, they
+    say, and I\nsuppose this Peter here is an emigrant from there. As the light looked\nso
+    dim, and the place, for the time, looked quiet enough, and the\ndilapidated little
+    wooden house itself looked as if it might have been\ncarted here from the ruins
+    of some burnt district, and as the swinging\nsign had a poverty-stricken sort
+    of creak to it, I thought that here\nwas the very spot for cheap lodgings, and
+    the best of pea coffee.\n  It was a queer sort of place- a gable-ended old house,
+    one side\npalsied as it were, and leaning over sadly. It stood on a sharp\nbleak
+    corner, where that tempestuous wind Euroclydon kept up a worse\nhowling than
+    ever it did about poor Paul's tossed craft. Euroclydon,\nnevertheless, is a mighty
+    pleasant zephyr to any one in-doors, with\nhis feet on the hob quietly toasting
+    for bed. \"In of that\ntempestuous wind called Euroclydon,\" says an old writer-
+    of whose\nworks I possess the only copy extant- \"it maketh a marvellous\ndifference,
+    whether thou lookest out at it from a glass window where\nthe frost is all on
+    the outside, or whether thou observest it from\nthat sashless window, where the
+    frost is on both sides, and of which\nthe wight Death is the only glazier.\"
+    True enough, thought I, as\nthis passage occurred to my mind- old black-letter,
+    thou reasonest\nwell. Yes, these eyes are windows, and this body of mine is the
+    house.\nWhat a pity they didn't stop up the chinks and the crannies though,\nand
+    thrust in a little lint here and there. But it's too late to\nmake any improvements
+    now. The universe is finished; the copestone\nis on, and the chips were carted
+    off a million years ago. Poor Lazarus\nthere, chattering his teeth against the
+    curbstone for his pillow,\nand shaking off his tatters with his shiverings, he
+    might plug up both\nears with rags, and put a corn-cob into his mouth, and yet
+    that\nwould not keep out the tempestuous Euroclydon. Euroclydon! says old\nDives,
+    in his red silken wrapper- (he had a redder one afterwards)\npooh, pooh! What
+    a fine frosty night; how Orion glitters; what\nnorthern lights! Let them talk
+    of their oriental summer climes of\neverlasting conservatories; give me the privilege
+    of making my own\nsummer with my own coals.\n  But what thinks Lazarus? Can he
+    warm his blue hands by holding\nthem up to the grand northern lights? Would not
+    Lazarus rather be in\nSumatra than here? Would he not far rather lay him down
+    lengthwise\nalong the line of the equator; yea, ye gods! go down to the fiery\npit
+    itself, in order to keep out this frost?\n  Now, that Lazarus should lie stranded
+    there on the curbstone\nbefore the door of Dives, this is more wonderful than
+    that an\niceberg should be moored to one of the Moluccas. Yet Dives himself,
+    he\ntoo lives like a Czar in an ice palace made of frozen sighs, and being\na
+    president of a temperance society, he only drinks the tepid tears of\norphans.\n 
+    But no more of this blubbering now, we are going a-whaling, and\nthere is plenty
+    of that yet to come. Let us scrape the ice from our\nfrosted feet, and see what
+    sort of a place this \"Spouter\" may be.\n  "

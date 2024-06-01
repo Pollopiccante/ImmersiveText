@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter21
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 22,   Merry Christmas
+  content: "\n  In the same New Bedford there stands a Whaleman's Chapel, and few\nare
+    the moody fishermen, shortly bound for the Indian Ocean or\nPacific, who fail
+    to make a Sunday visit to the spot. I am sure that I\ndid not.\n  Returning from
+    my first morning stroll, I again sallied out upon\nthis special errand. The sky
+    had changed from clear, sunny cold, to\ndriving sleet and mist. Wrapping myself
+    in my shaggy jacket of the\ncloth called bearskin, I fought my way against the
+    stubborn storm.\nEntering, I found a small scattered congregation of sailors,
+    and\nsailors' wives and widows. A muffled silence reigned, only broken at\ntimes
+    by the shrieks of the storm. Each silent worshipper seemed\npurposely sitting
+    apart from the other, as if each silent grief were\ninsular and incommunicable.
+    The chaplain had not yet arrived; and\nthere these silent islands of men and
+    women sat steadfastly eyeing\nseveral marble tablets, with black borders, masoned
+    into the wall on\neither side the pulpit. Three of them ran something like the\nfollowing,
+    but I do not pretend to quote:\n\n                            SACRED\n                       
+    TO THE MEMORY\n                              OF\n                          JOHN
+    TALBOT,\n        Who, at the age of eighteen, was lost overboard\n          Near
+    the Isle of Desolation, off Patagonia,\n                       November 1st,
+    1836.\n                          THIS TABLET\n                   Is erected to
+    his Memory\n                         BY HIS SISTER.\n\n                           
+    SACRED\n                        TO THE MEMORY\n                             
+    OF\n                  ROBERT LONG, WILLIS ELLERY,\n            NATHAN COLEMAN,
+    WALTER CANNY, SETH MACY,\n                       AND SAMUEL GLEIG,\n                
+    Forming one of the boats' crews\n                              OF\n                      
+    THE SHIP ELIZA\n             Who were towed out of sight by a Whale,\n                 
+    On the Off-shore Ground in the\n                           PACIFIC,\n                     
+    December 31st, 1839.\n                          THIS MARBLE\n               Is
+    here placed by their surviving\n                           SHIPMATES.\n\n                           
+    SACRED\n                        TO THE MEMORY\n                             
+    OF\n                           The late\n                    CAPTAIN EZEKIEL
+    HARDY,\n          Who in the bows of his boat was killed by a\n              
+    Sperm Whale on the coast of Japan,\n                       August 3d, 1833.\n                         
+    THIS TABLET\n                   Is erected to his Memory\n                             
+    BY\n                          HIS WIDOW.\n\n  Shaking off the sleet from my ice-glazed
+    hat and jacket, I seated\nmyself near the door, and turning sideways was surprised
+    to see\nQueequeg near me. Affected by the solemnity of the scene, there was\na
+    wondering gaze of incredulous curiosity in his countenance. This\nsavage was
+    the only person present who seemed to notice my entrance;\nbecause he was the
+    only one who could not read, and, therefore, was\nnot reading those frigid inscriptions
+    on the wall. Whether any of\nthe relatives of the seamen whose names appeared
+    there were now\namong the congregation, I knew not; but so many are the unrecorded\naccidents
+    in the fishery, and so plainly did several women present\nwear the countenance
+    if not the trappings of some unceasing grief,\nthat I feel sure that here before
+    me were assembled those, in whose\nunhealing hearts the sight of those bleak
+    tablets sympathetically\ncaused the old wounds to bleed afresh.\n  Oh! ye whose
+    dead lie buried beneath the green grass; who standing\namong flowers can say-
+    here, here lies my beloved; ye know not the\ndesolation that broods in bosoms
+    like these. What bitter blanks in\nthose black-bordered marbles which cover no
+    ashes! What despair in\nthose immovable inscriptions! What deadly voids and unbidden\ninfidelities
+    in the lines that seem to gnaw upon all Faith, and refuse\nresurrections to the
+    beings who have placelessly perished without a\ngrave. As well might those tablets
+    stand in the cave of Elephanta as\nhere.\n  In what census of living creatures,
+    the dead of mankind are\nincluded; why it is that a universal proverb says of
+    them, that they\ntell no tales, though containing more secrets than the Goodwin\nSands!
+    how it is that to his name who yesterday departed for the other\nworld, we prefix
+    so significant and infidel a word, and yet do not\nthus entitle him, if he but
+    embarks for the remotest Indies of this\nliving earth; why the Life Insurance
+    Companies pay death-forfeitures\nupon immortals; in what eternal, unstirring
+    paralysis, and deadly,\nhopeless trance, yet lies antique Adam who died sixty
+    round\ncenturies ago; how it is that we still refuse to be comforted for\nthose
+    who we nevertheless maintain are dwelling in unspeakable\nbliss; why all the
+    living so strive to hush all the dead; wherefore\nbut the rumor of a knocking
+    in a tomb will terrify a whole city. All\nthese things are not without their
+    meanings.\n  But Faith, like a jackal, feeds among the tombs, and even from these\ndead
+    doubts she gathers her most vital hope.\n  It needs scarcely to be told, with
+    what feelings, on the eve of a\nNantucket voyage, I regarded those marble tablets,
+    and by the murky\nlight of that darkened, doleful day read the fate of the whalemen\nwho
+    had gone before me. Yes, Ishmael, the same fate may be thine.\nBut somehow I
+    grew merry again. Delightful inducements to embark, fine\nchance for promotion,
+    it seems- aye, a stove boat will make me an\nimmortal by brevet. Yes, there is
+    death in this business of whaling- a\nspeechlessly quick chaotic bundling of
+    a man into Eternity. But what\nthen? Methinks we have hugely mistaken this matter
+    of Life and\nDeath. Methinks that what they call my shadow here on earth is my
+    true\nsubstance. Methinks that in looking at things spiritual, we are too\nmuch
+    like oysters observing the sun through the water, and thinking\nthat thick water
+    the thinnest of air. Methinks my body is but the lees\nof my better being. In
+    fact take my body who will, take it I say, it\nis not me. And therefore three
+    cheers for Nantucket; and come a\nstove boat and stove body when they will, for
+    stave my soul, Jove\nhimself cannot.\n  "

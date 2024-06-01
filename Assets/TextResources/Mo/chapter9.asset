@@ -1,0 +1,421 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter9
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 10,   A Bosom Friend
+  content: "\n  Entering that gable-ended Spouter-Inn, you found yourself in a wide,\nlow,
+    straggling entry with old-fashioned wainscots, reminding one of\nthe bulwarks
+    of some condemned old craft. On one side hung a very\nlarge oil painting so thoroughly
+    besmoked, and every way defaced, that\nin the unequal crosslights by which you
+    viewed it, it was only by\ndiligent study and a series of systematic visits to
+    it, and careful\ninquiry of the neighbors, that you could any way arrive at an\nunderstanding
+    of its purpose. Such unaccountable masses of shades\nand shadows, that at first
+    you almost thought some ambitious young\nartist, in the time of the New England
+    hags, had endeavored to\ndelineate chaos bewitched. But by dint of much and earnest\ncontemplation,
+    and oft repeated ponderings, and especially by throwing\nopen the little window
+    towards the back of the entry, you at last come\nto the conclusion that such
+    an idea, however wild, might not be\naltogether unwarranted.\n  But what most
+    puzzled and confounded you was a long, limber,\nportentous, black mass of something
+    hovering in the centre of the\npicture over three blue, dim, perpendicular lines
+    floating in a\nnameless yeast. A boggy, soggy, squitchy picture truly, enough
+    to\ndrive a nervous man distracted. Yet was there a sort of indefinite,\nhalf-attained,
+    unimaginable sublimity about it that fairly froze you\nto it, till you involuntarily
+    took an oath with yourself to find out\nwhat that marvellous painting meant.
+    Ever and anon a bright, but,\nalas, deceptive idea would dart you through.- It's
+    the Black Sea in\na midnight gale.- It's the unnatural combat of the four primal\nelements.-
+    It's a blasted heath.- It's a Hyperborean winter scene.-\nIt's the breaking-up
+    of the icebound stream of Time. But last all\nthese fancies yielded to that one
+    portentous something in the\npicture's midst. That once found out, and all the
+    rest were plain. But\nstop; does it not bear a faint resemblance to a gigantic
+    fish? even\nthe great leviathan himself?\n  In fact, the artist's design seemed
+    this: a final theory of my\nown, partly based upon the aggregated opinions of
+    many aged persons\nwith whom I conversed upon the subject. The picture represents
+    a\nCape-Horner in a great hurricane; the half-foundered ship weltering\nthere
+    with its three dismantled masts alone visible; and an\nexasperated whale, purposing
+    to spring clean over the craft, is in the\nenormous act of impaling himself upon
+    the three mast-heads.\n  The opposite wall of this entry was hung all over with
+    a\nheathenish array of monstrous clubs and spears. Some were thickly\nset with
+    glittering teeth resembling ivory saws; others were tufted\nwith knots of human
+    hair; and one was sickle-shaped, with a vast\nhandle sweeping round like the
+    segment made in the new-mown grass by a\nlong-armed mower. You shuddered as you
+    gazed, and wondered what\nmonstrous cannibal and savage could ever have gone
+    a\ndeath-harvesting with such a hacking, horrifying implement. Mixed with\nthese
+    were rusty old whaling lances and harpoons all broken and\ndeformed. Some were
+    storied weapons. With this once long lance, now\nwildly elbowed, fifty years
+    ago did Nathan Swain kill fifteen whales\nbetween a sunrise and a sunset. And
+    that harpoon- so like a\ncorkscrew now- was flung in Javan seas, and run away
+    with by a\nwhale, years afterwards slain off the Cape of Blanco. The original\niron
+    entered nigh the tail, and, like a restless needle sojourning\nin the body of
+    a man, travelled full forty feet, and at last was found\nimbedded in the hump.\n 
+    Crossing this dusky entry, and on through yon low-arched way- cut\nthrough what
+    in old times must have been a great central chimney\nwith fireplaces all round-
+    you enter the public room. A still\nduskier place is this, with such low ponderous
+    beams above, and such\nold wrinkled planks beneath, that you would almost fancy
+    you trod some\nold craft's cockpits, especially of such a howling night, when
+    this\ncorner-anchored old ark rocked so furiously. On one side stood a long,\nlow,
+    shelf-like table covered with cracked glass cases, filled with\ndusty rarities
+    gathered from this wide world's remotest nooks.\nProjecting from the further
+    angle of the room stands a dark-looking\nden- the bar- a rude attempt at a right
+    whale's head. Be that how it\nmay, there stands the vast arched bone of the whale's
+    jaw, so wide,\na coach might almost drive beneath it. Within are shabby shelves,\nranged
+    round with old decanters, bottles, flasks; and in those jaws of\nswift destruction,
+    like another cursed Jonah (by which name indeed\nthey called him), bustles a
+    little withered old man, who, for their\nmoney, dearly sells the sailors deliriums
+    and death.\n  Abominable are the tumblers into which he pours his poison. Though\ntrue
+    cylinders without- within, the villanous green goggling glasses\ndeceitfully
+    tapered downwards to a cheating bottom. Parallel meridians\nrudely pecked into
+    the glass, surround these footpads' goblets. Fill\nto this mark, and your charge
+    is but a penny; to this a penny more;\nand so on to the full glass- the Cape
+    Horn measure, which you may gulp\ndown for a shilling.\n  Upon entering the place
+    I found a number of young seamen gathered\nabout a table, examining by a dim
+    light divers specimens of\nskrimshander. I sought the landlord, and telling him
+    I desired to be\naccommodated with a room, received for answer that his house
+    was full-\nnot a bed unoccupied. \"But avast,\" he added, tapping his forehead,\n\"you
+    haint no objections to sharing a harpooneer's blanket, have ye? I\ns'pose you
+    are goin' a-whalin', so you'd better get used to that\nsort of thing.\"\n  I
+    told him that I never liked to sleep two in a bed; that if I\nshould ever do
+    so, it would depend upon who the harpooneer might be,\nand that if he (the landlord)
+    really had no other place for me, and\nthe harpooneer was not decidedly objectionable,
+    why rather than wander\nfurther about a strange town on so bitter a night, I
+    would put up with\nthe half of any decent man's blanket.\n  \"I thought so. All
+    right; take a seat. Supper?- you want supper?\nSupper'll be ready directly.\"\n 
+    I sat down on an old wooden settle, carved all over like a bench\non the Battery.
+    At one end a ruminating tar was still further adorning\nit with his jack-knife,
+    stooping over and diligently working away at\nthe space between his legs. He
+    was trying his hand at a ship under\nfull sail, but he didn't make much headway,
+    I thought.\n  At last some four or five of us were summoned to our meal in an\nadjoining
+    room. It was cold as Iceland- no fire at all- the landlord\nsaid he couldn't
+    afford it. Nothing but two dismal tallow candles,\neach in a winding sheet. We
+    were fain to button up our monkey jackets,\nand hold to our lips cups of scalding
+    tea with our half frozen\nfingers. But the fare was of the most substantial kind-
+    not only\nmeat and potatoes, but dumplings; good heavens! dumplings for\nsupper!
+    One young fellow in a green box coat, addressed himself to\nthese dumplings in
+    a most direful manner.\n  \"My boy,\" said the landlord, \"you'll have the nightmare
+    to a dead\nsartainty.\"\n  \"Landlord,\" I whispered, \"that aint the harpooneer
+    is it?\"\n  \"Oh, no,\" said he, looking a sort of diabolically funny, \"the\nharpooneer
+    is a dark complexioned chap. He never eats dumplings, he\ndon't- he eats nothing
+    but steaks, and he likes 'em rare.\"\n  \"The devil he does,\" says I. \"Where
+    is that harpooneer? Is he here?\"\n  \"He'll be here afore long,\" was the answer.\n 
+    I could not help it, but I began to feel suspicious of this \"dark\ncomplexioned\"
+    harpooneer. At any rate, I made up my mind that if it so\nturned out that we
+    should sleep together, he must undress and get into\nbed before I did.\n  Supper
+    over, the company went back to the bar-room, when, knowing\nnot what else to
+    do with myself, I resolved to spend the rest of the\nevening as a looker on.\n 
+    Presently a rioting noise was heard without. Starting up, the\nlandlord cried,
+    \"That's the Grampus's crew. I seed her reported in the\noffing this morning;
+    a three years' voyage, and a full ship. Hurrah,\nboys; now we'll have the latest
+    news from the Feegees.\"\n  A tramping of sea boots was heard in the entry; the
+    door was flung\nopen, and in rolled a wild set of mariners enough. Enveloped
+    in\ntheir shaggy watch coats, and with their heads muffled in woollen\ncomforters,
+    all bedarned and ragged, and their beards stiff with\nicicles, they seemed an
+    eruption of bears from Labrador. They had just\nlanded from their boat, and this
+    was the first house they entered.\nNo wonder, then, that they made a straight
+    wake for the whale's mouth-\nthe bar- when the wrinkled little old Jonah, there
+    officiating, soon\npoured them out brimmers all round. One complained of a bad
+    cold in\nhis head, upon which Jonah mixed him a pitch-like potion of gin and\nmolasses,
+    which he swore was a sovereign cure for all colds and\ncatarrhs whatsoever, never
+    mind of how long standing, or whether\ncaught off the coast of Labrador, or on
+    the weather side of an\nice-island.\n  The liquor soon mounted into their heads,
+    as it generally does\neven with the arrantest topers newly landed from sea, and
+    they began\ncapering about most obstreperously.\n  I observed, however, that
+    one of them held somewhat aloof, and\nthough he seemed desirous not to spoil
+    the hilarity of his shipmates\nby his own sober face, yet upon the whole he refrained
+    from making\nas much noise as the rest. This man interested me at once; and since\nthe
+    sea-gods had ordained that he should soon become my shipmate\n(though but a sleeping
+    partner one, so far as this narrative is\nconcerned), I will here venture upon
+    a little description of him. He\nstood full six feet in height, with noble shoulders,
+    and a chest\nlike a coffer-dam. I have seldom seen such brawn in a man. His face\nwas
+    deeply brown and burnt, making his white teeth dazzling by the\ncontrast; while
+    in the deep shadows of his eyes floated some\nreminiscences that did not seem
+    to give him much joy. His voice at\nonce announced that he was a Southerner,
+    and from his fine stature,\nI thought he must be one of those tall mountaineers
+    from the\nAlleghanian Ridge in Virginia. When the revelry of his companions\nhad
+    mounted to its height, this man slipped away unobserved, and I saw\nno more of
+    him till he became my comrade on the sea. In a few minutes,\nhowever, he was
+    missed by his shipmates, and being, it seems, for some\nreason a huge favorite
+    with them, they raised a cry of \"Bulkington!\nBulkington! where's Bulkington?\"
+    and darted out of the house in\npursuit of him.\n  It was now about nine o'clock,
+    and the room seeming almost\nsupernaturally quiet after these orgies, I began
+    to congratulate\nmyself upon a little plan that had occurred to me just previous
+    to the\nentrance of the seamen.\n  No man prefers to sleep two in a bed. In fact,
+    you would a good deal\nrather not sleep with your own brother. I don't know how
+    it is, but\npeople like to be private when they are sleeping. And when it comes
+    to\nsleeping with an unknown stranger, in a strange inn, in a strange\ntown,
+    and that stranger a harpooneer, then your objections\nindefinitely multiply.
+    Nor was there any earthly reason why I as a\nsailor should sleep two in a bed,
+    more than anybody else; for\nsailors no more sleep two in a bed at sea, than
+    bachelor Kings do\nashore. To be sure they all sleep together in one apartment,
+    but you\nhave your own hammock, and cover yourself with your own blanket, and\nsleep
+    in your own skin.\n  The more I pondered over this harpooneer, the more I abominated\nthe
+    thought of sleeping with him. It was fair to presume that being\na harpooneer,
+    his linen or woolen, as the case might be, would not\nbe of the tidiest, certainly
+    none of the finest. I began to twitch all\nover. Besides, it was getting late,
+    and my decent harpooneer ought\nto be home and going bedwards. Suppose now, he
+    should tumble in upon\nme at midnight- how could I tell from what vile hole he
+    had been\ncoming?\n  \"Landlord! I've changed my mind about that harpooneer.-
+    I shan't\nsleep with him. I'll try the bench here.\"\n  \"Just as you please;
+    I'm sorry I cant spare ye a tablecloth for a\nmattress, and it's a plaguy rough
+    board here\"- feeling of the knots\nand notches. \"But wait a bit, Skrimshander;
+    I've got a carpenter's\nplane there in the bar- wait, I say, and I'll make ye
+    snug enough.\" So\nsaying he procured the plane; and with his old silk handkerchief
+    first\ndusting the bench, vigorously set to planing away at my bed, the while\ngrinning
+    like an ape. The shavings flew right and left; till at last\nthe plane-iron came
+    bump against an indestructible knot. The\nlandlord was near spraining his wrist,
+    and I told him for heaven's\nsake to quit- the bed was soft enough to suit me,
+    and I did not know\nhow all the planing in the world could make eider down of
+    a pine\nplank. So gathering up the shavings with another grin, and throwing\nthem
+    into the great stove in the middle of the room, he went about his\nbusiness,
+    and left me in a brown study.\n  I now took the measure of the bench, and found
+    that it was a foot\ntoo short; but that could be mended with a chair. But it
+    was a foot\ntoo narrow, and the other bench in the room was about four inches\nhigher
+    than the planed one- so there was no yoking them. I then placed\nthe first bench
+    lengthwise along the only clear space against the\nwall, leaving a little interval
+    between, for my back to settle down\nin. But I soon found that there came such
+    a draught of cold air over\nme from under the sill of the window, that this plan
+    would never do at\nall, especially as another current from the rickety door met
+    the one\nfrom the window, and both together formed a series of small whirlwinds\nin
+    the immediate vicinity of the spot where I had thought to spend the\nnight.\n 
+    The devil fetch that harpooneer, thought I, but stop, couldn't I\nsteal a march
+    on him- bolt his door inside, and jump into his bed, not\nto be wakened by the
+    most violent knockings? It seemed no bad idea but\nupon second thoughts I dismissed
+    it. For who could tell but what the\nnext morning, so soon as I popped out of
+    the room, the harpooneer\nmight be standing in the entry, all ready to knock
+    me down!\n  Still looking round me again, and seeing no possible chance of\nspending
+    a sufferable night unless in some other person's bed, I began\nto think that
+    after all I might be cherishing unwarrantable prejudices\nagainst this unknown
+    harpooneer. Thinks I, I'll wait awhile; he must\nbe dropping in before long.
+    I'll have a good look at him then, and\nperhaps we may become jolly good bedfellows
+    after all- there's no\ntelling.\n  But though the other boarders kept coming
+    in by ones, twos, and\nthrees, and going to bed, yet no sign of my harpooneer.\n 
+    \"Landlord! said I, \"what sort of a chap is he- does he always keep\nsuch late
+    hours?\" It was now hard upon twelve o'clock.\n  The landlord chuckled again
+    with his lean chuckle, and seemed to\nbe mightily tickled at something beyond
+    my comprehension. \"No,\" he\nanswered, \"generally he's an early bird- airley
+    to bed and airley to\nrise- yea, he's the bird what catches the worm. But to-night
+    he went\nout a peddling, you see, and I don't see what on airth keeps him so\nlate,
+    unless, may be, he can't sell his head.\"\n  \"Can't sell his head?- What sort
+    of a bamboozingly story is this you\nare telling me?\" getting into a towering
+    rage. \"Do you pretend to say,\nlandlord, that this harpooneer is actually engaged
+    this blessed\nSaturday night, or rather Sunday morning, in peddling his head\naround
+    this town?\"\n  \"That's precisely it,\" said the landlord, \"and I told him
+    he\ncouldn't sell it here, the market's overstocked.\"\n  \"With what?\" shouted
+    I.\n  \"With heads to be sure; ain't there too many heads in the world?\"\n 
+    \"I tell you what it is, landlord,\" said I quite calmly, \"you'd\nbetter stop
+    spinning that yarn to me- I'm not green.\"\n  \"May be not,\" taking out a stick
+    and whittling a toothpick, \"but I\nrayther guess you'll be done brown if that
+    ere harpooneer hears you\na slanderin' his head.\"\n  \"I'll break it for him,\"
+    said I, now flying into a passion again\nat this unaccountable farrago of the
+    landlord's.\n  \"It's broke a'ready,\" said he.\n  \"Broke,\" said I- \"broke,
+    do you mean?\"\n  \"Sartain, and that's the very reason he can't sell it, I guess.\"\n 
+    \"Landlord,\" said I, going up to him as cool as Mt. Hecla in a\nsnowstorm- \"landlord,
+    stop whittling. You and I must understand one\nanother, and that too without
+    delay. I come to your house and want a\nbed; you tell me you can only give me
+    half a one; that the other\nhalf belongs to a certain harpooneer. And about this
+    harpooneer,\nwhom I have not yet seen, you persist in telling me the most\nmystifying
+    and exasperating stories tending to beget in me an\nuncomfortable feeling towards
+    the man whom you design for my\nbedfellow- a sort of connexion, landlord, which
+    is an intimate and\nconfidential one in the highest degree. I now demand of you
+    to speak\nout and tell me who and what this harpooneer is, and whether I shall\nbe
+    in all respects safe to spend the night with him. And in the\nfirst place, you
+    will be so good as to unsay that story about\nselling his head, which if true
+    I take to be good evidence that this\nharpooneer is stark mad, and I've no idea
+    of sleeping with a madman;\nand you, sir, you I mean, landlord, you, sir, by
+    trying to induce me\nto do so knowingly would thereby render yourself liable
+    to a\ncriminal prosecution.\"\n  \"Wall,\" said the landlord, fetching a long
+    breath, \"that's a purty\nlong sarmon for a chap that rips a little now and then.
+    But be easy,\nbe easy, this here harpooneer I have been tellin' you of has just\narrived
+    from the south seas, where he bought up a lot of 'balmed New\nZealand heads (great
+    curios, you know), and he's sold all on 'em but\none, and that one he's trying
+    to sell to-night, cause to-morrow's\nSunday, and it would not do to be sellin'
+    human heads about the\nstreets when folks is goin' to churches. He wanted to
+    last Sunday, but\nI stopped him just as he was goin' out of the door with four
+    heads\nstrung on a string, for all the airth like a string of inions.\"\n  This
+    account cleared up the otherwise unaccountable mystery, and\nshowed that the
+    landlord, after all, had had no idea of fooling me-\nbut at the same time what
+    could I think of a harpooneer who stayed out\nof a Saturday night clean into
+    the holy Sabbath, engaged in such a\ncannibal business as selling the heads of
+    dead idolators?\n  \"Depend upon it, landlord, that harpooneer is a dangerous
+    man.\"\n  \"He pays reg'lar,\" was the rejoinder. \"But come, it's a nice bed:\nSal
+    and me slept in that ere bed the night we were spliced. There's\nplenty of room
+    for two to kick about in that bed; it's an almighty big\nbed that. Why, afore
+    we give it up, Sal used to put our Sam and little\nJohnny in the foot of it.
+    But I got a dreaming and sprawling about one\nnight, and somehow, Sam got pitched
+    on the floor, and came near\nbreaking his arm. Arter that, Sal said it wouldn't
+    do. Come along\nhere, I'll give ye a glim in a jiffy;\" and so saying he lighted
+    a\ncandle and held it towards me, offering to lead the way. But I stood\nirresolute;
+    when looking at a clock in the corner, he exclaimed \"I vum\nit's Sunday- you
+    won't see that harpooneer to-night; he's come to\nanchor somewhere- come along
+    then; do come; won't ye come?\"\n  I considered the matter a moment, and then
+    up stairs we went, and\nI was ushered into a small room, cold as a clam, and
+    furnished, sure\nenough, with a prodigious bed, almost big enough indeed for
+    any four\nharpooneers to sleep abreast.\n  \"There,\" said the landlord, placing
+    the candle on a crazy old sea\nchest that did double duty as a wash-stand and
+    centre table; \"there,\nmake yourself comfortable now; and good night to ye.\"
+    I turned round\nfrom eyeing the bed, but he had disappeared.\n  Folding back
+    the counterpane, I stooped over the bed. Though none of\nthe most elegant, it
+    yet stood the scrutiny tolerably well. I then\nglanced round the room; and besides
+    the bedstead and centre table,\ncould see no other furniture belonging to the
+    place, but a rude shelf,\nthe four walls, and a papered fireboard representing
+    a man striking\na whale. Of things not properly belonging to the room, there
+    was a\nhammock lashed up, and thrown upon the floor in one corner; also a\nlarge
+    seaman's bag, containing the harpooneer's wardrobe, no doubt\nin lieu of a land
+    trunk. Likewise, there was a parcel of outlandish\nbone fish hooks on the shelf
+    over the fire-place, and a tall harpoon\nstanding at the head of the bed.\n 
+    But what is this on the chest? I took it up, and held it close to\nthe light,
+    and felt it, and smelt it, and tried every way possible\nto arrive at some satisfactory
+    conclusion concerning it. I can compare\nit to nothing but a large door mat,
+    ornamented at the edges with\nlittle tinkling tags something like the stained
+    porcupine quills round\nan Indian moccasin. There was a hole or slit in the middle
+    of this\nmat, as you see the same in South American ponchos. But could it be\npossible
+    that any sober harpooneer would get into a door mat, and\nparade the streets
+    of any Christian town in that sort of guise? I\nput it on, to try it, and it
+    weighed me down like a hamper, being\nuncommonly shaggy and thick, and I thought
+    a little damp, as though\nthis mysterious harpooneer had been wearing it of a
+    rainy day. I\nwent up in it to a bit of glass stuck against the wall, and I never\nsaw
+    such a sight in my life. I tore myself out of it in such a hurry\nthat I gave
+    myself a kink in the neck.\n  I sat down on the side of the bed, and commenced
+    thinking about this\nhead-peddling harpooneer, and his door mat. After thinking
+    some time\non the bed-side, I got up and took off my monkey jacket, and then\nstood
+    in the middle of the room thinking. I then took off my coat, and\nthought a little
+    more in my shirt sleeves. But beginning to feel\nvery cold now, half undressed
+    as I was, and remembering what the\nlandlord said about the harpooneer's not
+    coming home at all that\nnight, it being so very late, I made no more ado, but
+    jumped out of my\npantaloons and boots, and then blowing out the light tumbled
+    into bed,\nand commended myself to the care of heaven.\n  Whether that mattress
+    was stuffed with corncobs or broken\ncrockery, there is no telling, but I rolled
+    about a good deal, and\ncould not sleep for a long time. At last I slid off into
+    a light doze,\nand had pretty nearly made a good offing towards the land of Nod,
+    when\nI heard a heavy footfall in the passage, and saw a glimmer of light\ncome
+    into the room from under the door.\n  Lord save me, thinks I, that must be the
+    harpooneer, the infernal\nhead-peddler. But I lay perfectly still, and resolved
+    not to say a\nword till spoken to. Holding a light in one hand, and that identical\nNew
+    Zealand head in the other, the stranger entered the room, and\nwithout looking
+    towards the bed, placed his candle a good way off from\nme on the floor in one
+    corner, and then began working away at the\nknotted cords of the large bag I
+    before spoke of as being in the room.\nI was all eagerness to see his face, but
+    he kept it averted for some\ntime while employed in unlacing the bag's mouth.
+    This accomplished,\nhowever, he turned round- when, good heavens; what a sight!
+    Such a\nface! It was of a dark, purplish, yellow color, here and there stuck\nover
+    with large blackish looking squares. Yes, it's just as I thought,\nhe's a terrible
+    bedfellow; he's been in a fight, got dreadfully cut,\nand here he is, just from
+    the surgeon. But at that moment he chanced\nto turn his face so towards the light,
+    that I plainly saw they could\nnot be sticking-plasters at all, those black squares
+    on his cheeks.\nThey were stains of some sort or other. At first I knew not what
+    to\nmake of this; but soon an inkling of the truth occurred to me. I\nremembered
+    a story of a white man- a whaleman too- who, falling\namong the cannibals, had
+    been tattooed by them. I concluded that\nthis harpooneer, in the course of his
+    distant voyages, must have met\nwith a similar adventure. And what is it, thought
+    I, after all! It's\nonly his outside; a man can be honest in any sort of skin.
+    But then,\nwhat to make of his unearthly complexion, that part of it, I mean,\nlying
+    round about, and completely independent of the squares of\ntattooing. To be sure,
+    it might be nothing but a good coat of tropical\ntanning; but I never heard of
+    a hot sun's tanning a white man into a\npurplish yellow one. However, I had never
+    been in the South Seas;\nand perhaps the sun there produced these extraordinary
+    effects upon\nthe skin. Now, while all these ideas were passing through me like\nlightning,
+    this harpooneer never noticed me at all. But, after some\ndifficulty having opened
+    his bag, he commenced fumbling in it, and\npresently pulled out a sort of tomahawk,
+    and a seal-skin wallet with\nthe hair on. Placing these on the old chest in the
+    middle of a room,\nhe then took the New Zealand head- a ghastly thing enough-
+    and crammed\nit down into the bag. He now took off his hat- a new beaver hat-\nwhen
+    I came nigh singing out with fresh surprise. There was no hair on\nhis head-
+    none to speak of at least- nothing but a small scalp-knot\ntwisted up on his
+    forehead. His bald purplish head now looked for\nall the world like a mildewed
+    skull. Had not the stranger stood\nbetween me and the door, I would have bolted
+    out of it quicker than\never I bolted a dinner.\n  Even as it was, I thought
+    something of slipping out of the window,\nbut it was the second floor back. I
+    am no coward, but what to make\nof this headpeddling purple rascal altogether
+    passed my comprehension.\nIgnorance is the parent of fear, and being completely
+    nonplussed and\nconfounded about the stranger, I confess I was now as much afraid
+    of\nhim as if it was the devil himself who had thus broken into my room at\nthe
+    dead of night. In fact, I was so afraid of him that I was not game\nenough just
+    then to address him, and demand a satisfactory answer\nconcerning what seemed
+    inexplicable in him.\n  Meanwhile, he continued the business of undressing, and
+    at last\nshowed his chest and arms. As I live, these covered parts of him\nwere
+    checkered with the same squares as his face, his back, too, was\nall over the
+    same dark squares; he seemed to have been in a Thirty\nYears' War, and just escaped
+    from it with a sticking-plaster shirt.\nStill more, his very legs were marked,
+    as a parcel of dark green frogs\nwere running up the trunks of young palms. It
+    was now quite plain that\nhe must be some abominable savage or other shipped
+    aboard of a\nwhaleman in the South Seas, and so landed in this Christian country.
+    I\nquaked to think of it. A peddler of heads too- perhaps the heads of\nhis own
+    brothers. He might take a fancy to mine- heavens! look at that\ntomahawk!\n 
+    But there was no time for shuddering, for now the savage went\nabout something
+    that completely fascinated my attention, and convinced\nme that he must indeed
+    be a heathen. Going to his heavy grego, or\nwrapall, or dreadnaught, which he
+    had previously hung on a chair, he\nfumbled in the pockets, and produced at length
+    a curious little\ndeformed image with a hunch on its back, and exactly the color
+    of a\nthree days' old Congo baby. Remembering the embalmed head, at first\nI
+    almost thought that this black manikin was a real baby preserved\nsome similar
+    manner. But seeing that it was not at all limber, and\nthat it glistened a good
+    deal like polished ebony, I concluded that it\nmust be nothing but a wooden idol,
+    which indeed it proved to be. For\nnow the savage goes up to the empty fire-place,
+    and removing the\npapered fire-board, sets up this little hunch-backed image,
+    like a\ntenpin, between the andirons. The chimney jambs and all the bricks\ninside
+    were very sooty, so that I thought this fire-place made a\nvery appropriate little
+    shrine or chapel for his Congo idol.\n  I now screwed my eyes hard towards the
+    half hidden image, feeling\nbut ill at ease meantime- to see what was next to
+    follow. First he\ntakes about a double handful of shavings out of his grego pocket,\nand
+    places them carefully before the idol; then laying a bit of ship\nbiscuit on
+    top and applying the flame from the lamp, he kindled the\nshavings into a sacrificial
+    blaze. Presently, after many hasty\nsnatches into the fire, and still hastier
+    withdrawals of his fingers\n(whereby he seemed to be scorching them badly), he
+    at last succeeded\nin drawing out the biscuit; then blowing off the heat and
+    ashes a\nlittle, he made a polite offer of it to the little negro. But the\nlittle
+    devil did not seem to fancy such dry sort of fare at all; he\nnever moved his
+    lips. All these strange antics were accompanied by\nstill stranger guttural noises
+    from the devotee, who seemed to be\npraying in a sing-song or else singing some
+    pagan psalmody or other,\nduring which his face twitched about in the most unnatural
+    manner.\nAt last extinguishing the fire, he took the idol up very\nunceremoniously,
+    and bagged it again in his grego pocket as carelessly\nas if he were a sportsman
+    bagging a dead woodcock.\n  All these queer proceedings increased my uncomfortableness,
+    and\nseeing him now exhibiting strong symptoms of concluding his business\noperations,
+    and jumping into bed with me, I thought it was high\ntime, now or never, before
+    the light was put out, to break the spell\nin which I had so long been bound.\n 
+    But the interval I spent in deliberating what to say, was a fatal\none. Taking
+    up his tomahawk from the table, he examined the head of it\nfor an instant, and
+    then holding it to the light, with his mouth at\nthe handle, he puffed out great
+    clouds of tobacco smoke. The next\nmoment the light was extinguished, and this
+    wild cannibal, tomahawk\nbetween his teeth, sprang into bed with me. I sang out,
+    I could not\nhelp it now; and giving a sudden grunt of astonishment he began\nfeeling
+    me.\n  Stammering out something, I knew not what, I rolled away from him\nagainst
+    the wall, and then conjured him, whoever or whatever he\nmight be, to keep quiet,
+    and let me get up and light the lamp again.\nBut his guttural responses satisfied
+    me at once that he but ill\ncomprehended my meaning.\n  \"Who-e debel you?\"-
+    he at last said- \"you no speak-e, dam-me, I\nkill-e.\" And so saying the lighted
+    tomahawk began flourishing about me\nin the dark.\n  \"Landlord, for God's sake,
+    Peter Coffin!\" shouted I. \"Landlord!\nWatch! Coffin! Angels! save me!\"\n 
+    \"Speak-e! tell-ee me who-ee be, or dam-me, I kill-e!\" again\ngrowled the cannibal,
+    while his horrid flourishings of the tomahawk\nscattered the hot tobacco ashes
+    about me till I thought my linen would\nget on fire. But thank heaven, at that
+    moment the landlord came into\nthe room light in hand, and leaping from the bed
+    I ran up to him.\n  \"Don't be afraid now,\" said he, grinning again, \"Queequeg
+    here\nwouldn't harm a hair of your head.\"\n  \"Stop your grinning,\" shouted
+    I, \"and why didn't you tell me that\nthat infernal harpooneer was a cannibal?\"\n 
+    \"I thought ye know'd it;- didn't I tell ye, he was a peddlin'\nheads around
+    town?- but turn flukes again and go to sleep. Queequeg,\nlook here- you sabbee
+    me, I sabbee- you this man sleepe you- you\nsabbee?\"\n  \"Me sabbee plenty\"-
+    grunted Queequeg, puffing away at his pipe and\nsitting up in bed.\n  \"You gettee
+    in,\" he added, motioning to me with his tomahawk, and\nthrowing the clothes
+    to one side. He really did this in not only a\ncivil but a really kind and charitable
+    way. I stood looking at him a\nmoment. For all his tattooings he was on the whole
+    a clean, comely\nlooking cannibal. What's all this fuss I have been making about,\nthought
+    I to myself- the man's a human being just as I am: he has just\nas much reason
+    to fear me, as I have to be afraid of him. Better sleep\nwith a sober cannibal
+    than a drunken Christian.\n  \"Landlord,\" said I, \"tell him to stash his tomahawk
+    there, or\npipe, or whatever you call it; tell him to stop smoking, in short,
+    and\nI will turn in with him. But I don't fancy having a man smoking in bed\nwith
+    me. It's dangerous. Besides, I ain't insured.\"\n  This being told to Queequeg,
+    he at once complied, and again politely\nmotioned me to get into bed- rolling
+    over to one side as much as to\nsay- I won't touch a leg of ye.\"\n  \"Good night,
+    landlord,\" said I, \"you may go.\"\n  I turned in, and never slept better in
+    my life.\n  "

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter69
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 70,   The Sphynx
+  content: "\n  Some chapters back, one Bulkington was spoken of, a tall,\nnewlanded
+    mariner, encountered in New Bedford at the inn.\n  When on that shivering winter's
+    night, the Pequod thrust her\nvindictive bows into the cold malicious waves,
+    who should I see\nstanding at her helm but Bulkington! I looked with sympathetic
+    awe and\nfearfulness upon the man, who in mid-winter just landed from a four\nyears'
+    dangerous voyage, could so unrestingly push off again for still\nanother tempestuous
+    term. The land seemed scorching to his feet.\nWonderfullest things are ever the
+    unmentionable; deep memories yield\nno epitaphs; this six-inch chapter is the
+    stoneless grave of\nBulkington. Let me only say that it fared with him as with
+    the\nstorm-tossed ship, that miserably drives along the leeward land. The\nport
+    would fain give succor; the port is pitiful; in the port is\nsafety, comfort,
+    hearthstone, supper, warm blankets, friends, all\nthat's kind to our mortalities.
+    But in that gale, the port, the\nland, is that ship's direst jeopardy; she must
+    fly all hospitality;\none touch of land, though it but graze the keel, would
+    make her\nshudder through and through. With all her might she crowds all sail\noff
+    shore; in so doing, fights 'gainst the very winds that fain\nwould blow her homeward;
+    seeks all the lashed sea's landlessness\nagain; for refuge's sake forlornly rushing
+    into peril; her only friend\nher bitterest foe!\n  Know ye now, Bulkington? Glimpses
+    do ye seem to see of that mortally\nintolerable truth; that all deep, earnest
+    thinking is but the intrepid\neffort of the soul to keep the open independence
+    of her sea; while the\nwildest winds of heaven and earth conspire to cast her
+    on the\ntreacherous, slavish shore?\n  But as in landlessness alone resides highest
+    truth, shoreless,\nindefinite as God- so better is it to perish in that howling
+    infinite,\nthan be ingloriously dashed upon the lee, even if that were safety!\nFor
+    worm-like, then, oh! who would craven crawl to land! Terrors of\nthe terrible!
+    is all this agony so vain? Take heart, take heart, O\nBulkington! Bear thee grimly,
+    demigod! Up from the spray of thy\nocean-perishing- straight up, leaps thy apotheosis!\n  "

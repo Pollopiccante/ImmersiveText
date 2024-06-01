@@ -1,0 +1,393 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter96
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 97,   The Lamp
+  content: "\n  Already we are boldly launched upon the deep; but soon we shall be\nlost
+    in its unshored harborless immensities. Ere that come to pass;\nere the Pequod's
+    weedy hull rolls side by side with the barnacled\nhulls of the leviathan; at
+    the outset it is but well to attend to a\nmatter almost indispensable to a thorough
+    appreciative understanding\nof the more special leviathanic revelations and allusions
+    of all sorts\nwhich are to follow.\n  It is some systematized exhibition of the
+    whale in his broad genera,\nthat I would now fain put before you. Yet is it no
+    easy task. The\nclassification of the constituents of a chaos, nothing less is
+    here\nessayed. Listen to what the best and latest authorities have laid\ndown.\n 
+    \"No branch of Zoology is so much involved as that which is\nentitled Cetology,\"
+    says Captain Scoresby, A.D. 1820.\n  \"It is not my intention, were it in my
+    power, to enter into the\ninquiry as to the true method of dividing the cetacea
+    into groups\nand families.... Utter confusion exists among the historians of
+    this\nanimal\" (sperm whale), says Surgeon Beale, A.D. 1839.\n  \"Unfitness to
+    pursue our research in the unfathomable waters.\"\n\"Impenetrable veil covering
+    our knowledge of the cetacea.\" \"A field\nstrewn with thorns.\" \"All these
+    incomplete indications but serve to\ntorture us naturalists.\"\n  Thus speak
+    of the whale, the great Cuvier, and John Hunter, and\nLesson, those lights of
+    zoology and anatomy. Nevertheless, though of\nreal knowledge there be little,
+    yet of books there are a plenty; and\nso in some small degree, with cetology,
+    or the science of whales. Many\nare the men, small and great, old and new, landsmen
+    and seamen, who\nhave at large or in little, written of the whale. Run over a
+    few:- The\nAuthors of the Bible; Aristotle; Pliny; Aldrovandi; Sir Thomas Browne;\nGesner;
+    Ray; Linnaeus; Rondeletius; Willoughby; Green; Artedi;\nSibbald; Brisson; Marten;
+    Lacepede; Bonneterre; Desmarest; Baron\nCuvier; Frederick Cuvier; John Hunter;
+    Owen; Scoresby; Beale; Bennett;\nJ. Ross Browne; the Author of Miriam Coffin;
+    Olmstead; and the Rev. T.\nCheever. But to what ultimate generalizing purpose
+    all these have\nwritten, the above cited extracts will show.\n  Of the names
+    in this list of whale authors only those following Owen\never saw living whales;
+    and but one of them was a real professional\nharpooneer and whaleman. I mean
+    Captain Scoresby. On the separate\nsubject of the Greenland or right-whale, he
+    is the best existing\nauthority. But Scoresby knew nothing and says nothing of
+    the great\nsperm whale, compared with which the Greenland whale is almost\nunworthy
+    mentioning. And here be it said, that the Greenland whale\nis an usurper upon
+    the throne of the seas. He is not even by any means\nthe largest of the whales.
+    Yet, owing to the long priority of his\nclaims, and the profound ignorance which
+    till some seventy years back,\ninvested the then fabulous or utterly unknown
+    sperm-whale, and which\nignorance to this present day still reigns in all but
+    some few\nscientific retreats and whale-ports; this usurpation has been every\nway
+    complete. Reference to nearly all the leviathanic allusions in the\ngreat poets
+    of past days, will satisfy you that the Greenland whale,\nwithout one rival,
+    was to them the monarch of the seas. But the time\nhas at last come for a new
+    proclamation. This is Charing Cross; hear\nye! good people all,- the Greenland
+    whale is deposed,- the great sperm\nwhale now reigneth!\n  There are only two
+    books in being which at all pretend to put the\nliving sperm whale before you,
+    and at the same time, in the remotest\ndegree succeed in the attempt. Those books
+    are Beale's and\nBennett's; both in their time surgeons to the English South-Sea\nwhale-ships,
+    and both exact and reliable men. The original matter\ntouching the sperm whale
+    to be found in their volumes is necessarily\nsmall; but so far as it goes, it
+    is of excellent quality, though\nmostly confined to scientific description. As
+    yet, however, the\nsperm whale, scientific or poetic, lives not complete in any\nliterature.
+    Far above all other hunted whales, his is an unwritten\nlife.\n  Now the various
+    species of whales need some sort of popular\ncomprehensive classification, if
+    only an easy outline one for the\npresent, hereafter to be filled in all-outward
+    its departments by\nsubsequent laborers. As no better man advances to take this
+    matter\nin hand, I hereupon offer my own poor endeavors. I promise nothing\ncomplete;
+    because any human thing supposed to be complete must for\nthat very reason infallibly
+    be faulty. I shall not pretend to a minute\nanatomical description of the various
+    species, or- in this space at\nleast- to much of any description. My object here
+    is simply to project\nthe draught of a systematization of cetology. I am the
+    architect,\nnot the builder.\n  But it is a ponderous task; no ordinary letter-sorter
+    in the\nPost-Office is equal to it. To grope down into the bottom of the sea\nafter
+    them; to have one's hands among the unspeakable foundations,\nribs, and very
+    pelvis of the world; this is a fearful thing. What am I\nthat I should essay
+    to hook the nose of this leviathan! The awful\ntauntings in Job might well appal
+    me. \"Will he (the leviathan) make\na covenant with thee? Behold the hope of
+    him is vain! But I have\nswam through libraries and sailed through oceans; I
+    have had to do\nwith whales with these visible hands; I am in earnest; and I
+    will try.\nThere are some preliminaries to settle.\n  First: The uncertain, unsettled
+    condition of this science of\nCetology is in the very vestibule attested by the
+    fact, that in some\nquarters it still remains a moot point whether a whale be
+    a fish. In\nhis System of Nature, A.D. 1776, Linnaeus declares, \"I hereby separate\nthe
+    whales from the fish.\" But of my own knowledge, I know that down\nto the year
+    1850, sharks and shad, alewives and herring, against\nLinnaeus's express edict,
+    were still found dividing the possession\nof the same seas with the Leviathan.\n 
+    The grounds upon which Linnaeus would fain have banished the\nwhales from the
+    waters, he states as follows: \"On account of their\nwarm bilocular heart, their
+    lungs, their moveable eyelids, their\nhollow ears, penem intrantem feminam mammis
+    lactantem,\" and finally,\n\"ex lege naturae jure meritoque.\" I submitted all
+    this to my friends\nSimeon Macey and Charley Coffin, of Nantucket, both messmates
+    of\nmine in a certain voyage, and they united in the opinion that the\nreasons
+    set forth were altogether insufficient. Charley profanely\nhinted they were humbug.\n 
+    Be it known that, waiving all argument, I take the good old\nfashioned ground
+    that the whale is a fish, and call upon holy Jonah to\nback me. This fundamental
+    thing settled, the next point is, in what\ninternal respect does the whale differ
+    from other fish. Above,\nLinnaeus has given you those items. But in brief they
+    are these: lungs\nand warm blood; whereas, all other fish are lungless and cold
+    blooded.\n  Next: how shall we define the whale, by his obvious externals, so
+    as\nconspicuously to label him for all time to come. To be short, then,\na whale
+    is a spouting fish with a horizontal tail. There you have him.\nHowever contracted,
+    that definition is the result of expanded\nmeditation. A walrus spouts much like
+    a whale, but the walrus is not a\nfish, because he is amphibious. But the last
+    term of the definition is\nstill more cogent, as coupled with the first. Almost
+    any one must have\nnoticed that all the fish familiar to landsmen have not a
+    flat, but\na vertical, or up-and-down tail. Whereas, among spouting fish the\ntail,
+    though it may be similarly shaped, invariably assumes a\nhorizontal position.\n 
+    By the above definition of what a whale is, I do by no means exclude\nfrom the
+    leviathanic brotherhood any sea creature hitherto\nidentified with the whale
+    by the best informed Nantucketers; nor, on\nthe other hand, link with it any
+    fish hitherto authoritatively\nregarded as alien.* Hence, all the smaller, spouting
+    and horizontal\ntailed fish must be included in this ground-plan of cetology.
+    Now,\nthen, come the grand divisions of the entire whale host.\n\n  *I am aware
+    that down to the present time, the fish styled\nLamatins and Dugongs (Pig-fish
+    and Sow-fish of the Coffins of\nNantucket) are included by many naturalists among
+    the whales. But as\nthese pig-fish are a noisy, contemptible set, mostly lurking
+    in the\nmouths of rivers, and feeding on wet hay, and especially as they do\nnot
+    spout, I deny their credentials as whales; and have presented them\nwith their
+    passports to quit the Kingdom of Cetology.\n\n  First: According to magnitude
+    I divide the whales into three primary\nBOOKS (subdivisible into CHAPTERS), and
+    these shall comprehend them\nall, both small and large.\n  I. THE FOLIO WHALE;
+    II. the OCTAVO WHALE; III. the DUODECIMO WHALE.\n  As the type of the FOLIO I
+    present the Sperm Whale; of the OCTAVO,\nthe Grampus; of the DUODECIMO, the Porpoise.\n 
+    FOLIOS. Among these I here include the following chapters:- I. The\nSperm Whale;
+    II. the Right Whale; III. the Fin Back Whale; IV. the\nHumpbacked Whale; V. the
+    Razor Back Whale; VI. the Sulphur Bottom\nWhale.\n  BOOK I. (Folio), CHAPTER
+    I. (Sperm Whale).- This whale, among the\nEnglish of old vaguely known as the
+    Trumpa whale and the Physeter\nwhale, and the Anvil Headed whale, is the present
+    Cachalot of the\nFrench, and the Pottsfich of the Germans, and the Macrocephalus
+    of the\nLong Words. He is, without doubt, the largest inhabitant of the globe;\nthe
+    most formidable of all whales to encounter; the most majestic in\naspect; and
+    lastly, by far the most valuable in commerce; he being the\nonly creature from
+    which that valuable substance, spermaceti, is\nobtained. All his peculiarities
+    will, in many other places, be\nenlarged upon. It is chiefly with his name that
+    I now have to do.\nPhilologically considered, it is absurd. Some centuries ago,
+    when\nthe sperm whale was almost wholly unknown in his own proper\nindividuality,
+    and when his oil was only accidentally obtained from\nthe stranded fish; in those
+    days spermaceti, it would seem, was\npopularly supposed to be derived from a
+    creature identical with the\none then known in England as the Greenland or Right
+    Whale. It was\nthe idea also, that this same spermaceti was that quickening humor\nof
+    the Greenland Whale which the first syllable of the word\nliterally expresses.
+    In those times, also, spermaceti was\nexceedingly scarce, not being used for
+    light, but only as an\nointment and medicament. It was only to be had from the
+    druggists as\nyou nowadays buy an ounce of rhubarb. When, as I opine, in the\ncourse
+    of time, the true nature of spermaceti became known, its\noriginal name was still
+    retained by the dealers; no doubt to enhance\nits value by a notion so strangely
+    significant of its scarcity. And so\nthe appellation must at last have come to
+    be bestowed upon the whale\nfrom which this spermaceti was really derived.\n 
+    BOOK I. (Folio), CHAPTER II. (Right Whale).- In one respect this\nis the most
+    venerable of the leviathans, being the one first regularly\nhunted by man. It
+    yields the article commonly known as whalebone or\nbaleen; and the oil specially
+    known as \"whale oil,\" an inferior\narticle in commerce. Among the fishermen,
+    he is indiscriminately\ndesignated by all the following titles: The Whale; the
+    Greenland\nWhale; the Black Whale; the Great Whale; the True Whale; the Right\nWhale.
+    There is a deal of obscurity concerning the Identity of the\nspecies thus multitudinously
+    baptized. What then is the whale, which I\ninclude in the second species of my
+    Folios? It is the Great Mysticetus\nof the English naturalists; the Greenland
+    Whale of the English\nwhaleman; the Baliene Ordinaire of the French whalemen;
+    the\nGrowlands Walfish of the Swedes. It is the whale which for more than\ntwo
+    centuries past has been hunted by the Dutch and English in the\nArctic seas;
+    it is the whale which the American fishermen have long\npursued in the Indian
+    ocean, on the Brazil Banks, on the Nor' West\nCoast, and various other parts
+    of the world, designated by them\nRight Whale Cruising Grounds.\n  Some pretend
+    to see a difference between the Greenland whale of\nthe English and the right
+    whale of the Americans. But they precisely\nagree in all their grand features;
+    nor has there yet been presented\na single determinate fact upon which to ground
+    a radical\ndistinction. It is by endless subdivisions based upon the most\ninconclusive
+    differences, that some departments of natural history\nbecome so repellingly
+    intricate. The right whale will be elsewhere\ntreated of at some length, with
+    reference to elucidating the sperm\nwhale.\n  BOOK I. (Folio), CHAPTER III. (Fin-Back).-
+    Under this head I\nreckon a monster which, by the various names of Fin-Back,\nTall-Spout,
+    and Long-John, has been seen almost in every sea and is\ncommonly the whale whose
+    distant jet is so often descried by\npassengers crossing the Atlantic, in the
+    New York packet-tracks. In\nthe length he attains, and in his baleen, the Fin-back
+    resembles the\nright whale, but is of a less portly girth, and a lighter color,\napproaching
+    to olive. His great lips present a cable-like aspect,\nformed by the intertwisting,
+    slanting folds of large wrinkles. His\ngrand distinguishing feature, the fin,
+    from which he derives his name,\nis often a conspicuous object. This fin is some
+    three or four feet\nlong, growing vertically from the hinder part of the back,
+    of an\nangular shape, and with a very sharp pointed end. Even if not the\nslightest
+    other part of the creature be visible, this isolated fin\nwill, at times, be
+    seen plainly projecting from the surface. When\nthe sea is moderately calm, and
+    slightly marked with spherical\nripples, and this gnomon-like fin stands up and
+    casts shadows upon the\nwrinkled surface, it may well be supposed that the watery
+    circle\nsurrounding it somewhat resembles a dial, with its style and wavy\nhour-lines
+    graved on it. On that Ahaz-dial the shadow often goes back.\nThe Fin-Back is
+    not gregarious. He seems a whale-hater, as some men\nare man-haters. Very shy;
+    always going solitary; unexpectedly rising\nto the surface in the remotest and
+    most sullen waters; his straight\nand single lofty jet rising like a tall misanthropic
+    spear upon a\nbarren plain; gifted with such wondrous power and velocity in\nswimming,
+    as to defy all present pursuit from man; this leviathan\nseems the banished and
+    unconquerable Cain of his race, bearing for his\nmark that style upon his back.
+    From having the baleen in his mouth,\nthe Fin-Back is sometimes included with
+    the right whale, among a\ntheoretic species denominated Whalebone whales, that
+    is, whales with\nbaleen. Of these so-called Whalebone whales, there would seem
+    to be\nseveral varieties, most of which, however, are little known.\nBroad-nosed
+    whales and beaked whales; pike-headed whales; bunched\nwhales; under-jawed whales
+    and rostrated whales, are the fisherman's\nnames for a few sorts.\n  In connexion
+    with this appellative of \"Whalebone whales,\" it is of\ngreat importance to
+    mention, that however such a nomenclature may be\nconvenient in facilitating
+    allusions to some kind of whales, yet it is\nin vain to attempt a clear classification
+    of the Leviathan, founded\nupon either his baleen, or hump, or fin, or teeth;
+    notwithstanding\nthat those marked parts or features very obviously seem better
+    adapted\nto afford the basis for a regular system of Cetology than any other\ndetached
+    bodily distinctions, which the whale, in his kinds, presents.\nHow then? The
+    baleen, hump, back-fin, and teeth; these are things\nwhose peculiarities are
+    indiscriminately dispersed among all sorts\nof whales, without any record to
+    what may be the nature of their\nstructure in other and more essential particulars.
+    Thus, the sperm\nwhale and the humpbacked whale, each has a hump; but there the\nsimilitude
+    ceases. Then this same humpbacked whale and the Greenland\nwhale, each of these
+    has baleen; but there again the similitude\nceases. And it is just the same with
+    the other parts above\nmentioned. In various sorts of whales, they form such
+    irregular\ncombinations; or, in the case of any one of them detached, such an\nirregular
+    isolation; as utterly to defy all general methodization\nformed upon such a basis.
+    On this rock every one of the\nwhale-naturalists has split.\n  But it may possibly
+    be conceived that, in the internal parts of\nthe whale, in his anatomy- there,
+    at least, we shall be able to hit\nthe right classification. Nay; what thing,
+    for example, is there in\nthe Greenland whale's anatomy more striking than his
+    baleen? Yet we\nhave seen that by his baleen it is impossible correctly to classify\nthe
+    Greenland whale. And if you descend into the bowels of the various\nleviathans,
+    why there you will not find distinctions a fiftieth part\nas available to the
+    systematizer as those external ones already\nenumerated. What then remains? nothing
+    but to take hold of the\nwhales bodily, in their entire liberal volume, and boldly
+    sort them\nthat way. And this is the Bibliographical system here adopted; and\nit
+    is the only one that can possibly succeed, for it alone is\npracticable. To proceed.\n 
+    BOOK I. (Folio) CHAPTER IV. (Hump Back).- This whale is often seen\non the northern
+    American coast. He has been frequently captured there,\nand towed into harbor.
+    He has a great pack on him like a peddler; or\nyou might call him the Elephant
+    and Castle whale. At any rate, the\npopular name for him does not sufficiently
+    distinguish him, since\nthe sperm whale also has a hump though a smaller one.
+    His oil is not\nvery valuable. He has baleen. He is the most gamesome and\nlight-hearted
+    of all the whales, making more gay foam and white\nwater generally than any other
+    of them.\n  BOOK I. (Folio), CHAPTER V. (Razar Back).- Of this whale little is\nknown
+    but his name. I have seen him at a distance off Cape Horn. Of\na retiring nature,
+    he eludes both hunters and philosophers. Though\nno coward, he has never yet
+    shown any part of him but his back,\nwhich rises in a long sharp ridge. Let him
+    go. I know little more of\nhim, nor does anybody else.\n  BOOK I. (Folio), CHAPTER
+    VI. (Sulphur Bottom).- Another retiring\ngentleman, with a brimstone belly, doubtless
+    got by scraping along the\nTartarian tiles in some of his profounder divings.
+    He is seldom\nseen; at least I have never seen him except in the remoter southern\nseas,
+    and then always at too great a distance to study his\ncountenance. He is never
+    chased; he would run away with rope-walks\nof line. Prodigies are told of him.
+    Adieu, Sulphur Bottom! I can say\nnothing more that is true of ye, nor can the
+    oldest Nantucketer.\n  Thus ends BOOK I. (Folio), and now begins BOOK II. (Octavo).\n 
+    OCTAVOES.* These embrace the whales of middling magnitude, among\nwhich present
+    may be numbered:- I., the Grampus; II., the Black\nFish; III., the Narwhale;
+    IV., the Thrasher; V., the Killer.\n\n  *Why this book of whales is not denominated
+    the Quarto is very\nplain. Because, while the whales of this order, though smaller
+    than\nthose of the former order, nevertheless retain a proportionate\nlikeness
+    to them in figure, yet the bookbinder's Quarto volume in\nits dimensioned form
+    does not preserve the shape of the Folio\nvolume, but the Octavo volume does.\n\n 
+    BOOK II. (Octavo), CHAPTER I. (Grampus).- Though this fish, whose\nloud sonorous
+    breathing, or rather blowing, has furnished a proverb to\nlandsmen, is so well
+    known a denizen of the deep, yet is he not\npopularly classed among whales. But
+    possessing all the grand\ndistinctive features of the leviathan, most naturalists
+    have\nrecognised him for one. He is of moderate octave size, varying from\nfifteen
+    to twenty-five feet in length, and of corresponding dimensions\nround the waist.
+    He swims in herds; he is never regularly hunted,\nthough his oil is considerable
+    in quantity, and pretty good for light.\nBy some fishermen his approach is regarded
+    as premonitory of the\nadvance of the great sperm whale.\n  BOOK II. (Octavo),
+    CHAPTER II. (Black Fish).- I give the popular\nfishermen's names for all these
+    fish, for generally they are the best.\nWhere any name happens to be vague or
+    inexpressive, I shall say so,\nand suggest another. I do so now touching the
+    Black Fish, so called\nbecause blackness is the rule among almost all whales.
+    So, call him\nthe Hyena Whale, if you please. His voracity is well known and
+    from\nthe circumstance that the inner angles of his lips are curved upwards,\nhe
+    carries an everlasting Mephistophelean grin on his face. This whale\naverages
+    some sixteen or eighteen feet in length. He is found in\nalmost all latitudes.
+    He has a peculiar way of showing his dorsal\nhooked fin in swimming, which looks
+    something like a Roman nose.\nWhen not more profitably employed, the sperm whale
+    hunters sometimes\ncapture the Hyena whale, to keep up the supply of cheap oil
+    for\ndomestic employment- as some frugal housekeepers, in the absence of\ncompany,
+    and quite alone by themselves, burn unsavory tallow instead\nof odorous wax.
+    Though their blubber is very thin, some of these\nwhales will yield you upwards
+    of thirty gallons of oil.\n  BOOK II. (Octavo), CHAPTER III. (Narwhale), that
+    is, Nostril whale.-\nAnother instance of a curiously named whale, so named I
+    suppose from\nhis peculiar horn being originally mistaken for a peaked nose.
+    The\ncreature is some sixteen feet in length, while its horn averages\nfive feet,
+    though some exceed ten, and even attain to fifteen feet.\nStrictly speaking,
+    this horn is but a lengthened tusk, growing out\nfrom the jaw in a line a little
+    depressed from the horizontal. But\nit is only found on the sinister side, which
+    has an ill effect, giving\nits owner something analogous to the aspect of a clumsy
+    left-handed\nman. What precise purpose this ivory horn or lance answers, it would\nbe
+    hard to say. It does not seem to be used like the blade of the\nsword-fish and
+    bill-fish; though some sailors tell me that the\nNarwhale employs it for a rake
+    in turning over the bottom of the sea\nfor food. Charley Coffin said it was used
+    for an ice-piercer; for\nthe Narwhale, rising to the surface of the Polar Sea,
+    and finding it\nsheeted with ice, thrusts his horn up, and so breaks through.
+    But\nyou cannot prove either of these surmises to be correct. My own\nopinion
+    is, that however this one-sided horn may really be used by the\nNarwhale- however
+    that may be- it would certainly be very convenient\nto him for a folder in reading
+    pamphlets. The Narwhale I have heard\ncalled the Tusked whale, the Horned whale,
+    and the Unicorn whale. He\nis certainly a curious example of the Unicornism to
+    be found in almost\nevery kingdom of animated nature. From certain cloistered
+    old\nauthors I have gathered that this same sea-unicorn's horn was in\nancient
+    days regarded as the great antidote against poison, and as\nsuch, preparations
+    of it brought immense prices. It was also distilled\nto a volatile salts for
+    fainting ladies the same way that the horns of\nthe male deer are manufactured
+    into hartshorn. Originally it was in\nitself accounted an object of great curiosity.
+    Black Letter tells me\nthat Sir Martin Frobisher on his return from that voyage,
+    when Queen\nBess did gallantly wave her jewelled hand to him from a window of\nGreenwich
+    Palace, as his bold ship sailed down the Thames; \"when Sir\nMartin returned
+    from that voyage,\" saith Black Letter, \"on bended\nknees he presented to her
+    highness a prodigious long horn of the\nNarwhale, which for a long period after
+    hung in the castle at\nWindsor.\" An Irish author avers that the Earl of Leicester,
+    on\nbended knees, did likewise present to her highness another horn,\npertaining
+    to a land beast of the unicorn nature.\n  The Narwhale has a very picturesque,
+    leopard-like look, being of a\nmilk-white ground color, dotted with round and
+    oblong spots of\nblack. His oil is very superior, clear and fine; but there is
+    little\nof it, and he is seldom hunted. He is mostly found in the\ncircumpolar
+    seas.\n  BOOK II. (Octavo), CHAPTER IV. (Killer).- Of this whale little is\nprecisely
+    known to the Nantucketer, and nothing at all to the\nprofessed naturalists. From
+    what I have seen of him at a distance, I\nshould say that he was about the bigness
+    of a grampus. He is very\nsavage- a sort of Feegee fish. He sometimes takes the
+    great Folio\nwhales by the lip, and hangs there like a leech, till the mighty
+    brute\nis worried to death. The Killer is never hunted. I never heard what\nsort
+    of oil he has. Exception might be taken to the name bestowed upon\nthis whale,
+    on the ground of its indistinctness. For we are all\nkillers, on land and on
+    sea; Bonapartes and Sharks included.\n  BOOK II. (Octavo), CHAPTER V. (Thrasher).-
+    This gentleman is\nfamous for his tail which he uses for a ferule in thrashing
+    his\nfoes. He mounts the Folio whale's back, and as he swims, he works\nhis passage
+    by flogging him; as some schoolmasters get along in the\nworld by a similar process.
+    Still less is known of the Thrasher than\nof the Killer. Both are outlaws, even
+    in the lawless seas.\n  Thus ends BOOK II. (Octavo), and begins BOOK III, (Duodecimo.)\n 
+    DUODECIMOES.- These include the smaller whales. I. The Huzza\nPorpoise. II. The
+    Algerine Porpoise. III. The Mealy-mouthed Porpoise.\n  To those who have not
+    chanced specially to study the subject, it may\npossibly seem strange, that fishes
+    not commonly exceeding four or five\nfeet should be marshalled among WHALES-
+    a word, which, in the\npopular sense, always conveys an idea of hugeness. But
+    the creatures\nset down above as Duodecimoes are infallibly whales, by the terms
+    of\nmy definition of what a whale is- i.e. a spouting fish, with a\nhorizontal
+    tail.\n  BOOK III. (Duodecimo), CHAPTER 1. (Huzza Porpoise).- This is the\ncommon
+    porpoise found all over the globe. The name is of my own\nbestowal; for there
+    are more than one sort of porpoises, and something\nmust be done to distinguish
+    them. I call him thus, because he always\nswims in hilarious shoals, which upon
+    the broad sea keep tossing\nthemselves to heaven like caps in a Fourth-of-July
+    crowd. Their\nappearance is generally hailed with delight by the mariner. Full
+    of\nfine spirits, they invariably come from the breezy billows to\nwindward.
+    They are the lads that always live before the wind. They are\naccounted a lucky
+    omen. If you yourself can withstand three cheers\nat beholding these vivacious
+    fish, then heaven help ye; the spirit\nof godly gamesomeness is not in ye. A
+    well-fed, plump Huzza Porpoise\nwill yield you one good gallon of good oil. But
+    the fine and\ndelicate fluid extracted from his jaws is exceedingly valuable.
+    It\nis in request among jewellers and watchmakers. Sailors put in on their\nhones.
+    Porpoise meat is good eating, you know. It may never have\noccurred to you that
+    a porpoise spouts. Indeed, his spout is so\nsmall that it is not very readily
+    discernible. But the next time you\nhave a chance, watch him; and you will then
+    see the great Sperm\nwhale himself in miniature.\n  BOOK III. (Duodecimo), CHAPTER
+    II. (Algerine Porpoise).- A pirate.\nVery savage. He is only found, I think,
+    in the Pacific. He is somewhat\nlarger than the Huzza Porpoise, but much of the
+    same general make.\nProvoke him, and he will buckle to a shark. I have lowered
+    for him\nmany times, but never yet saw him captured.\n  BOOK III. (Duodecimo),
+    CHAPTER III. (Mealy-mouthed Porpoise).- The\nlargest kind of Porpoise; and only
+    found in the Pacific, so far as\nit is known. The only English name, by which
+    he has hitherto been\ndesignated, is that of the fisher- Right-Whale Porpoise,
+    from the\ncircumstance that he is chiefly found in the vicinity of that Folio.\nIn
+    shape, he differs in some degree from the Huzza Porpoise, being\nof a less rotund
+    and jolly girth; indeed, he is of quite a neat and\ngentleman-like figure. He
+    has no fins on his back (most other\nporpoises have), he has a lovely tail, and
+    sentimental Indian eyes\nof a hazel hue. But his mealy-mouth spoils him. Though
+    his entire back\ndown to his side fins is of a deep sable, yet a boundary line,\ndistinct
+    as the mark in a ship's hull, called the \"bright waist,\" that\nline streaks
+    him from stem to stern, with two separate colors, black\nabove and white below.
+    The white comprises part of his head, and the\nwhole of his mouth, which makes
+    him look as if he had just escaped\nfrom a felonious visit to a meal-bag. A most
+    mean and mealy aspect!\nHis oil is much like that of the common porpoise.\n\n 
+    Beyond the DUODECIMO, this system does not proceed, inasmuch as\nthe Porpoise
+    is the smallest of the whales. Above, you have all the\nLeviathans of note. But
+    there are a rabble of uncertain, fugitive,\nhalf-fabulous whales, which, as an
+    American whaleman, I know by\nreputation, but not personally. I shall enumerate
+    them by their\nfore-castle appellations; for possibly such a list may be valuable\nto
+    future investigators, who may complete what I have here but\nbegun. If any of
+    the following whales, shall hereafter be caught and\nmarked, then he can readily
+    be incorporated into this System,\naccording to his Folio, Octavo, or Duodecimo
+    magnitude:- The\nBottle-Nose Whale; the Junk Whale; the Pudding-Headed Whale;
+    the\nCape Whale; the Leading Whale; the Cannon Whale; the Scragg Whale; the\nCoppered
+    Whale; the Elephant Whale; the Iceberg Whale; the Quog Whale;\nthe Blue Whale;
+    &c. From Icelandic, Dutch, and old English\nauthorities, there might be quoted
+    other lists of uncertain whales,\nblessed with all manner of uncouth names. But
+    I omit them as\naltogether obsolete; and can hardly help suspecting them for
+    mere\nsounds, full of Leviathanism, but signifying nothing.\n  Finally: It was
+    stated at the outset, that this system would not\nbe here, and at once, perfected.
+    You cannot but plainly see that I\nhave kept my word. But I now leave my cetological
+    System standing thus\nunfinished, even as the great Cathedral of Cologne was
+    left, with\nthe cranes still standing upon the top of the uncompleted tower.
+    For\nsmall erections may be finished by their first architects; grand ones,\ntrue
+    ones, ever leave the copestone to posterity. God keep me from\never completing
+    anything. This whole book is but a draught- nay, but\nthe draught of a draught.
+    Oh, Time, Strength, Cash, and Patience!\n  "

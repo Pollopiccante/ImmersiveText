@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter123
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 124,   The Needle
+  content: "\n  I, Ishmael, was one of that crew; my shouts had gone up with the\nrest;
+    my oath had been welded with theirs; and stronger I shouted, and\nmore did I
+    hammer and clinch my oath, because of the dread in my soul.\nA wild, mystical,
+    sympathetical feeling was in me; Ahab's quenchless\nfeud seemed mine. With greedy
+    ears I learned the history of that\nmurderous monster against whom I and all
+    the others had taken our\noaths of violence and revenge.\n  For some time past,
+    though at intervals only, the unaccompanied,\nsecluded White Whale had haunted
+    those uncivilized seas mostly\nfrequented by the Sperm Whale fishermen. But not
+    all of them knew of\nhis existence; a few of them, comparatively, had knowingly
+    seen him;\nwhile the number who as yet had actually and knowingly given battle
+    to\nhim, was small indeed. For, owing to the large number of\nwhale-cruisers;
+    the disorderly way they were sprinkled over the entire\nwatery circumference,
+    many of them adventurously pushing their quest\nalong solitary latitudes, so
+    as seldom or never for a whole\ntwelvemonth or more on a stretch, to encounter
+    a single news-telling\nsail of any sort; the inordinate length of each separate
+    voyage; the\nirregularity of the times of sailing from home; all these, with\nother
+    circumstances, direct and indirect, long obstructed the spread\nthrough the whole
+    world-wide whaling-fleet of the special\nindividualizing tidings concerning Moby
+    Dick. It was hardly to be\ndoubted, that several vessels reported to have encountered,
+    at such or\nsuch a time, or on such or such a meridian, a Sperm Whale of\nuncommon
+    magnitude and malignity, which whale, after doing great\nmischief to his assailants,
+    has completely escaped them; to some minds\nit was not an unfair presumption,
+    I say, that the whale in question\nmust have been no other than Moby Dick. Yet
+    as of late the Sperm Whale\nfishery had been marked by various and not unfrequent
+    instances of\ngreat ferocity, cunning, and malice in the monster attacked; therefore\nit
+    was, that those who by accident ignorantly gave battle to Moby\nDick; such hunters,
+    perhaps, for the most part, were content to\nascribe the peculiar terror he bred,
+    more, as it were, to the perils\nof the Sperm Whale fishery at large, than to
+    the individual cause.\nIn that way, mostly, the disastrous encounter between
+    Ahab and the\nwhale had hitherto been popularly regarded.\n  And as for those
+    who, previously hearing of the White Whale, by\nchance caught sight of him; in
+    the beginning of the thing they had\nevery one of them, almost, as boldly and
+    fearlessly lowered for him,\nas for any other whale of that species. But at length,
+    such calamities\ndid ensue in these assaults- not restricted to sprained wrists
+    and\nankles, broken limbs, or devouring amputations- but fatal to the\nlast degree
+    of fatality; those repeated disastrous repulses, all\naccumulating and piling
+    their terrors upon Moby Dick; those things had\ngone far to shake the fortitude
+    of many brave hunters, to whom the\nstory of the White Whale had eventually come.\n 
+    Nor did wild rumors of all sorts fail to exaggerate, and still the\nmore horrify
+    the true histories of these deadly encounters. For not\nonly do fabulous rumors
+    naturally grow out of the very body of all\nsurprising terrible events,- as the
+    smitten tree gives birth to its\nfungi; but, in maritime life, far more than
+    in that of terra firma,\nwild rumors abound, wherever there is any adequate reality
+    for them to\ncling to. And as the sea surpasses the land in this matter, so the\nwhale
+    fishery surpasses every other sort of maritime life, in the\nwonderfulness and
+    fearfulness of the rumors which sometimes\ncirculate there. For not only are
+    whalemen as a body unexempt from\nthat ignorance and superstitiousness hereditary
+    to all sailors; but of\nall sailors, they are by all odds the most directly brought
+    into\ncontact with whatever is appallingly astonishing in the sea; face to\nface
+    they not only eye its greatest marvels, but, hand to jaw, give\nbattle to them.
+    Alone, in such remotest waters, that though you sailed\na thousand miles, and
+    passed a thousand shores, you would not come\nto any chiselled hearth-stone,
+    or aught hospitable beneath that part\nof the sun; in such latitudes and longitudes,
+    pursuing too such a\ncalling as he does, the whaleman is wrapped by influences
+    all\ntending to make his fancy pregnant with many a mighty birth. No\nwonder,
+    then, that ever gathering volume from the mere transit over\nthe wildest watery
+    spaces, the outblown rumors of the White Whale\ndid in the end incorporate with
+    themselves all manner of morbid hints,\nand half-formed foetal suggestions of
+    supernatural agencies, which\neventually invested Moby Dick with new terrors
+    unborrowed from\nanything that visibly appears. So that in many cases such a
+    panic\ndid he finally strike, that few who by those rumors, at least, had\nheard
+    of the White Whale, few of those hunters were willing to\nencounter the perils
+    of his jaw.\n  But there were still other and more vital practical influences
+    at\nwork. Nor even at the present day has the original prestige of the\nSperm
+    Whale, as fearfully distinguished from all other species of\nthe leviathan, died
+    out of the minds of the whalemen as a body.\nThere are those this day among them,
+    who, though intelligent and\ncourageous enough in offering battle to the Greenland
+    or Right\nwhale, would perhaps- either from professional inexperience, or\nincompetency,
+    or timidity, decline a contest with the Sperm Whale;\nat any rate, there are
+    plenty of whalemen, especially among those\nwhaling nations not sailing under
+    the American flag, who have never\nhostilely encountered the Sperm Whale, but
+    whose sole knowledge of the\nleviathan is restricted to the ignoble monster primitively
+    pursued\nin the North; seated on their hatches, these men will hearken with a\nchildish
+    fireside interest and awe, to the wild, strange tales of\nSouthern whaling. Nor
+    is the preeminent tremendousness of the great\nSperm Whale anywhere more feelingly
+    comprehended, than on board of\nthose prows which stem him.\n  And as if the
+    now tested reality of his might had in former\nlegendary times thrown its shadow
+    before it; we find some book\nnaturalists- Olassen and Povelson- declaring the
+    Sperm Whale not\nonly to be a consternation to every other creature in the sea,
+    but\nalso to be so incredibly ferocious as continually to be athirst for\nhuman
+    blood. Nor even down to so late a time as Cuvier's, were these\nor almost similar
+    impressions effaced. For in his Natural History, the\nBaron himself affirms that
+    at sight of the Sperm Whale, all fish\n(sharks included) are \"struck with the
+    most lively terrors,\" and\n\"often in the precipitancy of their flight dash
+    themselves against the\nrocks with such violence as to cause instantaneous death.\"
+    And however\nthe general experiences in the fishery may amend such reports as\nthese;
+    yet in their full terribleness, even to the bloodthirsty item\nof Povelson, the
+    superstitious belief in them is, in some vicissitudes\nof their vocation, revived
+    in the minds of the hunters.\n  So that overawed by the rumors and portents concerning
+    him, not a\nfew of the fishermen recalled, in reference to Moby Dick, the\nearlier
+    days of the Sperm Whale fishery, when it was oftentimes hard\nto induce long
+    practised Right whalemen to embark in the perils of\nthis new and daring warfare;
+    such men protesting that although other\nleviathans might be hopefully pursued,
+    yet to chase and point lances\nat such an apparition as the Sperm Whale was not
+    for mortal man.\nThat to attempt it, would be inevitably to be torn into a quick\neternity.
+    On this head, there are some remarkable documents that may\nbe consulted.\n 
+    Nevertheless, some there were, who even in the face of these\nthings were ready
+    to give chase to Moby Dick; and a still greater\nnumber who, chancing only to
+    hear of him distantly and vaguely,\nwithout the specific details of any certain
+    calamity, and without\nsuperstitious accompaniments were sufficiently hardy not
+    to flee\nfrom the battle if offered.\n  One of the wild suggestions referred
+    to, as at last coming to be\nlinked with the White Whale in the minds of the
+    superstitiously\ninclined, was the unearthly conceit that Moby Dick was ubiquitous;\nthat
+    he had actually been encountered in opposite latitudes at one and\nthe same instant
+    of time.\n  Nor, credulous as such minds must have been, was this conceit\naltogether
+    without some faint show of superstitious probability. For\nas the secrets of
+    the currents in the seas have never yet been\ndivulged, even to the most erudite
+    research; so the hidden ways of the\nSperm Whale when beneath the surface remain,
+    in great part,\nunaccountable to his pursuers; and from time to time have originated\nthe
+    most curious and contradictory speculations regarding them,\nespecially concerning
+    the mystic modes whereby, after sounding to a\ngreat depth, he transports himself
+    with such vast swiftness to the\nmost widely distant points.\n  It is a thing
+    well known to both American and English whale-ships,\nand as well a thing placed
+    upon authoritative record years ago by\nScoresby, that some whales have been
+    captured far north in the\nPacific, in whose bodies have been found the barbs
+    of harpoons\ndarted in the Greenland seas. Nor is it to be gainsaid, that in
+    some\nof these instances it has been declared that the interval of time\nbetween
+    the two assaults could not have exceeded very many days.\nHence, by inference,
+    it has been believed by some whalemen, that the\nNor' West Passage, so long a
+    problem to man, was never a problem to\nthe whale. So that here, in the real
+    living experience of living\nmen, the prodigies related in old times of the inland
+    Strello mountain\nin Portugal (near whose top there was said to be a lake in
+    which the\nwrecks of ships floated up to the surface); and that still more\nwonderful
+    story of the Arethusa fountain near Syracuse (whose waters\nwere believed to
+    have come from the Holy Land by an underground\npassage); these fabulous narrations
+    are almost fully equalled by the\nrealities of the whalemen.\n  Forced into familiarity,
+    then, with such prodigies as these; and\nknowing that after repeated, intrepid
+    assaults, the White Whale had\nescaped alive; it cannot be much matter of surprise
+    that some whalemen\nshould go still further in their superstitions; declaring
+    Moby Dick\nnot only ubiquitous, but immortal (for immortality is but ubiquity\nin
+    time); that though groves of spears should be planted in his\nflanks, he would
+    still swim away unharmed; or if indeed he should ever\nbe made to spout thick
+    blood, such a sight would be but a ghastly\ndeception; for again in unensanguined
+    billows hundreds of leagues\naway, his unsullied jet would once more be seen.\n 
+    But even stripped of these supernatural surmisings, there was enough\nin the
+    earthly make and incontestable character of the monster to\nstrike the imagination
+    with unwonted power. For, it was not so much\nhis uncommon bulk that so much
+    distinguished him from other sperm\nwhales, but, as was elsewhere thrown out-
+    a peculiar snow-white\nwrinkled forehead, and a high, pyramidical white hump.
+    These were\nhis prominent features; the tokens whereby, even in the limitless,\nuncharted
+    seas, he revealed his identity, at a long distance, to those\nwho knew him.\n 
+    The rest of his body was so streaked, and spotted, and marbled\nwith the same
+    shrouded hue, that, in the end, he had gained his\ndistinctive appellation of
+    the White Whale; a name, indeed,\nliterally justified by his vivid aspect, when
+    seen gliding at high\nnoon through a dark blue sea, leaving a milky-way wake
+    of creamy foam,\nall spangled with golden gleamings.\n  Nor was it his unwonted
+    magnitude, nor his remarkable hue, nor yet\nhis deformed lower jaw, that so much
+    invested the whale with natural\nterror, as that unexampled, intelligent malignity
+    which, according\nto specific accounts, he had over and over again evinced in
+    his\nassaults. More than all, his treacherous retreats struck more of\ndismay
+    than perhaps aught else. For, when swimming before his exulting\npursuers, with
+    every apparent symptom of alarm, he had several times\nbeen known to turn round
+    suddenly, and, bearing down upon them, either\nstave their boats to splinters,
+    or drive them back in consternation to\ntheir ship.\n  Already several fatalities
+    had attended his chase. But though\nsimilar disasters, however little bruited
+    ashore, were by no means\nunusual in the fishery; yet, in most instances, such
+    seemed the\nWhite Whale's infernal aforethought of ferocity, that every\ndismembering
+    or death that he caused, was not wholly regarded as\nhaving been inflicted by
+    an unintelligent agent.\n  Judge, then, to what pitches of inflamed, distracted
+    fury the\nminds of his more desperate hunters were impelled, when amid the chips\nof
+    chewed boats, and the sinking limbs of torn comrades, they swam out\nof the white
+    curds of the whale's direful wrath into the serene,\nexasperating sunlight, that
+    smiled on, as if at a birth or a bridal.\n  His three boats stove around him,
+    and oars and men both whirling\nin the eddies; one captain, seizing the line-knife
+    from his broken\nprow, had dashed at the whale, as an Arkansas duellist at his
+    foe,\nblindly seeking with a six inch blade to reach the fathom-deep life of\nthe
+    whale. That captain was Ahab. And then it was, that suddenly\nsweeping his sickle-shaped
+    lower jaw beneath him, Moby Dick had reaped\naway Ahab's leg, as a mower a blade
+    of grass in the field. No turbaned\nTurk, no hired Venetian or Malay, could have
+    smote him with more\nseeming malice. Small reason was there to doubt, then, that
+    ever since\nthat almost fatal encounter, Ahab had cherished a wild\nvindictiveness
+    against the whale, all the more fell for that in his\nfrantic morbidness he at
+    last came to identify with him, not only\nall his bodily woes, but all his intellectual
+    and spiritual\nexasperations. The White Whale swam before him as the monomaniac\nincarnation
+    of all those malicious agencies which some deep men feel\neating in them, till
+    they are left living on with half a heart and\nhalf a lung. That intangible malignity
+    which has been from the\nbeginning; to whose dominion even the modern Christians
+    ascribe\none-half of the worlds; which the ancient Ophites of the east\nreverenced
+    in their statue devil;- Ahab did not fall down and\nworship it like them; but
+    deliriously transferring its idea to the\nabhorred white whale, he pitted himself,
+    all mutilated, against it.\nAll that most maddens and torments; all that stirs
+    up the lees of\nthings; all truth with malice in it; all that cracks the sinews
+    and\ncakes the brain; all the subtle demonisms of life and thought; all\nevil,
+    to crazy Ahab, were visibly personified, and made practically\nassailable in
+    Moby Dick. He piled upon the whale's white hump the\nsum of all the general rage
+    and hate felt by his whole race from\nAdam down; and then, as if his chest had
+    been a mortar, he burst his\nhot heart's shell upon it.\n  It is not probable
+    that this monomania in him took its instant\nrise at the precise time of his
+    bodily dismemberment. Then, in darting\nat the monster, knife in hand, he had
+    but given loose to a sudden,\npassionate, corporal animosity; and when he received
+    the stroke that\ntore him, he probably but felt the agonizing bodily laceration,
+    but\nnothing more. Yet, when by this collision forced to turn towards home,\nand
+    for long months of days and weeks, Ahab and anguish lay\nstretched together in
+    one hammock, rounding in mid winter that dreary,\nhowling Patagonian Cape; then
+    it was, that his torn body and gashed\nsoul bled into one another; and so interfusing,
+    made him mad. That\nit was only then, on the homeward voyage, after the encounter,
+    that\nthe final monomania seized him, seems all but certain from the fact\nthat,
+    at intervals during the passage, he was a raving lunatic; and,\nthough unlimbed
+    of a leg, yet such vital strength yet lurked in his\nEgyptian chest, and was
+    moreover intensified by his delirium, that his\nmates were forced to lace him
+    fast, even there, as he sailed, raving\nin his hammock. In a strait-jacket, he
+    swung to the mad rockings of\nthe gales. And, when running into more sufferable
+    latitudes, the ship,\nwith mild stun'sails spread, floated across the tranquil
+    tropics, and,\nto all appearances, the old man's delirium seemed left behind
+    him with\nthe Cape Horn swells, and he came forth from his dark den into the\nblessed
+    light and air; even then, when he bore that firm, collected\nfront, however pale,
+    and issued his calm orders once again; and his\nmates thanked God the direful
+    madness was now gone; even then, Ahab,\nin his hidden self, raved on. Human madness
+    is oftentimes a cunning\nand most feline thing. When you think it fled, it may
+    have but\nbecome transfigured into some still subtler form. Ahab's full lunacy\nsubsided
+    not, but deepeningly contracted; like the unabated Hudson,\nwhen that noble Northman
+    flows narrowly, but unfathomably through\nthe Highland gorge. But, as in his
+    narrow-flowing monomania, not one\njot of Ahab's broad madness had been left
+    behind; so in that broad\nmadness, not one jot of his great natural intellect
+    had perished. That\nbefore living agent, now became the living instrument. If
+    such a\nfurious trope may stand, his special lunacy stormed his general\nsanity,
+    and carried it, and turned all its concentred cannon upon\nits own mad mark;
+    so that far from having lost his strength, Ahab,\nto that one end, did now possess
+    a thousand fold more potency than\never he had sanely brought to bear upon any
+    one reasonable object.\n  This is much; yet Ahab's larger, darker, deeper part
+    remains\nunhinted. But vain to popularize profundities, and all truth is\nprofound.
+    Winding far down from within the very heart of this spiked\nHotel de Cluny where
+    we here stand- however grand and wonderful, now\nquit it;- and take your way,
+    ye nobler, sadder souls, to those vast\nRoman halls of Thermes; where far beneath
+    the fantastic towers of\nman's upper earth, his root of grandeur, his whole awful
+    essence\nsits in bearded state; an antique buried beneath antiquities, and\nthroned
+    on torsoes! So with a broken throne, the great gods mock\nthat captive king;
+    so like a Caryatid, he patient sits, upholding on\nhis frozen brow the piled
+    entablatures of ages. Wind ye down there, ye\nprouder, sadder souls! question
+    that proud, sad king! A family\nlikeness! aye, he did beget ye, ye young exiled
+    royalties; and from\nyour grim sire only will the old State-secret come.\n  Now,
+    in his heart, Ahab had some glimpse of this, namely; all my\nmeans are sane,
+    my motive and my object mad. Yet without power to\nkill, or change, or shun the
+    fact; he likewise knew that to mankind he\ndid long dissemble; in some sort,
+    did still. But that thing of his\ndissembling was only subject to his perceptibility,
+    not to his will\ndeterminate. Nevertheless, so well did he succeed in that dissembling,\nthat
+    when with ivory leg he stepped ashore at last, no Nantucketer\nthought him otherwise
+    than but naturally grieved, and that to the\nquick, with the terrible casualty
+    which had overtaken him.\n  The report of his undeniable delirium at sea was
+    likewise\npopularly ascribed to a kindred cause. And so too, all the added\nmoodiness
+    which always afterwards, to the very day of sailing in the\nPequod on the present
+    voyage, sat brooding on his brow. Nor is it so\nvery unlikely, that far from
+    distrusting his fitness for another\nwhaling voyage, on account of such dark
+    symptoms, the calculating\npeople of that prudent isle were inclined to harbor
+    the conceit,\nthat for those very reasons he was all the better qualified and
+    set on\nedge, for a pursuit so full of rage and wildness as the bloody hunt of\nwhales.
+    Gnawed within and scorched without, with the infixed,\nunrelenting fangs of some
+    incurable idea; such an one, could he be\nfound, would seem the very man to dart
+    his iron and lift his lance\nagainst the most appalling of all brutes. Or, if
+    for any reason\nthought to be corporeally incapacitated for that, yet such an
+    one\nwould seem superlatively competent to cheer and howl on his underlings\nto
+    the attack. But be all this as it may, certain it is, that with the\nmad secret
+    of his unabated rage bolted up and keyed in him, Ahab had\npurposely sailed upon
+    the present voyage with the one only and\nall-engrossing object of hunting the
+    White Whale. Had any one of his\nold acquaintances on shore but half dreamed
+    of what was lurking in him\nthen, how soon would their aghast and righteous souls
+    have wrenched\nthe ship from such a fiendish man! They were bent on profitable\ncruises,
+    the profit to be counted down in dollars from the mint. He\nwas intent on an
+    audacious, immitigable, and supernatural revenge.\n  Here, then, was this grey-headed,
+    ungodly old man, chasing with\ncurses Job's whale round the world, at the head
+    of a crew, too,\nchiefly made up of mongrel renegades, and castaways, and cannibals-\nmorally
+    enfeebled also, by the incompetence of mere unaided virtue\nor right-mindedness
+    in Starbuck, the invunerable jollity of\nindifference and recklessness in Stubb,
+    and the pervading mediocrity\nin Flask. Such a crew, so officered, seemed specially
+    picked and\npacked by some infernal fatality to help him to his monomaniac\nrevenge.
+    How it was that they so aboundingly responded to the old\nman's ire- by what
+    evil magic their souls were possessed, that at\ntimes his hate seemed almost
+    theirs; the White Whale as much their\ninsufferable foe as his; how all this
+    came to be- what the White Whale\nwas to them, or how to their unconscious understandings,
+    also, in some\ndim, unsuspected way, he might have seemed the gliding great demon\nof
+    the seas of life,- all this to explain, would be to dive deeper\nthan Ishmael
+    can go. The subterranean miner that works in us all,\nhow can one tell whither
+    leads his shaft by the ever shifting, muffled\nsound of his pick? Who does not
+    feel the irresistible arm drag? What\nskiff in tow of a seventy-four can stand
+    still? For one, I gave myself\nup to the abandonment of the time and the place;
+    but while yet all\na-rush to encounter the whale, could see naught in that brute
+    but\nthe deadliest ill.\n  "

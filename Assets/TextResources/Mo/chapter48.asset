@@ -1,0 +1,403 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter48
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 49,   The Hyena
+  content: "\n  In bed we concocted our plans for the morrow. But to my surprise
+    and\nno small concern, Queequeg now gave me to understand, that he had been\ndiligently
+    consulting Yojo- the name of his black little god- and Yojo\nhad told him two
+    or three times over, and strongly insisted upon it\neveryway, that instead of
+    our going together among the whaling-fleet\nin harbor, and in concert selecting
+    our craft; instead of this, I say,\nYojo earnestly enjoined that the selection
+    of the ship should rest\nwholly with me, inasmuch as Yojo purposed befriending
+    us; and, in\norder to do so, had already pitched upon a vessel, which, if left
+    to\nmyself, I, Ishmael, should infallibly light upon, for all the world as\nthough
+    it had turned out by chance; and in that vessel I must\nimmediately ship myself,
+    for the present irrespective of Queequeg.\n  I have forgotten to mention that,
+    in many things, Queequeg placed\ngreat confidence in the excellence of Yojo's
+    judgment and surprising\nforecast of things; and cherished Yojo with considerable
+    esteem, as\na rather good sort of god, who perhaps meant well enough upon the\nwhole,
+    but in all cases did not succeed in his benevolent designs.\n  Now, this plan
+    of Queequeg's or rather Yojo's, touching the\nselection of our craft; I did not
+    like that plan at all. I had not a\nlittle relied upon Queequeg's sagacity to
+    point out the whaler best\nfitted to carry us and our fortunes securely. But
+    as all my\nremonstrances produced no effect upon Queequeg, I was obliged to\nacquiesce;
+    and accordingly prepared to set about this business with\na determined rushing
+    sort of energy and vigor, that should quickly\nsettle that trifling little affair.
+    Next morning early, leaving\nQueequeg shut up with in our little bedroom- for
+    it seemed that it was\nsome sort of Lent or Ramadan, or day of fasting, humiliation,
+    and\nprayer with Queequeg and Yojo that day; how it was I never could\nfind out,
+    for, though I applied myself to it several times, I never\ncould master his liturgies
+    and XXXIX Articles- leaving Queequeg, then,\nfasting on his tomahawk pipe, and
+    Yojo warming himself at his\nsacrificial fire of shavings, I sallied out among
+    the shipping.\nAfter much prolonged sauntering, and many random inquiries, I
+    learnt\nthat there were three ships up for three-years' voyages- The\nDevil-dam,
+    the Tit-bit, and the Pequod. Devil-dam, I do not know the\norigin of; Tit-bit
+    is obvious; Pequod you will no doubt remember,\nwas the name of a celebrated
+    tribe of Massachusetts Indians; now\nextinct as the ancient Medes. I peered and
+    pryed about the\nDevil-dam; from her, hopped over to the Tit-bit; and finally,
+    going on\nboard the Pequod, looked around her for a moment, and then decided\nthat
+    this was the very ship for us.\n  You may have seen many a quaint craft in your
+    day, for aught I\nknow;- square-toed luggers; mountainous Japanese junks; butter-box\ngalliots,
+    and what not; but take my word for it, you never saw such\na rare old craft as
+    this same rare old Pequod. She was a ship of the\nold school, rather small if
+    anything; with an old-fashioned\nclaw-footed look about her. Long seasoned and
+    weather-stained in the\ntyphoons and calms of all four oceans, her old hull's
+    complexion was\ndarkened like a French grenadier's, who has alike fought in Egypt\nand
+    Siberia. Her venerable bows looked bearded. Her masts- cut\nsomewhere on the
+    coast of Japan, where her original ones were lost\noverboard in a gale- her masts
+    stood stiffly up like the spines of the\nthree old kings of Cologne. Her ancient
+    decks were worn and\nwrinkled, like the pilgrim-worshipped flag-stone in Canterbury\nCathedral
+    where Becket bled. But to all these her old antiquities,\nwere added new and
+    marvellous features, pertaining to the wild\nbusiness that for more than half
+    a century she had followed. Old\nCaptain Peleg, many years her chief-mate, before
+    he commanded\nanother vessel of his own, and now a retired seaman, and one of
+    the\nprincipal owners of the Pequod,- this old Peleg, during the term of\nhis
+    chief-mateship, had built upon her original grotesqueness, and\ninlaid it, all
+    over, with a quaintness both of material and device,\nunmatched by anything except
+    it be Thorkill-Hake's carved buckler or\nbedstead. She was apparelled like any
+    barbaric Ethiopian emperor,\nhis neck heavy with pendants of polished ivory.
+    She was a thing of\ntrophies. A cannibal of a craft, tricking herself forth in
+    the\nchased bones of her enemies. All round, her unpanelled, open\nbulwarks were
+    garnished like one continuous jaw, with the long sharp\nteeth of the sperm whale,
+    inserted there for pins, to fasten her old\nhempen thews and tendons to. Those
+    thews ran not through base blocks\nof land wood, but deftly travelled over sheaves
+    of sea-ivory. Scorning\na turnstile wheel at her reverend helm, she sported there
+    a tiller;\nand that tiller was in one mass, curiously carved from the long narrow\nlower
+    jaw of her hereditary foe. The helmsman who steered that\ntiller in a tempest,
+    felt like the Tartar, when he holds back his\nfiery steed by clutching its jaw.
+    A noble craft, but somehow a most\nmelancholy! All noble things are touched with
+    that.\n  Now when I looked about the quarter-deck, for some one having\nauthority,
+    in order to propose myself as a candidate for the voyage,\nat first I saw nobody;
+    but I could not well overlook a strange sort of\ntent, or rather wigwam, pitched
+    a little behind the main-mast. It\nseemed only a temporary erection used in port.
+    It was of a conical\nshape, some ten feet high; consisting of the long, huge
+    slabs of\nlimber black bone taken from the middle and highest part of the jaws\nof
+    the right-whale. Planted with their broad ends on the deck, a\ncircle of these
+    slabs laced together, mutually sloped towards each\nother, and at the apex united
+    in a tufted point, where the loose hairy\nfibres waved to and fro like the top-knot
+    on some old Pottowottamie\nSachem's head. A triangular opening faced towards
+    the bows of the\nship, so that the insider commanded a complete view forward.\n 
+    And half concealed in this queer tenement, I at length found one who\nby his
+    aspect seemed to have authority; and who, it being noon, and\nthe ship's work
+    suspended, was now enjoying respite from the burden of\ncommand. He was seated
+    on an old-fashioned oaken chair, wriggling\nall over with curious carving; and
+    the bottom of which was formed of a\nstout interlacing of the same elastic stuff
+    of which the wigwam was\nconstructed.\n  There was nothing so very particular,
+    perhaps, about the\nappearance of the elderly man I saw; he was brown and brawny,
+    like\nmost old seamen, and heavily rolled up in blue pilot-cloth, cut in the\nQuaker
+    style; only there was a fine and almost microscopic net-work of\nthe minutest
+    wrinkles interlacing round eyes, which must have arisen\nfrom his continual sailings
+    in many hard gales, and always looking\nto windward;- for this causes the muscles
+    about the eyes to become\npursed together. Such eye-wrinkles are very effectual
+    in a scowl.\n  \"Is this the Captain of the Pequod?\" said I, advancing to the
+    door\nof the tent.\n  \"Supposing it be the captain of the Pequod, what dost
+    thou want of\nhim?\" he demanded.\n  \"I was thinking of shipping.\"\n  \"Thou
+    wast, wast thou? I see thou art no Nantucketer- ever been in a\nstove boat?\"\n 
+    \"No, Sir, I never have.\"\n  \"Dost know nothing at all about whaling, I dare
+    say- eh?\n  \"Nothing, Sir; but I have no doubt I shall soon learn. I've been\nseveral
+    voyages in the merchant service, and I think that-\"\n  \"Merchant service be
+    damned. Talk not that lingo to me. Dost see\nthat leg?- I'll take that leg away
+    from thy stern, if ever thou\ntalkest of the merchant service to me again. Marchant
+    service\nindeed! I suppose now ye feel considerable proud of having served in\nthose
+    marchant ships. But flukes! man, what makes thee want to go a\nwhaling, eh?-
+    it looks a little suspicious, don't it, eh?- Hast not\nbeen a pirate, hast thou?-
+    Didst not rob thy last Captain, didst\nthou?- Dost not think of murdering the
+    officers when thou gettest to\nsea?\"\n  I protested my innocence of these things.
+    I saw that under the\nmask of these half humorous innuendoes, this old seaman,
+    as an\ninsulated Quakerish Nantucketer, was full of his insular prejudices,\nand
+    rather distrustful of all aliens, unless they hailed from Cape Cod\nor the Vineyard.\n 
+    \"But what takes thee a-whaling? I want to know that before I think\nof shipping
+    ye.\"\n  \"Well, sir, I want to see what whaling is. I want to see the world.\"\n 
+    \"Want to see what whaling is, eh? Have ye clapped eye on Captain\nAhab?\"\n 
+    \"Who is Captain Ahab, sir?\"\n  \"Aye, aye, I thought so. Captain Ahab is the
+    Captain of this ship.\"\n  \"I am mistaken then. I thought I was speaking to
+    the Captain\nhimself.\"\n  \"Thou art speaking to Captain Peleg- that's who ye
+    are speaking\nto, young man. It belongs to me and Captain Bildad to see the Pequod\nfitted
+    out for the voyage, and supplied with all her needs,\nincluding crew. We are
+    part owners and agents. But as I was going to\nsay, if thou wantest to know what
+    whaling is, as thou tellest ye do, I\ncan put ye in a way of finding it out before
+    ye bind yourself to it,\npast backing out. Clap eye on Captain Ahab, young man,
+    and thou wilt\nfind that he has only one leg.\"\n  \"What do you mean, sir? Was
+    the other one lost by a whale?\"\n  \"Lost by a whale! Young man, come nearer
+    to me: it was devoured,\nchewed up, crunched by the monstrousest parmacetty that
+    ever chipped a\nboat!- ah, ah!\"\n  I was a little alarmed by his energy, perhaps
+    also a little\ntouched at the hearty grief in his concluding exclamation, but
+    said as\ncalmly as I could, \"What you say is no doubt true enough, sir; but
+    how\ncould I know there was any peculiar ferocity in that particular whale,\nthough
+    indeed I might have inferred as much from the simple fact of\nthe accident.\"\n 
+    \"Look ye now, young man, thy lungs are a sort of soft, d'ye see;\nthou dost
+    not talk shark a bit. Sure, ye've been to sea before now;\nsure of that?\"\n 
+    \"Sir,\" said I, \"I thought I told you that I had been four voyages in\nthe
+    merchant-\"\n  \"Hard down out of that! Mind what I said about the marchant service-\ndon't
+    aggravate me- I won't have it. But let us understand each other.\nI have given
+    thee a hint about what whaling is! do ye yet feel\ninclined for it?\"\n  \"I
+    do, sir.\"\n  \"Very good. Now, art thou the man to pitch a harpoon down a live\nwhale's
+    throat, and then jump after it? Answer, quick!\"\n  \"I am, sir, if it should
+    be positively indispensable to do so; not\nto be got rid of, that is; which I
+    don't take to be the fact.\"\n  \"Good again. Now then, thou not only wantest
+    to go a-whaling, to\nfind out by experience what whaling is, but ye also want
+    to go in\norder to see the world? Was not that what ye said? I thought so.\nWell
+    then, just step forward there, and take a peep over the weather\nbow, and then
+    back to me and tell me what ye see there.\"\n  For a moment I stood a little
+    puzzled by this curious request, not\nknowing exactly how to take it, whether
+    humorously or in earnest.\nBut concentrating all his crow's feet into one scowl,
+    Captain Peleg\nstarted me on the errand.\n  Going forward and glancing over the
+    weather bow, I perceived that\nthe ship swinging to her anchor with the flood-tide,
+    was now obliquely\npointing towards the open ocean. The prospect was unlimited,
+    but\nexceedingly monotonous and forbidding; not the slightest variety\nthat I
+    could see.\n  \"Well, what's the report?\" said Peleg when I came back; \"what
+    did ye\nsee?\"\n  \"Not much,\" I replied- \"nothing but water; considerable
+    horizon\nthough, and there's a squall coming up, I think.\"\n  \"Well, what does
+    thou think then of seeing the world? Do ye wish\nto go round Cape Horn to see
+    any more of it, eh? Can't ye see the\nworld where you stand?\"\n  I was a little
+    staggered, but go a-whaling I must, and I would;\nand the Pequod was as good
+    a ship as any- I thought the best- and\nall this I now repeated to Peleg. Seeing
+    me so determined, he\nexpressed his willingness to ship me.\n  \"And thou mayest
+    as well sign the papers right off,\" he added- \"come\nalong with ye.\" And so
+    saying, he led the way below deck into the\ncabin.\n  Seated on the transom was
+    what seemed to me a most uncommon and\nsurprising figure. It turned out to be
+    Captain Bildad who along with\nCaptain Peleg was one of the largest owners of
+    the vessel; the other\nshares, as is sometimes the case in these ports, being
+    held by a crowd\nof old annuitants; widows, fatherless children, and chancery
+    wards;\neach owning about the value of a timber head, or a foot of plank, or
+    a\nnail or two in the ship. People in Nantucket invest their money in\nwhaling
+    vessels, the same way that you do yours in approved state\nstocks bringing in
+    good interest.\n  Now, Bildad, like Peleg, and indeed many other Nantucketers,
+    was a\nQuaker, the island having been originally settled by that sect; and to\nthis
+    day its inhabitants in general retain in an uncommon measure\npeculiarities of
+    the Quaker, only variously and anomalously modified\nby things altogether alien
+    and heterogeneous. For some of these same\nQuakers are the most sanguinary of
+    all sailors and whale-hunters. They\nare fighting Quakers; they are Quakers with
+    a vengeance.\n  So that there are instances among them of men, who, named with\nScripture
+    names- a singularly common fashion on the island- and in\nchildhood naturally
+    imbibing the stately dramatic thee and thou of the\nQuaker idiom; still, from
+    the audacious, daring, and boundless\nadventure of their subsequent lives, strangely
+    blend with these\nunoutgrown peculiarities, a thousand bold dashes of character,
+    not\nunworthy a Scandinavian sea-king, or a poetical Pagan Roman. And\nwhen these
+    things unite in a man of greatly superior natural force,\nwith a globular brain
+    and a ponderous heart; who has also by the\nstillness and seclusion of many long
+    night-watches in the remotest\nwaters, and beneath constellations never seen
+    here at the north,\nbeen led to think untraditionally and independently; receiving
+    all\nnature's sweet or savage impressions fresh from her own virgin\nvoluntary
+    and confiding breast, and thereby chiefly, but with some\nhelp from accidental
+    advantages, to learn a bold and nervous lofty\nlanguage- that man makes one in
+    a whole nation's census- a mighty\npageant creature, formed for noble tragedies.
+    Nor will it at all\ndetract from him, dramatically regarded, if either by birth
+    or other\ncircumstances, he have what seems a half wilful overruling\nmorbidness
+    at the bottom of his nature. For all men tragically great\nare made so through
+    a certain morbidness. Be sure of this, O young\nambition, all mortal greatness
+    is but disease. But, as yet we have not\nto do with such an one, but with quite
+    another; and still a man,\nwho, if indeed peculiar, it only results again from
+    another phase of\nthe Quaker, modified by individual circumstances.\n  Like Captain
+    Peleg, Captain Bildad was a well-to-do, retired\nwhaleman. But unlike Captain
+    Peleg- who cared not a rush for what\nare called serious things, and indeed deemed
+    those self-same serious\nthings the veriest of all trifles- Captain Bildad had
+    not only been\noriginally educated according to the strictest sect of Nantucket\nQuakerism,
+    but all his subsequent ocean life, and the sight of many\nunclad, lovely island
+    creatures, round the Horn- all that had not\nmoved this native born Quaker one
+    single jot, had not so much as\naltered one angle of his vest. Still, for all
+    this immutableness,\nwas there some lack of common consistency about worthy Captain\nPeleg.
+    Though refusing, from conscientious scruples, to bear arms\nagainst land invaders,
+    yet himself had illimitably invaded the\nAtlantic and Pacific; and though a sworn
+    foe to human bloodshed, yet\nhad he in his straight-bodied coat, spilled tuns
+    upon tuns of\nleviathan gore. How now in the contemplative evening of his days,\nthe
+    pious Bildad reconciled these things in the reminiscence, I do not\nknow; but
+    it did not seem to concern him much, and very probably he\nhad long since come
+    to the sage and sensible conclusion that a man's\nreligion is one thing, and
+    this practical world quite another. This\nworld pays dividends. Rising from a
+    little cabin boy in short\nclothes of the drabbest drab, to a harpooneer in a
+    broad\nshad-bellied waistcoat; from that becoming boat-header, chief mate,\nand
+    captain, and finally a shipowner; Bildad, as I hinted before,\nhad concluded
+    his adventurous career by wholly retiring from active\nlife at the goodly age
+    of sixty, and dedicating his remaining days\nto the quiet receiving of his well-earned
+    income.\n  Now, Bildad, I am sorry to say, had the reputation of being an\nincorrigible
+    old hunks, and in his sea-going days, a bitter, hard\ntask-master. They told
+    me in Nantucket, though it certainly seems a\ncurious story, that when he sailed
+    the old Categut whaleman, his crew,\nupon arriving home, were mostly all carried
+    ashore to the hospital,\nsore exhausted and worn out. For a pious man, especially
+    for a Quaker,\nhe was certainly rather hard-hearted, to say the least. He never\nused
+    to swear, though, at his men, they said; but somehow he got an\ninordinate quantity
+    of cruel, unmitigated hard work out of them.\nWhen Bildad was a chief-mate, to
+    have his drab-colored eye intently\nlooking at you, made you feel completely
+    nervous, till you could\nclutch something- a hammer or a marrling-spike, and
+    go to work like\nmad, at something or other, never mind what. Indolence and idleness\nperished
+    before him. His own person was the exact embodiment of his\nutilitarian character.
+    On his long, gaunt body, he carried no spare\nflesh, no superfluous beard, his
+    chin having a soft, economical nap to\nit, like that worn nap of his broad-brimmed
+    hat.\n  Such, then, was the person that I saw seated on the transom when I\nfollowed
+    Captain Peleg down into the cabin. The space between the\ndecks was small; and
+    there, bolt upright, sat old Bildad, who always\nsat so, and never leaned, and
+    this to save his coat-tails. His\nbroad-brim was placed beside him; his legs
+    were stiffly crossed; his\ndrab vesture was buttoned up to his chin; and spectacles
+    on nose, he\nseemed absorbed in reading from a ponderous volume.\n  \"Bildad,\"
+    cried Captain Peleg, \"at it again, Bildad, eh? Ye have\nbeen studying those
+    Scriptures, now, for the last thirty years, to\nmy certain knowledge. How far
+    ye got, Bildad?\"\n  As if long habituated to such profane talk from his old
+    shipmate,\nBildad, without noticing his present irreverence, quietly looked up,\nand
+    seeing me, glanced again inquiringly towards Peleg.\n  \"He says he's our man,
+    Bildad,\" said Peleg, \"he wants to ship.\"\n  \"Dost thee?\" said Bildad, in
+    a hollow tone, and turning round to me.\n  \"I dost,\" said I unconsciously,
+    he was so intense a Quaker.\n  \"What do ye think of him, Bildad?\" said Peleg.\n 
+    \"He'll do,\" said Bildad, eyeing me, and then went on spelling away\nat his
+    book in a mumbling tone quite audible.\n  I thought him the queerest old Quaker
+    I ever saw, especially as\nPeleg, his friend and old shipmate, seemed such a
+    blusterer. But I\nsaid nothing, only looking round me sharply. Peleg now threw
+    open a\nchest, and drawing forth the ship's articles, placed pen and ink\nbefore
+    him, and seated himself at a little table. I began to think\nit was high time
+    to settle with myself at what terms I would be\nwilling to engage for the voyage.
+    I was already aware that in the\nwhaling business they paid no wages; but all
+    hands, including the\ncaptain, received certain shares of the profits called
+    lays, and\nthat these lays were proportioned to the degree of importance\npertaining
+    to the respective duties of the ship's company. I was\nalso aware that being
+    a green hand at whaling, my own lay would not be\nvery large; but considering
+    that I was used to the sea, could steer\na ship, splice a rope, and all that,
+    I made no doubt that from all I\nhad heard I should be offered at least the 275th
+    lay- that is, the\n275th part of the clear net proceeds of the voyage, whatever
+    that\nmight eventually amount to. And though the 275th lay was what they\ncall
+    a rather long lay, yet it was better than nothing; and if we\nhad a lucky voyage,
+    might pretty nearly pay for the clothing I would\nwear out on it, not to speak
+    of my three years' beef and board, for\nwhich I would not have to pay one stiver.\n 
+    It might be thought that this was a poor way to accumulate a\nprincely fortune-
+    and so it was, a very poor way indeed. But I am\none of those who never take
+    on about princely fortunes, and am quite\ncontent if the world is ready to board
+    and lodge me, while I am\nputting up at this grim sign of the Thunder Cloud.
+    Upon the whole, I\nthought the 275th lay would be about the fair thing, but would
+    not\nhave been surprised had I been offered the 200th, considering I was of\na
+    broad-shouldered make.\n  But one thing, nevertheless, that made me a little
+    distrustful about\nreceiving a generous share of the profits was this: Ashore,
+    I had\nheard something of both Captain Peleg and his unaccountable old\ncrony
+    Bildad; how that they being the principal proprietors of the\nPequod, therefore
+    the other and more inconsiderable and scattered\nowners, left nearly the whole
+    management of the ship's affairs to\nthese two. And I did not know but what the
+    stingy old Bildad might\nhave a mighty deal to say about shipping hands, especially
+    as I now\nfound him on board the Pequod, quite at home there in the cabin, and\nreading
+    his Bible as if at his own fireside. Now while Peleg was\nvainly trying to mend
+    a pen with his jack-knife, old Bildad, to my\nno small surprise, considering
+    that he was such an interested party in\nthese proceedings; Bildad never heeded
+    us, but went on mumbling to\nhimself out of his book, \"Lay not up for yourselves
+    treasures upon\nearth, where moth-\"\n  \"Well, Captain Bildad,\" interrupted
+    Peleg, \"what d'ye say, what\nlay shall we give this young man?\"\n  \"Thou knowest
+    best,\" was the sepulchral reply, \"the seven hundred\nand seventy-seventh wouldn't
+    be too much, would it?- 'where moth and\nrust do corrupt, but lay-'\"\n  Lay,
+    indeed, thought I, and such a lay! the seven hundred and\nseventy-seventh! Well,
+    old Bildad, you are determined that I, for one,\nshall not lay up many lays here
+    below, where moth and rust do corrupt.\nIt was an exceedingly long lay that,
+    indeed; and though from the\nmagnitude of the figure it might at first deceive
+    a landsman, yet\nthe slightest consideration will show that though seven hundred
+    and\nseventy-seven is a pretty large number, yet, when you come to make a\nteenth
+    of it, you will then see, I say, that the seven hundred and\nseventy-seventh
+    part of a forthing is a good deal less than seven\nhundred and seventy-seven
+    gold doubloons; and so I thought at the\ntime.\n  \"Why, blast your eyes, Bildad,\"
+    cried Peleg, \"thou dost not want\nto swindle this young man! he must have more
+    than that.\"\n  \"Seven hundred and seventy-seventh,\" again said Bildad, without\nlifting
+    his eyes; and then went on mumbling- \"for where your\ntreasure is, there will
+    your heart be also.\"\n  \"I am going to put him down for the three hundredth,\"
+    said Peleg,\n\"do ye hear that, Bildad! The three hundredth lay, I say.\"\n 
+    Bildad laid down his book, and turning solemnly towards him said,\n\"Captain
+    Peleg, thou hast a generous heart; but thou must consider the\nduty thou owest
+    to the other owners of this ship- widows and\norphans, many of them- and that
+    if we too abundantly reward the labors\nof this young man, we may be taking the
+    bread from those widows and\nthose orphans. The seven hundred and seventy-seventh
+    lay, Captain\nPeleg.\"\n  \"Thou Bildad!\" roared Peleg, starting up and clattering
+    about the\ncabin. \"Blast ye, Captain Bildad, if I had followed thy advice in\nthese
+    matters, I would afore now had a conscience to lug about that\nwould be heavy
+    enough to founder the largest ship that ever sailed\nround Cape Horn.\"\n  \"Captain
+    Peleg,\" said Bildad steadily, \"thy conscience may be\ndrawing ten inches of
+    water, or ten fathoms, I can't tell; but as thou\nart still an impenitent man,
+    Captain Peleg, I greatly fear lest thy\nconscience be but a leaky one; and will
+    in the end sink thee\nfoundering down to the fiery pit, Captain Peleg.\"\n  \"Fiery
+    pit! fiery pit! ye insult me, man; past all natural\nbearing, ye insult me. It's
+    an all-fired outrage to tell any human\ncreature that he's bound to hell. Flukes
+    and flames! Bildad, say\nthat again to me, and start my soulbolts, but I'll-
+    I'll- yes, I'll\nswallow a live goat with all his hair and horns on. Out of the\ncabin,
+    ye canting, drab-colored son of a wooden gun- a straight wake\nwith ye!\"\n 
+    As he thundered out this he made a rush at Bildad, but with a\nmarvellous oblique,
+    sliding celerity, Bildad for that time eluded him.\n  Alarmed at this terrible
+    outburst between the two principal and\nresponsible owners of the ship, and feeling
+    half a mind to give up all\nidea of sailing in a vessel so questionably owned
+    and temporarily\ncommanded, I stepped aside from the door to give egress to Bildad,\nwho,
+    I made no doubt, was all eagerness to vanish from before the\nawakened wrath
+    of Peleg. But to my astonishment, he sat down again\non the transom very quietly,
+    and seemed to have not the slightest\nintention of withdrawing. He seemed quite
+    used to impenitent Peleg and\nhis ways. As for Peleg, after letting off his rage
+    as he had, there\nseemed no more left in him, and he, too, sat down like a lamb,\nthough
+    he twitched a little as if still nervously agitated. \"Whew!\" he\nwhistled at
+    last- \"the squall's gone off to leeward, I think.\nBildad, thou used to be good
+    at sharpening a lance, mend that pen,\nwill ye. My jack-knife here needs the
+    grindstone. That's he; thank ye,\nBildad. Now then, my young man, Ishmael's thy
+    name, didn't ye say?\nWell then, down ye go here, for the three hundredth lay.\"\n 
+    \"Captain Peleg,\" said I, \"I have a friend with me who wants to\nship too-
+    shall I bring him down to-morrow?\"\n  \"To be sure,\" said Peleg. \"Fetch him
+    along, and we'll look at him.\"\n  \"What lay does he want?\" groaned Bildad,
+    glancing up from the Book\nin which he had again been burying himself.\n  \"Oh!
+    never thee mind about that, Bildad,\" said Peleg. \"Has he ever\nwhaled it any?\"
+    turning to me.\n  \"Killed more whales than I can count, Captain Peleg.\"\n 
+    \"Well, bring him along then.\"\n  And, after signing the papers, off I went;
+    nothing doubting but that\nI had done a good morning's work, and that the Pequod
+    was the\nidentical ship that Yojo had provided to carry Queequeg and me round\nthe
+    Cape.\n  But I had not proceeded far, when I began to bethink me that the\nCaptain
+    with whom I was to sail yet remained unseen by me; though,\nindeed, in many cases,
+    a whale-ship will be completely fitted out, and\nreceive all her crew on board,
+    ere the captain makes himself visible\nby arriving to take command; for sometimes
+    these voyages are so\nprolonged, and the shore intervals at home so exceedingly
+    brief,\nthat if the captain have family, or any absorbing concernment of\nthat
+    sort, he does not trouble himself much about his ship in port,\nbut leaves her
+    to the owners till all is ready for sea. However, it is\nalways as well to have
+    a look at him before irrevocably committing\nyourself into his hands. Turning
+    back I accosted Captain Peleg,\ninquiring where Captain Ahab was to be found.\n 
+    \"And what dost thou want of Captain Ahab? It's all right enough;\nthou art shipped.\"\n 
+    \"Yes, but I should like to see him.\"\n  \"But I don't think thou wilt be able
+    to at present. I don't know\nexactly what's the matter with him; but he keeps
+    close inside the\nhouse; a sort of sick, and yet he don't look so. In fact, he
+    ain't\nsick; but no, he isn't well either. Any how, young man, he won't\nalways
+    see me, so I don't suppose he will thee. He's a queer man,\nCaptain Ahab- so
+    some think- but a good one. Oh, thou'lt like him well\nenough; no fear, no fear.
+    He's a grand, ungodly, god-like man, Captain\nAhab; doesn't speak much; but,
+    when he does speak, then you may well\nlisten. Mark ye, be forewarned; Ahab's
+    above the common; Ahab's been\nin colleges, as well as 'mong the cannibals; been
+    used to deeper\nwonders than the waves; fixed his fiery lance in mightier, stranger\nfoes
+    than whales. His lance! aye, the keenest and surest that out of\nall our isle!
+    Oh! he ain't Captain Bildad; no, and he ain't Captain\nPeleg; he's Ahab, boy;
+    and Ahab of old, thou knowest, was a crowned\nking!\"\n  \"And a very vile one.
+    When that wicked king was slain, the dogs, did\nthey not lick his blood?\"\n 
+    \"Come hither to me- hither, hither,\" said Peleg, with a significance\nin his
+    eye that almost startled me. \"Look ye, lad; never say that on\nboard the Pequod.
+    Never say it anywhere. Captain Ahab did not name\nhimself .'Twas a foolish, ignorant
+    whim of his crazy, widowed\nmother, who died when he was only a twelvemonth old.
+    And yet the old\nsquaw Tistig, at Gayhead, said that the name would somehow prove\nprophetic.
+    And, perhaps, other fools like her may tell thee the\nsame. I wish to warn thee.
+    It's a lie. I know Captain Ahab well;\nI've sailed with him as mate years ago;
+    know what he is- a good man-\nnot a pious, good man, like Bildad, but a swearing
+    good man- something\nlike me- only there's a good deal more of him. Aye, aye,
+    I know that\nhe was never very jolly; and I know that on the passage home he
+    was\na little out of his mind for a spell; but it was the sharp shooting\npains
+    in his bleeding stump that brought that about, as any one\nmight see. I know,
+    too, that ever since he lost his leg last voyage by\nthat accursed whale, he's
+    been a kind of moody- desperate moody, and\nsavage sometimes; but that will all
+    pass off. And once for all, let me\ntell thee and assure thee, young man, it's
+    better to sail with a moody\ngood captain than a laughing bad one. So good-bye
+    to thee- and wrong\nnot Captain Ahab, because he happens to have a wicked name.
+    Besides,\nmy boy, he has a wife- not three voyages wedded- a sweet, resigned\ngirl.
+    Think of that; by that sweet girl that old man had a child: hold\nye then there
+    can be any utter, hopeless harm in Ahab? No, no, my lad;\nstricken, blasted,
+    if he be, Ahab has his humanities!\"\n  As I walked away, I was full of thoughtfulness;
+    what had been\nincidentally revealed to me of Captain Ahab, filled me with a\ncertain
+    wild vagueness of painfulness concerning him. And somehow,\nat the time, I felt
+    a sympathy and a sorrow for him, but for I don't\nknow what, unless it was the
+    cruel loss of his leg. And yet I also\nfelt a strange awe of him; but that sort
+    of awe, which I cannot at all\ndescribe, was not exactly awe; I do not know what
+    it was. But I felt\nit; and it did not disincline me towards him; though I felt
+    impatience\nat what seemed like mystery in him, so imperfectly as he was known\nto
+    me then. However, my thoughts were at length carried in other\ndirections, so
+    that for the present dark Ahab slipped my mind.\n  "

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Name: chapter63
+  m_EditorClassIdentifier: 
+  chapterTitle: CHAPTER 64,   Stubb's Supper
+  content: "\n  It was nearly six o'clock, but only grey imperfect misty dawn,\nwhen
+    we drew nigh the wharf.\n  \"There are some sailors running ahead there, if I
+    see right,\" said I\nto Queequeg, \"it can't be shadow; she's off by sunrise,
+    I guess;\ncome on!\"\n  \"Avast!\" cried a voice, whose owner at the same time
+    coming close\nbehind us, laid a hand upon both our shoulders, and then insinuating\nhimself
+    between us, stood stooping forward a little, in the\nuncertain twilight, strangely
+    peering from Queequeg to me. It was\nElijah.\n  \"Going aboard?\"\n  \"Hands
+    off, will you,\" said I.\n  \"Lookee here,\" said Queequeg, shaking himself,
+    \"go 'way!\"\n  \"Aint going aboard, then?\"\n  \"Yes, we are,\" said I, \"but
+    what business is that of yours? Do you\nknow, Mr. Elijah, that I consider you
+    a little impertinent?\"\n  \"No, no, no; I wasn't aware of that,\" said Elijah,
+    slowly and\nwonderingly looking from me to Queequeg, with the most unaccountable\nglances.\n 
+    \"Elijah,\" said I, \"you will oblige my friend and me by\nwithdrawing. We are
+    going to the Indian and Pacific Oceans, and\nwould prefer not to be detained.\"\n 
+    \"Ye be, be ye? Coming back afore breakfast?\"\n  \"He's cracked, Queequeg,\"
+    said I, \"come on.\"\n  \"Holloa!\" cried stationary Elijah, hailing us when
+    we had removed\na few paces.\n  \"Never mind him,\" said I, \"Queequeg, come
+    on.\"\n  But he stole up to us again, and suddenly clapping his hand on my\nshoulder,
+    said- \"Did ye see anything looking like men going towards\nthat ship a while
+    ago?\"\n  Struck by this plain matter-of-fact question, I answered, saying,\n\"Yes,
+    I thought I did see four or five men; but it was too dim to be\nsure.\"\n  \"Very
+    dim, very dim,\" said Elijah. \"Morning to ye.\"\n  Once more we quitted him;
+    but once more he came softly after us; and\ntouching my shoulder again, said,
+    \"See if you can find 'em now, will\nye?\n  \"Find who?\"\n  \"Morning to ye!
+    morning to ye!\" he rejoined, again moving off.\n\"Oh! I was going to warn ye
+    against- but never mind, never mind-\nit's all one, all in the family too;- sharp
+    frost this morning,\nain't it? Good-bye to ye. Shan't see ye again very soon,
+    I guess;\nunless it's before the Grand Jury.\" And with these cracked words he\nfinally
+    departed, leaving me, for the moment, in no small wonderment\nat his frantic
+    impudence.\n  At last, stepping on board the Pequod, we found everything in\nprofound
+    quiet, not a soul moving. The cabin entrance was locked\nwithin; the hatches
+    were all on, and lumbered with coils of rigging.\nGoing forward to the forecastle,
+    we found the slide of the scuttle\nopen. Seeing a light, we went down, and found
+    only an old rigger\nthere, wrapped in a tattered pea-jacket. He was thrown at
+    whole length\nupon two chests, his face downwards and inclosed in his folded
+    arms.\nThe profoundest slumber slept upon him.\n  \"Those sailors we saw, Queequeg,
+    where can they have gone to?\"\nsaid I, looking dubiously at the sleeper. But
+    it seemed that, when\non the wharf, Queequeg had not at all noticed what I now
+    alluded to;\nhence I would have thought myself to have been optically deceived
+    in\nthat matter, were it not for Elijah's otherwise inexplicable question.\nBut
+    I beat the thing down; and again marking the sleeper, jocularly\nhinted to Queequeg
+    that perhaps we had best sit up with the body;\ntelling him to establish himself
+    accordingly. He put his hand upon the\nsleeper's rear, as though feeling if it
+    was soft enough; and then,\nwithout more ado, sat quietly down there.\n  \"Gracious!
+    Queequeg, don't sit there,\" said I.\n  \"Oh; perry dood seat,\" said Queequeg,
+    \"my country way; won't hurt\nhim face.\"\n  \"Face!\" said I, \"call that his
+    face? very benevolent countenance\nthen; but how hard he breathes, he's heaving
+    himself; get off,\nQueequeg, you are heavy, it's grinding the face of the poor.
+    Get\noff, Queequeg! Look, he'll twitch you off soon. I wonder he don't\nwake.\"\n 
+    Queequeg removed himself to just beyond the head of the sleeper, and\nlighted
+    his tomahawk pipe. I sat at the feet. We kept the pipe passing\nover the sleeper,
+    from one to the other. Meanwhile, upon questioning\nhim in his broken fashion,
+    Queequeg gave me to understand that, in his\nland, owing to the absence of settees
+    and sofas of all sorts, the\nking, chiefs, and great people generally, were in
+    the custom of\nfattening some of the lower orders for ottomans; and to furnish
+    a\nhouse comfortably in that respect, you had only to buy up eight or ten\nlazy
+    fellows, and lay them around in the piers and alcoves. Besides,\nit was very
+    convenient on an excursion; much better than those\ngarden-chairs which are convertible
+    into walking sticks; upon\noccasion, a chief calling his attendant, and desiring
+    him to make a\nsettee of himself under a spreading tree, perhaps in some damp\nmarshy
+    place.\n  While narrating these things, every time Queequeg received the\ntomahawk
+    from me, he flourished the hatchet-side of it over the\nsleeper's head.\n  \"What's
+    that for, Queequeg?\"\n  \"Perry easy, kill-e; oh! perry easy!\n  He was going
+    on with some wild reminiscences about his tomahawk-pipe\nwhich, it seemed, had
+    in its two uses both brained his foes and\nsoothed his soul, when we were directly
+    attracted to the sleeping\nrigger. The strong vapor now completely filling the
+    contracted hole,\nit began to tell upon him. He breathed with a sort of muffledness;\nthen
+    seemed troubled in the nose; then revolved over once or twice;\nthen sat up and
+    rubbed his eyes.\n  \"Holloa!\" he breathed at last, \"who be ye smokers?\"\n 
+    \"Shipped men,\" answered I, \"when does she sail?\"\n  \"Aye, aye, ye are going
+    in her, be ye? She sails to-day. The Captain\ncame aboard last night.\"\n  \"What
+    Captain?- Ahab?\"\n  \"Who but him indeed?\"\n  I was going to ask him some further
+    questions concerning Ahab,\nwhen we heard a noise on deck.\n  \"Holloa! Starbuck's
+    astir,\" said the rigger. \"He's a lively chief\nmate that; good man, and a pious;
+    but all alive now, I must turn\nto.\" And so saying he went on deck, and we followed.\n 
+    It was now clear sunrise. Soon the crew came on board in twos and\nthrees; the
+    riggers bestirred themselves; the mates were actively\nengaged; and several of
+    the shore people were busy in bringing various\nlast things on board. Meanwhile
+    Captain Ahab remained invisibly\nenshrined within his cabin.\n  "
