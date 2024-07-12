@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1c393fbcc822b09fae3858966ece4, type: 3}
+  m_Name: normal
+  m_EditorClassIdentifier: 
+  meshAlphabet: {fileID: 11400000, guid: d34c6942181d61f91a7b0e09acef70e4, type: 2}
+  numberOfElements: 46
+  letterScale: 1
+  textureDimension: 8
+  letterTexture: {fileID: 6918954641851045129, guid: 0395b4ee30d18381cb876493046f1b40, type: 3}
+  positionTexture: {fileID: 6918954641851045129, guid: f3da780b92e6f886c9876026ae18e89e, type: 3}
+  rotationTexture: {fileID: 6918954641851045129, guid: 1b72de46323f0077783a7962ea7fb8bb, type: 3}

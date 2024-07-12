@@ -1,0 +1,19 @@
+pcache
+format ascii 1.0
+comment Exported with PCache.cs
+elements 11
+property float position.x
+property float position.y
+property float position.z
+end_header
+10 0 0
+9.563398 0.375733 0
+9.157654 0.7249108 0
+8.773789 1.055258 0
+8.337188 1.430991 0
+7.900586 1.806724 0
+7.516722 2.137072 0
+7.110978 2.48625 0
+6.727114 2.816597 0
+6.290512 3.192331 0
+5.884768 3.541508 0

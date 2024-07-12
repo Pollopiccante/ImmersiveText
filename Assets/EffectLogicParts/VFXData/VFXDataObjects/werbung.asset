@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1c393fbcc822b09fae3858966ece4, type: 3}
+  m_Name: werbung
+  m_EditorClassIdentifier: 
+  meshAlphabet: {fileID: 11400000, guid: d34c6942181d61f91a7b0e09acef70e4, type: 2}
+  numberOfElements: 64
+  letterScale: 1
+  textureDimension: 9
+  letterTexture: {fileID: 6918954641851045129, guid: 49c1967d64b3f5c79833ffe5e5e1204c, type: 3}
+  positionTexture: {fileID: 6918954641851045129, guid: 6f7301b59d2b01ed9a7b2d973a6a6fda, type: 3}
+  rotationTexture: {fileID: 6918954641851045129, guid: c6b93877f396e5c22a8f9d0c46d9208d, type: 3}
