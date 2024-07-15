@@ -187,7 +187,7 @@ Transform:
   m_GameObject: {fileID: 22971169}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25744066, y: 0.06504533, z: -0.23616982, w: 0.93472844}
-  m_LocalPosition: {x: -46.4, y: 59.8, z: -5.8}
+  m_LocalPosition: {x: -157.1, y: 111.1, z: 24.8}
   m_LocalScale: {x: 60, y: 60, z: 60}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -276,11 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5a6b1019fe7be8e9cde1928d439394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPathFitMode: 0
-  textSize: 68.4
-  meshGo: {fileID: 22971169}
-  planePadding: 2.96
-  numberOfRayCasts: 3000
 --- !u!1 &77132305
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,12 +756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c76fb6b3f1ea9c0955d2b05a2a16f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
-  pointCache: {fileID: 6918954641851045129, guid: f0898996949160c25a4a44420098ea67, type: 3}
-  letterMeshEffectPrefab: {fileID: 723168208225519487, guid: b6a6669bb10238371abb144dfcdd04c1, type: 3}
-  meshGo: {fileID: 578881500}
-  letterDistances: {fileID: 0}
-  chapter: {fileID: 11400000, guid: 87a9561f1fd356a7d8770b6c1737dd92, type: 2}
 --- !u!4 &226709546
 Transform:
   m_ObjectHideFlags: 0
@@ -811,8 +800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919a70fcd72581bf2bc82442c1f06cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathLineRenderer: {fileID: 0}
-  subPathLineRenderer: {fileID: 0}
+  mesh: {fileID: -5876688374695104875, guid: 0de58fadeda13c052b492ed015cc6937, type: 3}
+  alphabethScriptableObject: {fileID: 11400000, guid: d34c6942181d61f91a7b0e09acef70e4, type: 2}
+  chapter: {fileID: 11400000, guid: 9c1f8179006168d9aaf9c717937f9235, type: 2}
 --- !u!4 &233253426
 Transform:
   m_ObjectHideFlags: 0
@@ -1720,9 +1710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23c1eec8672f0f88aea151b6e57b6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPathFitMode: 0
-  textSize: 20
-  steps: 30
 --- !u!1 &578881500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,11 +2447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5a6b1019fe7be8e9cde1928d439394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPathFitMode: 0
-  textSize: 34.6
-  meshGo: {fileID: 882516655}
-  planePadding: 3.94
-  numberOfRayCasts: 2000
 --- !u!1 &895168062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,181 +3538,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1201159473
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1201159476}
-  - component: {fileID: 1201159475}
-  - component: {fileID: 1201159474}
-  m_Layer: 0
-  m_Name: smallPath2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1201159474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201159473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e3a9454a48d298389ef3c66a8145b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showBasics: 1
-  showPathProgress: 1
-  showInsertSubPath: 1
-  showRotationGizmos: 1
-  showCurrentPositionGizmo: 1
-  upAxisRoughDirection: {x: 1, y: 0, z: 0}
-  stepToJumpTo: 0
-  interPointProgress: 0
-  moveDistance: 1
-  destroyWhileMoving: 0
-  basePathToSaveTo: 
-  pathScriptableObjectName: 
-  subPath: {fileID: 0}
---- !u!120 &1201159475
-LineRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201159473}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f2076253bdfa71d3b91ac90d3ba8094b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Positions:
-  - {x: 10, y: 0, z: 0}
-  - {x: -1.62, y: 10, z: 0}
-  - {x: 10, y: 20, z: 0}
-  - {x: 10, y: 30, z: 7.61}
-  - {x: 48.6, y: 40, z: 0}
-  - {x: 10.01, y: 33.6, z: 0}
-  m_Parameters:
-    serializedVersion: 3
-    widthMultiplier: 1
-    widthCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0.1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 0.1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    colorGradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
-      ctime4: 0
-      ctime5: 0
-      ctime6: 0
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_ColorSpace: -1
-      m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
-    alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
-    shadowBias: 0.5
-    generateLightingData: 0
-  m_MaskInteraction: 0
-  m_UseWorldSpace: 1
-  m_Loop: 0
-  m_ApplyActiveColorSpace: 1
---- !u!4 &1201159476
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201159473}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326248056
 GameObject:
   m_ObjectHideFlags: 0
@@ -5820,11 +5627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9e9037ecda869e496ee79745a91115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  book: {fileID: 11400000, guid: 512f935353ea046ab8c014a5cf3b6cd3, type: 2}
-  layouterConfigurations:
-  - {fileID: 22971175}
-  - {fileID: 542688401}
-  - {fileID: 882516661}
 --- !u!4 &2039517688
 Transform:
   m_ObjectHideFlags: 0
@@ -6427,4 +6229,3 @@ SceneRoots:
   - {fileID: 668881062}
   - {fileID: 312860239}
   - {fileID: 233253426}
-  - {fileID: 1201159476}

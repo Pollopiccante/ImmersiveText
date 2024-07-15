@@ -115,4 +115,23 @@ public class PathLineRenderer : MonoBehaviour
             Gizmos.DrawSphere(_pso.LoadPath().GetVirtualCurrentPoint().pos, 1);
         }
     }
+
+    public static PathLineRenderer CreateFromPath(Path path)
+    {
+        GameObject myLine = new GameObject("MyPathLineRenderer");
+        myLine.transform.position = new Vector3(0,0,0);
+        LineRenderer lr = myLine.AddComponent<LineRenderer>();
+        lr.material = new Material(Resources.Load<Material>("Materials/LineMaterial"));
+        lr.startWidth = 0.01f;
+        lr.endWidth = 0.01f;
+        PathLineRenderer plr = myLine.AddComponent<PathLineRenderer>();
+        PathScriptableObject mockPso = ScriptableObject.CreateInstance<PathScriptableObject>();
+        mockPso.points = path.GetPoints();
+        mockPso.pathUp = path.GetUp();
+        mockPso.pathPosition = path.GetPathPosition();
+        plr.SetPSO(mockPso);
+        plr.Reset();
+        plr.SyncLineRenderer();
+        return plr;
+    }
 }

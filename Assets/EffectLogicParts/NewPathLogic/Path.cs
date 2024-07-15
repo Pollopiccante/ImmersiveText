@@ -717,4 +717,69 @@ public class Path
 
         return new TextInsertionResult(textureDimension, positions, rotations, letters, leftoverText, false);
     }
+
+    public void SubstituteConnection(int connection, Path originalSubPath, float? overrideAngle=null)
+    {
+        Path subPath = originalSubPath.Copy();
+        
+        // pick connection start / end
+        int connectionStart = connection;
+        int connectionEnd = connection + 1;
+        
+        // check if sub path has right length
+        float connectionLength = Vector3.Distance(GetPoints()[connectionStart].pos, GetPoints()[connectionEnd].pos);
+        if (Mathf.Approximately(subPath.GetStartToEndSpaceDistance(), connectionLength))
+        {
+            float factor = connectionLength / subPath.GetStartToEndSpaceDistance();
+            subPath = subPath.Scale(factor);
+        }
+
+        // get old and new facing direction of the sub path
+        Vector3 formerPathDirection = subPath.GetMainAxis();
+        Vector3 substitutedPathPartAxis = (GetPoints()[connectionEnd].pos - GetPoints()[connectionStart].pos).normalized;
+
+        // calculate rotation needed
+        Quaternion rot = Quaternion.FromToRotation(formerPathDirection, substitutedPathPartAxis);
+
+        // align subgraph start and end
+        subPath = subPath.Rotate(rot);
+        subPath = subPath.MoveStartTo(GetPoints()[connectionStart].pos);
+
+        // get relative up of substituted path part
+        Vector3 axisRelativeUp = Quaternion.FromToRotation(GetMainAxis(), substitutedPathPartAxis) * _pathUp;
+        // align subPath up with relative up
+        subPath = subPath.Rotate(Quaternion.FromToRotation(subPath._pathUp, axisRelativeUp), subPath.GetPoints()[0].pos);
+        // rotate subPath around its main axis
+        float angle;
+        if (overrideAngle == null)
+            angle = Mathf.Lerp(GetPoints()[connectionEnd].rotIn, GetPoints()[connectionStart].rotOut, 0.5f);
+        else
+            angle = overrideAngle.Value;    
+        subPath = subPath.Rotate(Quaternion.AngleAxis(angle, subPath.GetMainAxis()), subPath.GetPoints()[0].pos);
+
+        // insert subPath, dont use first and last point of subPath
+        List<Point> outPoints = new List<Point>(_points);
+        List<Point> pointsToInsert = new List<Point>(subPath.GetPoints());
+        pointsToInsert.RemoveAt(0);
+        pointsToInsert.RemoveAt(pointsToInsert.Count - 1);
+        outPoints.InsertRange(connectionStart + 1, pointsToInsert.ToArray());
+
+        // write back new points
+        _points = outPoints.ToArray();
+    }
+
+    public Path Scale(float factor)
+    {
+        Path path = Copy();
+        path._points = path._points.Select(p => new Point(p.pos * factor, p.rotIn, p.rotOut)).ToArray();
+        return path;
+    }
+
+    public Vector3 GetZeroAxis(int connStart, int connEnd)
+    {
+        Tuple<Quaternion, Quaternion> rotations = GetRotationsForConnection(connStart, connEnd);
+        Quaternion rotation = Quaternion.Lerp(rotations.Item1, rotations.Item2, 0.5f);
+
+        return (rotation * Vector3.up).normalized;
+    }
 }
