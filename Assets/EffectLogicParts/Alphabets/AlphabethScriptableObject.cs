@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "MeshAlphabet", menuName = "ScriptableObjects/MeshAlphabet", order = 1)]
@@ -25,4 +26,24 @@ public class AlphabethScriptableObject : ScriptableObject
       }
       return outDict;
    }
+
+   public float CalculateTextLength(string text, List<float> letterScaling)
+   {
+      // calculate length of text
+      float length = 0f;
+      Dictionary<char, float> widthDictionary = GetWidthDictionary();
+      for (int i = 0; i < text.Length; i++)
+      {
+         char currentCharacter = text[i];
+         if (currentCharacter == ' ')
+            length += spaceWidth;
+         else
+         {
+            float charWidth = (widthDictionary[text[i]]) * letterScaling.ElementAt(i);
+            length += charWidth;
+         }
+      }
+      return length;
+   }
+
 }

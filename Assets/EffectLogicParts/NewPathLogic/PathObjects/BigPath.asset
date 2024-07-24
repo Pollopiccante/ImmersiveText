@@ -14,24 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points:
   - pos: {x: 0, y: 0, z: 0}
-    rotIn: 40
-    rotOut: 40
-  - pos: {x: 0, y: 10, z: 0}
-    rotIn: 80
-    rotOut: 80
-  - pos: {x: 0, y: 20, z: 0}
-    rotIn: 120
-    rotOut: 120
-  - pos: {x: 0, y: 30, z: 0}
-    rotIn: 160
-    rotOut: 160
-  - pos: {x: 0, y: 40, z: 0}
-    rotIn: 200
-    rotOut: 200
-  - pos: {x: 0, y: 50, z: 0}
-    rotIn: 240
-    rotOut: 240
-  pathUp: {x: 1, y: 0, z: 0}
+    rotIn: 0
+    rotOut: 0
+  - pos: {x: 3000, y: 0, z: 0}
+    rotIn: 0
+    rotOut: 0
+  pathUp: {x: 0, y: 1, z: 0}
   pathPosition:
     PointIndex: 0
     InterPointProgress: 0

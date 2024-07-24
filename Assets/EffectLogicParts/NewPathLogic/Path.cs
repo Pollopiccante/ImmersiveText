@@ -12,6 +12,7 @@ public class TextInsertionResult
     public List<Vector3> positionsTexture;
     public List<Vector3> rotationsTexture;
     public List<Vector3> lettersTexture;
+    public List<Vector3> scalesTexture;
     
     // additional vfx data
     public List<Vector3> colorsTexture;
@@ -21,12 +22,13 @@ public class TextInsertionResult
     // was the path used up
     public bool pathWasUsedUp;
 
-    public TextInsertionResult(int textureDimension, List<Vector3> positionsTexture, List<Vector3> rotationsTexture, List<Vector3> lettersTexture, string leftoverText, bool pathWasUsedUp)
+    public TextInsertionResult(int textureDimension, List<Vector3> positionsTexture, List<Vector3> rotationsTexture, List<Vector3> lettersTexture, List<Vector3> scalesTexture, string leftoverText, bool pathWasUsedUp)
     {
         this.textureDimension = textureDimension;
         this.positionsTexture = positionsTexture;
         this.rotationsTexture = rotationsTexture;
         this.lettersTexture = lettersTexture;
+        this.scalesTexture = scalesTexture;
         this.leftoverText = leftoverText;
         this.pathWasUsedUp = pathWasUsedUp;
     }
@@ -35,13 +37,20 @@ public class TextInsertionResult
 [Serializable]
 public class PathPosition
 {
+    public readonly static float epsilon = 1E-03f;
     public int PointIndex = 0;
     public float InterPointProgress = 0f;
 
     public PathPosition(int pointIndex, float interPointProgress)
     {
+        // round interPoint progress
+        if (0 - epsilon < interPointProgress && interPointProgress < 0)
+            interPointProgress = 0;
+        if (1 < interPointProgress && interPointProgress < 1 + epsilon)
+            interPointProgress = 1;
+        // check for invalid progress values
         if (interPointProgress > 1f || interPointProgress < 0f)
-            throw new ArgumentException("InterPointProgress must be a value between 0 and 1!");
+            throw new ArgumentException($"InterPointProgress must be a value between 0 and 1! But was {interPointProgress}");
         
         this.PointIndex = pointIndex;
         this.InterPointProgress = interPointProgress;
@@ -205,7 +214,25 @@ public class Path
     {
         float l = 0;
         for (int i = 0; i < _points.Length - 1; i++)
-            l += Vector3.Distance(_points[i + 1].pos, _points[1].pos);
+            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
+        return l;
+    }
+
+    // calculate length to the end, starting at the current position
+    public float GetLengthToEndFromCurrentPosition()
+    {
+        float l = 0;
+        for (int i = _currentPathPosition.PointIndex; i < _points.Length - 1; i++)
+            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
+        return l;
+    }
+    
+    // calculate length to the start, starting at the current position
+    public float GetLengthToStartFromCurrentPosition()
+    {
+        float l = 0;
+        for (int i = _currentPathPosition.PointIndex; i >= 0; i--)
+            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
         return l;
     }
 
@@ -519,9 +546,6 @@ public class Path
         // calc distance left to travel
         float distanceLeftToTravel = distance - distTraveled;
 
-
-        Debug.Log($"current index: {currIndex} inter: {currInterPoint}");
-        
         // get distance left on the current connection
         float connectionDist = Vector3.Distance(_points[currIndex].pos, _points[currIndex + 1].pos);
         float distLeftOnCurrentConnection = (1 - currInterPoint) * connectionDist;
@@ -530,7 +554,6 @@ public class Path
         if (distLeftOnCurrentConnection > distanceLeftToTravel)
         {
             float newProgress = currInterPoint + distanceLeftToTravel / connectionDist;
-            Debug.Log($"NEW PROGRESS: {newProgress}");
             _currentPathPosition = new PathPosition(currIndex, newProgress);
         }
         else
@@ -648,10 +671,8 @@ public class Path
     }
     
     
-    public TextInsertionResult ConvertToPointData(string text, AlphabethScriptableObject alphabet, bool splitWords=true)
+    public TextInsertionResult ConvertToPointData(string text, AlphabethScriptableObject alphabet, List<float> scaleData, bool splitWords=true)
     {
-        List<List<Vector3>> outTextures = new List<List<Vector3>>();
-
         // prepare text
         string textWithoutSpace = text.Replace(" ", "");
         string[] words = text.Split(" ");
@@ -664,6 +685,7 @@ public class Path
 
         // enter letters by width, count inserted characters + spaces
         int insertedCharacters = 0;
+        int insertedNonSpaceCharacters = 0;
         for (int i = 0; i < words.Length; i++)
         {
             string word = words[i];
@@ -672,16 +694,18 @@ public class Path
             for (int j = 0; j < word.Length - 1; j++)
             {
                 char currentLetter = word[j];
-                if (!MoveDistanceInSpace(widthCache[currentLetter], true))
+                if (!MoveDistanceInSpace(widthCache[currentLetter] * scaleData[insertedNonSpaceCharacters], true))
                     break; // TODO REMOVE FOLLOWING PATH
                 insertedCharacters++;
+                insertedNonSpaceCharacters++;
             }
             // final letter has additional width of trailing space
-            float lastLetterWidth = widthCache[word[word.Length - 1]] + alphabet.spaceWidth;
+            float lastLetterWidth = widthCache[word[word.Length - 1]] * scaleData[insertedNonSpaceCharacters] + alphabet.spaceWidth;
             if (!MoveDistanceInSpace(lastLetterWidth, true))
                 break; // TODO REMOVE FOLLOWING PATH
             insertedCharacters++;
             insertedCharacters++;
+            insertedNonSpaceCharacters++;
         }
         
         // after entering letters: see whats left
@@ -694,10 +718,12 @@ public class Path
         List<Vector3> positions = new List<Vector3>();
         List<Vector3> rotations = new List<Vector3>();
         List<Vector3> letters = new List<Vector3>();
+        List<Vector3> scales = new List<Vector3>();
         for (int i = 0; i < positionRotationInformation.Count && i < textWithoutSpace.Length; i++)
         {
             Vector3 position = positionRotationInformation.ElementAt(i).Item1;
             Vector3 rotation = positionRotationInformation.ElementAt(i).Item2.eulerAngles;
+            Vector3 scale = new Vector3(scaleData[i], 0, 0);
 
             int letterInt = TextUtil.CharToInt(textWithoutSpace[i]);
             int letterIndex = letterInt % 4;
@@ -707,15 +733,12 @@ public class Path
             positions.Add(position);
             rotations.Add(rotation);
             letters.Add(letterVector);
+            scales.Add(scale);
         }
-
-        outTextures.Add(positions);
-        outTextures.Add(rotations);
-        outTextures.Add(letters);
 
         int textureDimension = Mathf.CeilToInt(Mathf.Sqrt(positions.Count));
 
-        return new TextInsertionResult(textureDimension, positions, rotations, letters, leftoverText, false);
+        return new TextInsertionResult(textureDimension, positions, rotations, letters, scales, leftoverText, false);
     }
 
     public void SubstituteConnection(int connection, Path originalSubPath, float? overrideAngle=null)
@@ -781,5 +804,17 @@ public class Path
         Quaternion rotation = Quaternion.Lerp(rotations.Item1, rotations.Item2, 0.5f);
 
         return (rotation * Vector3.up).normalized;
+    }
+
+    public void AddLineAtEnd(float distance)
+    {
+        List<Point> newPoints = new List<Point>(_points);
+        // create new last point in the direction of the main axis
+        Vector3 mainAxisDirection = GetMainAxis().normalized;
+        Point oldLastPoint = _points[_points.Length - 1];
+        Vector3 newLastPos = oldLastPoint.pos + distance * mainAxisDirection;
+        newPoints.Add(new Point(newLastPos, oldLastPoint.rotIn, oldLastPoint.rotOut));
+        // write back new points
+        _points = newPoints.ToArray();
     }
 }

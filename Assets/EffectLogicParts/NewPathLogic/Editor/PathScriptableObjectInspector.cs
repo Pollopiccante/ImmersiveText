@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -39,11 +40,14 @@ public class PathScriptableObjectInspector : Editor
         instanciateVFXEffectInSceneImmediatly = EditorGUILayout.Toggle("instanciate VFXEffect in scene immediatly", instanciateVFXEffectInSceneImmediatly);
         if (GUILayout.Button("Convert to VFX data"))
         {
+            // dummy scaling
+            List<float> letterScaling = Enumerable.Repeat(1f ,TextUtil.ToSingleLine(text).Replace(" ", "").Length).ToList();
+            
             // get textures
-            TextInsertionResult insertionResult = castTarget.LoadPath().Copy().ConvertToPointData(text, alphabet);
+            TextInsertionResult insertionResult = castTarget.LoadPath().Copy().ConvertToPointData(text, alphabet, letterScaling);
             
             // create pCache files, fill them with point data
-            string imagePathTemplate = pathToSaveVFXData + "{0}" + "_{1}_" + DateTime.Now.ToString("yyyymmdd") + ".pcache";
+            string imagePathTemplate = pathToSaveVFXData + DirConfiguration.GetPCacheFileNamingTemplate();
             string posFileName = String.Format(imagePathTemplate, nameToSave, "pos");
             string rotFileName = String.Format(imagePathTemplate, nameToSave, "rot");
             string letterFileName = String.Format(imagePathTemplate, nameToSave, "letter");

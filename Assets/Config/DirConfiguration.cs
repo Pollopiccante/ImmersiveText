@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -27,6 +26,11 @@ public class DirConfiguration : ScriptableObject
     
     public string pathScriptableObjectDir = "Assets/EffectLogicParts/NewPathLogic/PathObjects/";
     public string vfxDataScriptableObjectDir = "Assets/EffectLogicParts/VFXData/VFXDataObjects/";
+
+    public static string GetPCacheFileNamingTemplate()
+    {
+        return "{0}" + "_{1}_" + DateTime.Now.ToString("yyyymmdd") + ".pcache";
+    }
 }
 
 
