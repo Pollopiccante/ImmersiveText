@@ -14,6 +14,10 @@ public class DefaultEffectDimensionsDataPoint : EffectDimensionDataPoint
 {
     public ScaleEffectDimension Scale = new ScaleEffectDimension();
     public ColorEffectDimension Color = new ColorEffectDimension();
+    public XWaveMotionEffectDimension XWave = new XWaveMotionEffectDimension();
+    public AlphaEffectDimension Alpha = new AlphaEffectDimension();
+    public SmoothnessEffectDimension Smoothness = new SmoothnessEffectDimension();
+    public MetalicEffectDimension Metalic = new MetalicEffectDimension();
 }
 
 [CreateAssetMenu(fileName = "TextArangement", menuName = "ScriptableObjects/Annotation/TextArangement", order = 0)]
@@ -29,6 +33,14 @@ public class DefaultMapping : AbstractMapping<DefaultTextDimensionsDataPoint, De
         {
             outDimensions.Scale.value = 5f;
             outDimensions.Color.value = new Color(255, 0, 0);
+            outDimensions.XWave.value = new WaveMotionData(0.005f, 200, 0);
+            
+            outDimensions.Alpha.value = 0.2f;
+        }
+        else
+        {
+            outDimensions.XWave.value = new WaveMotionData(0, 0, 0);
+            outDimensions.Metalic.value = 1f;
         }
 
         if (textDimensions.Humor.value > 1f)
@@ -36,8 +48,7 @@ public class DefaultMapping : AbstractMapping<DefaultTextDimensionsDataPoint, De
             Color randomColor = Random.ColorHSV();
             outDimensions.Color.value = randomColor;
         }
-        
-        
+
         // pass through letter and subPathStrategy
         outDimensions.Letter = textDimensions.Letter;
         outDimensions.SubPathStrategy = textDimensions.SubPathStrategy;

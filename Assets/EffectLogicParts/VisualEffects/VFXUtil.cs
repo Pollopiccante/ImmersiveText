@@ -26,6 +26,8 @@ public class VFXUtil
         vfxComponent.SetTexture("Letters", vfxData.letterTexture);
         vfxComponent.SetTexture("Scalings", vfxData.scaleTexture);
         vfxComponent.SetTexture("Colors", vfxData.colorTexture);
+        vfxComponent.SetTexture("XWaveMotions", vfxData.xWaveMotionTexture);
+        vfxComponent.SetTexture("Alpha_Smoothness_Metalic", vfxData.alphaSmoothnessMetalicTexture);
         // mesh alphabet
         for (int i = 0; i < TextUtil.alphabeth.Length; i++)
             vfxComponent.SetMesh($"Mesh_ {i}", vfxData.meshAlphabet.meshes[i]);
@@ -171,14 +173,21 @@ public class VFXUtil
 
         // create shortened independent textures
         List<Vector3> colors = new List<Vector3>();
+        List<Vector3> xWaveMotions = new List<Vector3>();
+        List<Vector3> alphaSmoothnessMetalic = new List<Vector3>();
         for (int i = 0; i < insertionResult.positionsTexture.Count; i++)
         {
-            Color c = dataPoints[i].color;
-            colors.Add(new Vector3(c.r / 255f,c.g / 255f,c.b / 255f));
+            VfxDataPoint dp = dataPoints[i];
+            
+            colors.Add(new Vector3(dp.color.r / 255f,dp.color.g / 255f,dp.color.b / 255f));
+            xWaveMotions.Add(dp.XWaveMotion.ToVector());
+            alphaSmoothnessMetalic.Add(new Vector3(dp.alpha, dp.smoothness, dp.metalic));
         }
 
         // apply path independent textures:
         vfxData.colorTexture = PointCacheToTexture2D(colors);
+        vfxData.xWaveMotionTexture = PointCacheToTexture2D(xWaveMotions);
+        vfxData.alphaSmoothnessMetalicTexture = PointCacheToTexture2D(alphaSmoothnessMetalic);
 
         // assign additional information
         vfxData.textureDimension = insertionResult.textureDimension;
@@ -199,6 +208,8 @@ public class VFXUtil
         string letterFileName = String.Format(fileNameTemplate, name, "letter");
         string scaleFileName = String.Format(fileNameTemplate, name, "scale");
         string colorFileName = String.Format(fileNameTemplate, name, "color");
+        string xWaveFileName = String.Format(fileNameTemplate, name, "xwave");
+        string alphaSmoothnessMetalicFileName = String.Format(fileNameTemplate, name, "AlSmMe");
         
         
         WritePointCache(data.positionTexture, posFileName);
@@ -206,6 +217,8 @@ public class VFXUtil
         WritePointCache(data.letterTexture, letterFileName);
         WritePointCache(data.scaleTexture, scaleFileName);
         WritePointCache(data.colorTexture, colorFileName);
+        WritePointCache(data.xWaveMotionTexture, xWaveFileName);
+        WritePointCache(data.alphaSmoothnessMetalicTexture, alphaSmoothnessMetalicFileName);
         
         AssetDatabase.Refresh();
 
@@ -215,6 +228,8 @@ public class VFXUtil
         AssetDatabase.ImportAsset(letterFileName, ImportAssetOptions.ForceUpdate);
         AssetDatabase.ImportAsset(scaleFileName, ImportAssetOptions.ForceUpdate);
         AssetDatabase.ImportAsset(colorFileName, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.ImportAsset(xWaveFileName, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.ImportAsset(alphaSmoothnessMetalicFileName, ImportAssetOptions.ForceUpdate);
 
         AssetDatabase.Refresh();
 
@@ -224,6 +239,8 @@ public class VFXUtil
         Texture2D letterTexture = ReadTextureFromPointCache(letterFileName);
         Texture2D scaleTexture = ReadTextureFromPointCache(scaleFileName);
         Texture2D colorTexture = ReadTextureFromPointCache(colorFileName);
+        Texture2D xWaveMotionTexture = ReadTextureFromPointCache(xWaveFileName);
+        Texture2D alphaSmoothnessMetalicTexture = ReadTextureFromPointCache(alphaSmoothnessMetalicFileName);
             
         // create vfx data object, assign textures 
         data.positionTexture = positionTexture;
@@ -231,6 +248,8 @@ public class VFXUtil
         data.letterTexture = letterTexture;
         data.scaleTexture = scaleTexture;
         data.colorTexture = colorTexture;
+        data.xWaveMotionTexture = xWaveMotionTexture;
+        data.alphaSmoothnessMetalicTexture = alphaSmoothnessMetalicTexture;
 
         // save vfx data as asset
         AssetDatabase.CreateAsset(data, DirConfiguration.Instance.vfxDataScriptableObjectDir + name + ".asset");
