@@ -28,10 +28,15 @@ public class VFXUtil
         vfxComponent.SetTexture("Colors", vfxData.colorTexture);
         vfxComponent.SetTexture("XWaveMotions", vfxData.xWaveMotionTexture);
         vfxComponent.SetTexture("Alpha_Smoothness_Metalic", vfxData.alphaSmoothnessMetalicTexture);
-        vfxComponent.SetTexture("FlyInIndexTimes", vfxData.flyInIndexTimeTexture);
+        vfxComponent.SetTexture("StartEndIndices", vfxData.startEndIndexTexture);
+        
         // mesh alphabet
         for (int i = 0; i < TextUtil.alphabeth.Length; i++)
             vfxComponent.SetMesh($"Mesh_ {i}", vfxData.meshAlphabet.meshes[i]);
+        
+        // add index stepper, and start it
+        IndexStepper indexStepper = vfxObject.AddComponent<IndexStepper>();
+        indexStepper.pause = false;
     }
     
     public static VFXDataScriptableObject CreateVFXDataFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)
@@ -176,7 +181,7 @@ public class VFXUtil
         List<Vector3> colors = new List<Vector3>();
         List<Vector3> xWaveMotions = new List<Vector3>();
         List<Vector3> alphaSmoothnessMetalic = new List<Vector3>();
-        List<Vector3> flyInIndexTimes = new List<Vector3>();
+        List<Vector3> startStopIndices = new List<Vector3>();
         for (int i = 0; i < insertionResult.positionsTexture.Count; i++)
         {
             VfxDataPoint dp = dataPoints[i];
@@ -184,14 +189,14 @@ public class VFXUtil
             colors.Add(new Vector3(dp.color.r / 255f,dp.color.g / 255f,dp.color.b / 255f));
             xWaveMotions.Add(dp.XWaveMotion.ToVector());
             alphaSmoothnessMetalic.Add(new Vector3(dp.alpha, dp.smoothness, dp.metalic));
-            flyInIndexTimes.Add(new Vector3(dp.flyInIndexTime,0,0));
+            startStopIndices.Add(new Vector3(dp.indexStart,dp.indexEnd,0));
         }
 
         // apply path independent textures:
         vfxData.colorTexture = PointCacheToTexture2D(colors);
         vfxData.xWaveMotionTexture = PointCacheToTexture2D(xWaveMotions);
         vfxData.alphaSmoothnessMetalicTexture = PointCacheToTexture2D(alphaSmoothnessMetalic);
-        vfxData.flyInIndexTimeTexture = PointCacheToTexture2D(flyInIndexTimes);
+        vfxData.startEndIndexTexture = PointCacheToTexture2D(startStopIndices);
 
         // assign additional information
         vfxData.textureDimension = insertionResult.textureDimension;
@@ -214,7 +219,7 @@ public class VFXUtil
         string colorFileName = String.Format(fileNameTemplate, name, "color");
         string xWaveFileName = String.Format(fileNameTemplate, name, "xwave");
         string alphaSmoothnessMetalicFileName = String.Format(fileNameTemplate, name, "AlSmMe");
-        string flyInIndexTimeFileName = String.Format(fileNameTemplate, name, "flyInIndexTime");
+        string startStopIndexFileName = String.Format(fileNameTemplate, name, "startStopIndex");
         
         
         WritePointCache(data.positionTexture, posFileName);
@@ -224,7 +229,7 @@ public class VFXUtil
         WritePointCache(data.colorTexture, colorFileName);
         WritePointCache(data.xWaveMotionTexture, xWaveFileName);
         WritePointCache(data.alphaSmoothnessMetalicTexture, alphaSmoothnessMetalicFileName);
-        WritePointCache(data.alphaSmoothnessMetalicTexture, flyInIndexTimeFileName);
+        WritePointCache(data.startEndIndexTexture, startStopIndexFileName);
         
         AssetDatabase.Refresh();
 
@@ -236,7 +241,7 @@ public class VFXUtil
         AssetDatabase.ImportAsset(colorFileName, ImportAssetOptions.ForceUpdate);
         AssetDatabase.ImportAsset(xWaveFileName, ImportAssetOptions.ForceUpdate);
         AssetDatabase.ImportAsset(alphaSmoothnessMetalicFileName, ImportAssetOptions.ForceUpdate);
-        AssetDatabase.ImportAsset(flyInIndexTimeFileName, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.ImportAsset(startStopIndexFileName, ImportAssetOptions.ForceUpdate);
 
         AssetDatabase.Refresh();
 
@@ -248,7 +253,7 @@ public class VFXUtil
         Texture2D colorTexture = ReadTextureFromPointCache(colorFileName);
         Texture2D xWaveMotionTexture = ReadTextureFromPointCache(xWaveFileName);
         Texture2D alphaSmoothnessMetalicTexture = ReadTextureFromPointCache(alphaSmoothnessMetalicFileName);
-        Texture2D flyInIndexTimeTexture = ReadTextureFromPointCache(flyInIndexTimeFileName);
+        Texture2D startStopIndexTexture = ReadTextureFromPointCache(startStopIndexFileName);
             
         // create vfx data object, assign textures 
         data.positionTexture = positionTexture;
@@ -258,7 +263,7 @@ public class VFXUtil
         data.colorTexture = colorTexture;
         data.xWaveMotionTexture = xWaveMotionTexture;
         data.alphaSmoothnessMetalicTexture = alphaSmoothnessMetalicTexture;
-        data.flyInIndexTimeTexture = flyInIndexTimeTexture;
+        data.startEndIndexTexture = startStopIndexTexture;
 
         // save vfx data as asset
         AssetDatabase.CreateAsset(data, DirConfiguration.Instance.vfxDataScriptableObjectDir + name + ".asset");

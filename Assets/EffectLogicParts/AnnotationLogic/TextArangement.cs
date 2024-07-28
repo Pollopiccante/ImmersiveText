@@ -9,6 +9,7 @@ using UnityEngine;
 
 [Serializable]
 public class AnnotationData
+
 {
     public string SectionName;
     public GenericSection Data;
