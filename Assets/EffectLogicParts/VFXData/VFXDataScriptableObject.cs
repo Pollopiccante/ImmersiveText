@@ -13,4 +13,5 @@ public class VFXDataScriptableObject : ScriptableObject
     public Texture2D colorTexture;
     public Texture2D xWaveMotionTexture;
     public Texture2D alphaSmoothnessMetalicTexture;
+    public Texture2D flyInIndexTimeTexture;
 }

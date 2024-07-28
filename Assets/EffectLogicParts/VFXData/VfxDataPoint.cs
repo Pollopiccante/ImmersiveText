@@ -12,4 +12,5 @@ public class VfxDataPoint
     public float alpha = 1f;
     public float smoothness = 0.5f;
     public float metalic = 0;
+    public float flyInIndexTime = 1f;
 }

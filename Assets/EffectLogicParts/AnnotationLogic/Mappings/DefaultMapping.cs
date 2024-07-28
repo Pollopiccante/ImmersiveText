@@ -18,6 +18,7 @@ public class DefaultEffectDimensionsDataPoint : EffectDimensionDataPoint
     public AlphaEffectDimension Alpha = new AlphaEffectDimension();
     public SmoothnessEffectDimension Smoothness = new SmoothnessEffectDimension();
     public MetalicEffectDimension Metalic = new MetalicEffectDimension();
+    public FlyInIndexTimeEffectDimension FlyInIndexTime = new FlyInIndexTimeEffectDimension();
 }
 
 [CreateAssetMenu(fileName = "TextArangement", menuName = "ScriptableObjects/Annotation/TextArangement", order = 0)]
@@ -36,11 +37,13 @@ public class DefaultMapping : AbstractMapping<DefaultTextDimensionsDataPoint, De
             outDimensions.XWave.value = new WaveMotionData(0.005f, 200, 0);
             
             outDimensions.Alpha.value = 0.2f;
+            outDimensions.FlyInIndexTime.value = 0.5f;
         }
         else
         {
             outDimensions.XWave.value = new WaveMotionData(0, 0, 0);
             outDimensions.Metalic.value = 1f;
+            outDimensions.FlyInIndexTime.value = 5f;
         }
 
         if (textDimensions.Humor.value > 1f)
