@@ -28,7 +28,7 @@ MonoBehaviour:
     stringValue: 
     boolValue: 0
     meshPathStrategyValue: {fileID: 0}
-    genericSectionValue: {fileID: 11400000, guid: 48e5c6ed5222ad02ca2c235fbe46344c, type: 2}
+    genericSectionValue: {fileID: 11400000, guid: 73e537aa574de33608d99d7800a9b5c1, type: 2}
   - integerValue: 0
     charValue: 0
     floatValue: 0
@@ -36,3 +36,10 @@ MonoBehaviour:
     boolValue: 0
     meshPathStrategyValue: {fileID: 0}
     genericSectionValue: {fileID: 11400000, guid: 8a11829aae9801b22a8c3f881a93d94a, type: 2}
+  - integerValue: 0
+    charValue: 0
+    floatValue: 0
+    stringValue: 
+    boolValue: 0
+    meshPathStrategyValue: {fileID: 0}
+    genericSectionValue: {fileID: 11400000, guid: 48e5c6ed5222ad02ca2c235fbe46344c, type: 2}

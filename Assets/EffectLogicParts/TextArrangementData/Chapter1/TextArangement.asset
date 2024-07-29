@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TextArangement
   m_EditorClassIdentifier: Assembly-CSharp::DefaultTextArangement
   text: {fileID: 11400000, guid: 9c1f8179006168d9aaf9c717937f9235, type: 2}
-  mainPath: {fileID: 11400000, guid: a2a01023ecaf01575b5ddd7a89bfc524, type: 2}
+  mainPath: {fileID: 11400000, guid: c644cfca03373a27a931cee6c55c1adf, type: 2}
   completeAnnotationData:
   - SectionName: Angry
     Data: {fileID: 11400000, guid: 72cc14856a2d97fcaa46df1b71d166e3, type: 2}

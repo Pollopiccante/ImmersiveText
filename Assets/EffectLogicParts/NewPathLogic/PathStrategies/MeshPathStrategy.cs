@@ -16,8 +16,8 @@ public class MeshPathStrategy : PathStrategy
     {
         this.mesh = mesh;
     }
-    
-    public override Path GetPath(string text, List<float> letterScaling, AlphabethScriptableObject alphabet)
+
+    protected override Path GetPath(string text, List<float> letterScaling, AlphabethScriptableObject alphabet)
     {
         // Step 1: create estimated first path
         float length = alphabet.CalculateTextLength(text, letterScaling);

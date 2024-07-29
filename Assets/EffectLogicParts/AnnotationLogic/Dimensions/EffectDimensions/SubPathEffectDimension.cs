@@ -7,6 +7,6 @@ public class SubPathEffectDimension : EffectDimension<PathStrategy>
     public override PathStrategy GetDefaultValue()
     {
         // return object with the same identity, to connect into a single line by default
-        return SimpleLinePathStrategy.Default();
+        return SkipPathStrategy.Default();
     }
 }

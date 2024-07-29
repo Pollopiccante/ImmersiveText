@@ -118,13 +118,14 @@ public class VFXUtil
 
     public static VFXDataScriptableObject ToVfxDataScriptableObject(List<VfxDataPoint> dataPoints, Path basePath, AlphabethScriptableObject alphabet)
     {
+        Path basePathCopy = basePath.Copy();
+        
         // STEP 1: Construct the final basePath, by inserting subPaths as specified by the dataPoints
         // group data by form sections
-        List<Path> subPaths = new List<Path>();
         PathStrategy currentStrategy = null;
         string groupText = "";
         List<float> letterScaling = new List<float>();
-        for (int i = 1; i < dataPoints.Count; i++)
+        for (int i = 0; i < dataPoints.Count; i++)
         {
             VfxDataPoint dataPoint = dataPoints[i];
             
@@ -141,20 +142,17 @@ public class VFXUtil
             }
             else
             {
-                subPaths.Add(currentStrategy.GetPath(groupText, letterScaling, alphabet));
+                // apply strategy to the base path
+                currentStrategy.Apply(basePathCopy, groupText, letterScaling, alphabet);
+
                 // reset
                 groupText = "";
                 letterScaling = new List<float>();
                 currentStrategy = dataPoint.subPathStrategy;
             }
         }
-        subPaths.Add(currentStrategy.GetPath(groupText, letterScaling, alphabet));
-
-        // insert all sub paths into the base path
-        subPaths.ForEach(subPath =>
-        {
-            basePath.InsertSubPath(subPath);
-        });
+        // apply last strategy to the base path
+        currentStrategy.Apply(basePathCopy, groupText, letterScaling, alphabet);
 
         // STEP 2: create vfx data by inserting the complete text into the base path
         // gather complete text and letter scaling, and colors
@@ -168,7 +166,7 @@ public class VFXUtil
         }
 
         // get textures as pCaches
-        TextInsertionResult insertionResult = basePath.Copy().ConvertToPointData(completeText, alphabet, completeLetterScaling);
+        TextInsertionResult insertionResult = basePathCopy.Copy().ConvertToPointData(completeText, alphabet, completeLetterScaling);
         
         // create vfx data object, assign textures 
         VFXDataScriptableObject vfxData = ScriptableObject.CreateInstance<VFXDataScriptableObject>();

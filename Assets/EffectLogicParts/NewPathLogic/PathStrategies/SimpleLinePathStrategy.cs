@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "linepathstrategy", menuName = "ScriptableObjects/Paths/LinePathStrategy", order = 0)]
 public class SimpleLinePathStrategy : PathStrategy
 {
-   public override Path GetPath(string text, List<float> letterScaling, AlphabethScriptableObject alphabet)
+   protected override Path GetPath(string text, List<float> letterScaling, AlphabethScriptableObject alphabet)
    {
       float length = alphabet.CalculateTextLength(text, letterScaling);
       // create straight path of length
