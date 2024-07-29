@@ -1,11 +1,15 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[ExecuteAlways]
 public class RandomWalker : MonoBehaviour
 {
 
+    public Vector3 basePosition = new Vector3(0,0,0);
+    public bool pause = true;
     public float stepDistance = 1;
     public float stepsPerSecond = 1;
     public float maximumAngle = 90;
@@ -26,7 +30,6 @@ public class RandomWalker : MonoBehaviour
         // reset time
         _timeSinceLastStep = 0f;
     }
-
 
     static readonly float QUAD = .5f * MathF.PI;
     static readonly float TAU = 2f * MathF.PI;
@@ -101,19 +104,6 @@ public class RandomWalker : MonoBehaviour
             
             // transform back to direction
             direction = FromLongLat(longLat);
-            
-            // float longitude = Mathf.Deg2Rad * Random.Range(-maximumAngle / 2f, maximumAngle / 2f);
-            // float latitude = Mathf.Deg2Rad * Random.Range(-maximumAngle / 2f, maximumAngle / 2f);
-            //
-            // float equatorX = Mathf.Cos(longitude);
-            // float equatorZ = Mathf.Sin(longitude);
-            // float y = Mathf.Sin(latitude);
-            // float multiplier = Mathf.Cos(latitude);
-            // float x = multiplier * equatorX;
-            // float z = multiplier * equatorZ;
-            //
-            // direction = new Vector3(x,y,z).normalized;
-            // Debug.Log(direction.ToString());
         }
         else
         {
@@ -171,8 +161,24 @@ public class RandomWalker : MonoBehaviour
         }
     }
 
+    public void Reset()
+    {
+        _trail.positionCount = 0;
+        _trail.SetPositions(new Vector3[] {transform.position});
+        AddTrailToPosition(basePosition);
+        // reset time
+        _timeSinceLastStep = 0f;
+
+        transform.position = basePosition;
+    }
+    
     public void Update()
     {
+        if (pause)
+            return;
+        
+        Debug.Log(_timeSinceLastStep);
+        
         float timePerStep = 1 / stepsPerSecond;
         _timeSinceLastStep += Time.deltaTime;
 
@@ -181,5 +187,32 @@ public class RandomWalker : MonoBehaviour
             _timeSinceLastStep -= timePerStep;
             Step();
         }
+    }
+
+    public Path GetPath()
+    {
+        Vector3[] positions = new Vector3[_trail.positionCount];
+        for (int i = 0; i < positions.Length; i++)
+            positions[i] = _trail.GetPosition(i);
+
+        Vector3 mainAxis = positions[positions.Length - 1] - positions[0];
+        Vector3 estimatedDir = Vector3.up;
+
+        Vector3 ortagonal = Vector3.Cross(mainAxis, estimatedDir);
+        Vector3 pathUp = Vector3.Cross(ortagonal, mainAxis);
+
+        return new Path(positions, pathUp.normalized);
+    }
+
+    public void SaveAsScriptableObject()
+    {
+        PathScriptableObject pathSo = ScriptableObject.CreateInstance<PathScriptableObject>();
+
+        Path pathCopy = GetPath().Copy();
+        
+        pathSo.points = pathCopy.GetPoints();
+        pathSo.pathUp = pathCopy.GetUp().normalized;
+        
+        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + "RandomWalker.asset");
     }
 }

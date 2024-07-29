@@ -44,12 +44,10 @@ public class DefaultMapping : AbstractMapping<DefaultTextDimensionsDataPoint, De
             outDimensions.XWave.value = new WaveMotionData(0, 0, 0);
             outDimensions.Metalic.value = 1f;
             outDimensions.IndexStartEnd.value = new StartEndIndex(index, index + 1);
-        }
-
-        if (textDimensions.Humor.value > 1f)
-        {
+            
             Color randomColor = Random.ColorHSV();
-            outDimensions.Color.value = randomColor;
+            outDimensions.Color.value = new Color(randomColor.r * 255, randomColor.g * 255, randomColor.b * 255);
+            
         }
 
         // pass through letter and subPathStrategy
