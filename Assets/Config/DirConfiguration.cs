@@ -26,6 +26,7 @@ public class DirConfiguration : ScriptableObject
     
     public string pathScriptableObjectDir = "Assets/EffectLogicParts/NewPathLogic/PathObjects/";
     public string vfxDataScriptableObjectDir = "Assets/EffectLogicParts/VFXData/VFXDataObjects/";
+    public string annotationsFileDir = "Assets/TextLogicParts/TextLogic/ConcreteAnnotations/";
 
     public static string GetPCacheFileNamingTemplate()
     {

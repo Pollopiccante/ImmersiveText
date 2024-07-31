@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SODG", menuName = "SO/CompoundSection", order = 0)]
 public class GenericCompoundSection : GenericSection
 {
+    
     public GenericCompoundSection()
     {
         this.type = AllowedGenericTypes.GENERIC_SECTION;

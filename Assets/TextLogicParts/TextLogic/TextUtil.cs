@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -28,9 +30,8 @@ public static class TextUtil
         {
             if (c == ' ' && prevSpace)
             {
-                Debug.Log("DOUBLE SPACE FOUND");
+                throw new Exception("Double Space found");
             }
-            
             if (c == ' ')
             {
                 prevSpace = true;
@@ -40,12 +41,7 @@ public static class TextUtil
                 prevSpace = false;
             }
         }
-        Debug.Log("DOUBLE CHECK Completed");
-
         return outText;
-
-
-        // return Regex.Replace(text, @"[\s\n\\]+", " ").Trim(' ').Trim('\n').Replace("[^a-zA-Z0-9_.]+", "");
     }
 
     public static int CharToInt(char c)
@@ -56,5 +52,10 @@ public static class TextUtil
     public static char IntToChar(int i)
     {
         return alphabeth[i];
+    }
+
+    public static string ReadTextFile(string path)
+    {
+        return ToSingleLine(File.ReadAllText(path));
     }
 }

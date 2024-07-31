@@ -85,5 +85,10 @@ public abstract class GenericSection : ScriptableObject
     {
         return i < GetLength();
     }
+ 
+    public virtual bool JustBaseInspector()
+    {
+        return false; 
+    }
 }
 

@@ -16,9 +16,9 @@ MonoBehaviour:
   mainPath: {fileID: 11400000, guid: a2a01023ecaf01575b5ddd7a89bfc524, type: 2}
   completeAnnotationData:
   - SectionName: Angry
-    Data: {fileID: 11400000, guid: 712a04f03ff63a8f795a0d2bb46220b1, type: 2}
+    Data: {fileID: 11400000, guid: a6549997d26e7a9dea0d35c50be84b4c, type: 2}
   - SectionName: Humor
-    Data: {fileID: 11400000, guid: 330ee6e66563614408d4e5e103ddab16, type: 2}
+    Data: {fileID: 11400000, guid: a6549997d26e7a9dea0d35c50be84b4c, type: 2}
   - SectionName: SubPathStrategy
-    Data: {fileID: 11400000, guid: 90d7c76a0bd113dad8ac48e8824c145b, type: 2}
+    Data: {fileID: 0}
   mappingName: DefaultMapping

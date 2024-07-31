@@ -21,6 +21,7 @@ public class AnnotationData
     }
 }
 
+
 public class InspectableTextArrangement : ScriptableObject
 {
     public virtual void MakeValid()

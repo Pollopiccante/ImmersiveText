@@ -15,7 +15,7 @@ public class GenericSectionInspector : Editor
     {
 
         
-        if (((GenericSection) target).MustForceIterable())
+        if (!((GenericSection) target).JustBaseInspector() && ((GenericSection) target).MustForceIterable())
         {
             list = new ReorderableList(serializedObject, 
                 serializedObject.FindProperty("values"), 
@@ -62,6 +62,12 @@ public class GenericSectionInspector : Editor
     
     public override void OnInspectorGUI()
     {
+        if (((GenericSection) target).JustBaseInspector())
+        {
+            base.OnInspectorGUI();
+            return;
+        }
+        
         serializedObject.Update();
 
         GUIShared();
