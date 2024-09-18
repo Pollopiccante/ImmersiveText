@@ -27,7 +27,8 @@ public class PathStrategyImporter : AnnotationImporter
         
         foreach (PathStrategyNamePair pair in meshes)
         {
-            if (pair.name == encodedValue)
+            Debug.Log($"PAIR: {pair.name} EncodedValue: {encodedValue}");
+            if (pair.name.Equals(encodedValue))
             {
                 vw.meshPathStrategyValue = pair.pathStrategy;
                 return vw;

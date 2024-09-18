@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: MobyDickTextArangement
+  m_EditorClassIdentifier: Assembly-CSharp::MobyDickTextArangement
+  text: {fileID: 11400000, guid: 9c1f8179006168d9aaf9c717937f9235, type: 2}
+  mainPath: {fileID: 11400000, guid: c644cfca03373a27a931cee6c55c1adf, type: 2}
+  completeAnnotationData:
+  - SectionName: UrbanNature
+    Data: {fileID: 11400000, guid: a08635465af03bae0a0134794086cbff, type: 2}
+  - SectionName: SeaRelated
+    Data: {fileID: 11400000, guid: 3058642671a8bd951a086dfabe0d2678, type: 2}
+  - SectionName: SilentLoud
+    Data: {fileID: 11400000, guid: cb830f1bb98a400e59b9eca4a7a13ca6, type: 2}
+  - SectionName: ProfoundBasic
+    Data: {fileID: 11400000, guid: cd4e8afaa4e65d4f68e49aeb90c739dd, type: 2}
+  - SectionName: Sadness
+    Data: {fileID: 11400000, guid: bd1dc25a432aed9a7bae28a138f87cc7, type: 2}
+  - SectionName: Narration
+    Data: {fileID: 11400000, guid: 444f6ac7eca5cbef1a0df596ab9a9e0f, type: 2}
+  - SectionName: Character
+    Data: {fileID: 11400000, guid: a18ce9008e0cc90a3bec07c3912e39c3, type: 2}
+  - SectionName: SubPathStrategy
+    Data: {fileID: 11400000, guid: 48ebeb43ebac2226eaec2426b59c04fc, type: 2}
+  mappingName: MobyDickMapping

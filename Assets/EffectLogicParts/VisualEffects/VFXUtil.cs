@@ -22,6 +22,7 @@ public class VFXUtil
         // textures
         vfxComponent.SetInt("Dimension", vfxData.textureDimension);
         vfxComponent.SetTexture("Positions", vfxData.positionTexture);
+        vfxComponent.SetTexture("LinePositions", vfxData.linePositionTexture);
         vfxComponent.SetTexture("Rotations", vfxData.rotationTexture);
         vfxComponent.SetTexture("Letters", vfxData.letterTexture);
         vfxComponent.SetTexture("Scalings", vfxData.scaleTexture);
@@ -37,6 +38,9 @@ public class VFXUtil
         // add index stepper, and start it
         IndexStepper indexStepper = vfxObject.AddComponent<IndexStepper>();
         indexStepper.pause = false;
+        // add reader stepper, and start it
+        ReaderStepper readerStepper = vfxObject.AddComponent<ReaderStepper>();
+        readerStepper.pause = false;
     }
     
     public static VFXDataScriptableObject CreateVFXDataFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)
@@ -46,6 +50,7 @@ public class VFXUtil
 
         // convert pCaches to textures
         Texture2D positionTexture = PointCacheToTexture2D(insertionResult.positionsTexture);
+        Texture2D linePositionTexture = PointCacheToTexture2D(insertionResult.linePositionTexture);
         Texture2D rotationTexture = PointCacheToTexture2D(insertionResult.rotationsTexture);
         Texture2D letterTexture = PointCacheToTexture2D(insertionResult.lettersTexture);
         Texture2D scalesTexture = PointCacheToTexture2D(insertionResult.scalesTexture);
@@ -53,6 +58,7 @@ public class VFXUtil
         // create vfx data object, assign textures 
         VFXDataScriptableObject vfxData = ScriptableObject.CreateInstance<VFXDataScriptableObject>();
         vfxData.positionTexture = positionTexture;
+        vfxData.linePositionTexture = linePositionTexture;
         vfxData.rotationTexture = rotationTexture;
         vfxData.letterTexture = letterTexture;
         vfxData.scaleTexture = scalesTexture;
@@ -170,7 +176,8 @@ public class VFXUtil
         
         // create vfx data object, assign textures 
         VFXDataScriptableObject vfxData = ScriptableObject.CreateInstance<VFXDataScriptableObject>();
-        vfxData.positionTexture = PointCacheToTexture2D(insertionResult.positionsTexture);;
+        vfxData.positionTexture = PointCacheToTexture2D(insertionResult.positionsTexture);
+        vfxData.linePositionTexture = PointCacheToTexture2D(insertionResult.linePositionTexture);
         vfxData.rotationTexture = PointCacheToTexture2D(insertionResult.rotationsTexture);
         vfxData.letterTexture = PointCacheToTexture2D(insertionResult.lettersTexture);
         vfxData.scaleTexture = PointCacheToTexture2D(insertionResult.scalesTexture);
@@ -211,6 +218,7 @@ public class VFXUtil
     {
         string fileNameTemplate = DirConfiguration.Instance.vfxDataScriptableObjectDir + DirConfiguration.GetPCacheFileNamingTemplate();
         string posFileName = String.Format(fileNameTemplate, name, "pos");
+        string linePosFileName = String.Format(fileNameTemplate, name, "line_pos");
         string rotFileName = String.Format(fileNameTemplate, name, "rot");
         string letterFileName = String.Format(fileNameTemplate, name, "letter");
         string scaleFileName = String.Format(fileNameTemplate, name, "scale");
@@ -221,6 +229,7 @@ public class VFXUtil
         
         
         WritePointCache(data.positionTexture, posFileName);
+        WritePointCache(data.linePositionTexture, linePosFileName);
         WritePointCache(data.rotationTexture, rotFileName);
         WritePointCache(data.letterTexture, letterFileName);
         WritePointCache(data.scaleTexture, scaleFileName);
@@ -245,6 +254,7 @@ public class VFXUtil
 
         // read position part for each pCache
         Texture2D positionTexture = ReadTextureFromPointCache(posFileName);
+        Texture2D linePositionTexture = ReadTextureFromPointCache(linePosFileName);
         Texture2D rotationTexture = ReadTextureFromPointCache(rotFileName);
         Texture2D letterTexture = ReadTextureFromPointCache(letterFileName);
         Texture2D scaleTexture = ReadTextureFromPointCache(scaleFileName);
@@ -255,6 +265,7 @@ public class VFXUtil
             
         // create vfx data object, assign textures 
         data.positionTexture = positionTexture;
+        data.linePositionTexture = linePositionTexture;
         data.rotationTexture = rotationTexture;
         data.letterTexture = letterTexture;
         data.scaleTexture = scaleTexture;

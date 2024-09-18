@@ -28,7 +28,7 @@ MonoBehaviour:
     stringValue: 
     boolValue: 0
     meshPathStrategyValue: {fileID: 0}
-    genericSectionValue: {fileID: 11400000, guid: 73e537aa574de33608d99d7800a9b5c1, type: 2}
+    genericSectionValue: {fileID: 11400000, guid: 0a26bd649f92d3b529cde07074afc49d, type: 2}
   - integerValue: 0
     charValue: 0
     floatValue: 0

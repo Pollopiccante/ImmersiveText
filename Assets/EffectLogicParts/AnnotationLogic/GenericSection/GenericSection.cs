@@ -30,8 +30,10 @@ public class ValueWrapper
             return floatValue;
         if (type == typeof(PathStrategy))
             return meshPathStrategyValue;
+        if (type == typeof(string))
+            return stringValue;
         
-        throw new ArgumentException($"type {type} is not present in wrapper object");
+        throw new System.ArgumentException($"type {type} is not present in wrapper object");
     }
     
     public int integerValue;

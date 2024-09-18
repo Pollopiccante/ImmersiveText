@@ -36,7 +36,7 @@ public class AlphabethScriptableObject : ScriptableObject
       {
          char currentCharacter = text[i];
          if (currentCharacter == ' ')
-            length += spaceWidth;
+            length += spaceWidth * letterScaling.ElementAt(i);
          else
          {
             float charWidth = (widthDictionary[text[i]]) * letterScaling.ElementAt(i);

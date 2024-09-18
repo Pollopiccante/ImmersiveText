@@ -19,31 +19,31 @@ MonoBehaviour:
   - pos: {x: 500, y: 0, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 500, y: 100, z: 0}
+  - pos: {x: 500, y: 2, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 0, y: 100, z: 0}
+  - pos: {x: 0, y: 2, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 0, y: 200, z: 0}
+  - pos: {x: 0, y: 4, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 500, y: 200, z: 0}
+  - pos: {x: 500, y: 4, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 500, y: 300, z: 0}
+  - pos: {x: 500, y: 6, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 0, y: 300, z: 0}
+  - pos: {x: 0, y: 6, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 0, y: 400, z: 0}
+  - pos: {x: 0, y: 8, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 500, y: 400, z: 0}
+  - pos: {x: 500, y: 8, z: 0}
     rotIn: 0
     rotOut: 0
-  - pos: {x: 500, y: 500, z: 0}
+  - pos: {x: 500, y: 10, z: 0}
     rotIn: 0
     rotOut: 0
   pathUp: {x: 0, y: 0, z: 1}

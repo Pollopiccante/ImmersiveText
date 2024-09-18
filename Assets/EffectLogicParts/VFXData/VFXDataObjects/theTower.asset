@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1c393fbcc822b09fae3858966ece4, type: 3}
+  m_Name: theTower
+  m_EditorClassIdentifier: 
+  meshAlphabet: {fileID: 11400000, guid: f4bd7f4f7847dc642bfb669480398939, type: 2}
+  numberOfElements: 9975
+  letterScale: 1
+  textureDimension: 100
+  letterTexture: {fileID: 6918954641851045129, guid: fee6e9ac3a6f76314996619d132e00d2, type: 3}
+  positionTexture: {fileID: 6918954641851045129, guid: 86810d41fb62e2837a0bc125fb1c7287, type: 3}
+  rotationTexture: {fileID: 6918954641851045129, guid: b8580acee7d52f5afa85cd2123940b45, type: 3}
+  scaleTexture: {fileID: 6918954641851045129, guid: 2f214dcbbb1bafb8b8b911b7284be3da, type: 3}
+  colorTexture: {fileID: 6918954641851045129, guid: 884dd8eeeb15da3bdbecacc95bad73a4, type: 3}
+  xWaveMotionTexture: {fileID: 6918954641851045129, guid: 921ed6afff3ccc6538c6dedfec08eaf1, type: 3}
+  alphaSmoothnessMetalicTexture: {fileID: 6918954641851045129, guid: d5103e67205f5d2f7b971842d34ca008, type: 3}
+  startEndIndexTexture: {fileID: 6918954641851045129, guid: 5506161bba8684fea8f767812a244b04, type: 3}

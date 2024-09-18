@@ -26,3 +26,5 @@ MonoBehaviour:
   meshes:
   - name: cube
     pathStrategy: {fileID: 11400000, guid: 8c3583b54df183ee7a408da10bfa33a4, type: 2}
+  - name: tower
+    pathStrategy: {fileID: 11400000, guid: a8fad9a7acd20eff097a51504f87c9ee, type: 2}

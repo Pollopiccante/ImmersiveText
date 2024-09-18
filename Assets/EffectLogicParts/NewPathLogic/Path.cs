@@ -10,6 +10,7 @@ public class TextInsertionResult
     // basic vfx data
     public int textureDimension;
     public List<Vector3> positionsTexture;
+    public List<Vector3> linePositionTexture;
     public List<Vector3> rotationsTexture;
     public List<Vector3> lettersTexture;
     public List<Vector3> scalesTexture;
@@ -22,10 +23,11 @@ public class TextInsertionResult
     // was the path used up
     public bool pathWasUsedUp;
 
-    public TextInsertionResult(int textureDimension, List<Vector3> positionsTexture, List<Vector3> rotationsTexture, List<Vector3> lettersTexture, List<Vector3> scalesTexture, string leftoverText, bool pathWasUsedUp)
+    public TextInsertionResult(int textureDimension, List<Vector3> positionsTexture, List<Vector3> linePositionTexture , List<Vector3> rotationsTexture, List<Vector3> lettersTexture, List<Vector3> scalesTexture, string leftoverText, bool pathWasUsedUp)
     {
         this.textureDimension = textureDimension;
         this.positionsTexture = positionsTexture;
+        this.linePositionTexture = linePositionTexture;
         this.rotationsTexture = rotationsTexture;
         this.lettersTexture = lettersTexture;
         this.scalesTexture = scalesTexture;
@@ -700,7 +702,7 @@ public class Path
                 insertedNonSpaceCharacters++;
             }
             // final letter has additional width of trailing space
-            float lastLetterWidth = widthCache[word[word.Length - 1]] * scaleData[insertedNonSpaceCharacters] + alphabet.spaceWidth;
+            float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
             if (!MoveDistanceInSpace(lastLetterWidth, true))
                 break; // TODO REMOVE FOLLOWING PATH
             insertedCharacters++;
@@ -716,29 +718,55 @@ public class Path
 
         // color the textures of vfx
         List<Vector3> positions = new List<Vector3>();
+        List<Vector3> linePositions = new List<Vector3>();
         List<Vector3> rotations = new List<Vector3>();
         List<Vector3> letters = new List<Vector3>();
         List<Vector3> scales = new List<Vector3>();
+        
+        // total line position is split into three variables, to avoid floating point imprecision
+        int splittingFactor = 100;
+        int totalLinePositionTenThousands = 0;
+        int totalLinePositionHundrets = 0;
+        float totalLinePositionDelta = 0f;
+
+        Vector3 prevPosition = positionRotationInformation.ElementAt(0).Item1;
         for (int i = 0; i < positionRotationInformation.Count && i < textWithoutSpace.Length; i++)
         {
             Vector3 position = positionRotationInformation.ElementAt(i).Item1;
             Vector3 rotation = positionRotationInformation.ElementAt(i).Item2.eulerAngles;
             Vector3 scale = new Vector3(scaleData[i], 0, 0);
 
+            float positionDelta = Vector3.Distance(prevPosition, position);
+            
+            // increment total line position
+            totalLinePositionDelta += positionDelta;
+            totalLinePositionHundrets += Mathf.FloorToInt(totalLinePositionDelta / splittingFactor);
+            totalLinePositionTenThousands += totalLinePositionHundrets / splittingFactor;
+            totalLinePositionDelta %= splittingFactor;
+            totalLinePositionHundrets %= splittingFactor;
+            totalLinePositionTenThousands %= splittingFactor;
+            
+            // encode total line position to color
+            Vector3 linePosition = new Vector3(totalLinePositionTenThousands, totalLinePositionHundrets, totalLinePositionDelta);
+            
             int letterInt = TextUtil.CharToInt(textWithoutSpace[i]);
             int letterIndex = letterInt % 4;
             int letterGroup = letterInt / 4;
             Vector3 letterVector = new Vector3(letterIndex, letterGroup);
             
             positions.Add(position);
+            linePositions.Add(linePosition);
             rotations.Add(rotation);
             letters.Add(letterVector);
             scales.Add(scale);
+            
+            // update prev position for next run
+            prevPosition = position;
         }
 
         int textureDimension = Mathf.CeilToInt(Mathf.Sqrt(positions.Count));
 
-        return new TextInsertionResult(textureDimension, positions, rotations, letters, scales, leftoverText, false);
+        return new TextInsertionResult(textureDimension, positions, linePositions, rotations, letters, scales, leftoverText, false);
     }
 
     public void SubstituteConnection(int connection, Path originalSubPath, float? overrideAngle=null)
