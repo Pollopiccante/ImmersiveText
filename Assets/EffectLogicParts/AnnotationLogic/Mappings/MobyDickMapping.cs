@@ -43,13 +43,13 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
     public override MobyDickEffectDimensionsDataPoint Convert(MobyDickTextDimensionsDataPoint textDimensions, int index)
     {
         MobyDickEffectDimensionsDataPoint outDimensions = new MobyDickEffectDimensionsDataPoint();
-        
+
         // default fly in, start end index
         outDimensions.IndexStartEnd.value = new StartEndIndex(index, index + 1);
         
         // effect dimension parts influenced by multiple text dimensions
         Color finalColor = new Color(155, 155, 155);
-        float finalScale = 1f;
+        float finalScale = 3f;
         
         // MAPPING:
         // Sadness: smaller, add darkness to color

@@ -10,6 +10,7 @@ public class StringImporter : AnnotationImporter
         ValueWrapper vw = new ValueWrapper();
         vw.stringValue = encodedValue;
         return vw;
+        
     }
 
     public override ValueWrapper GetDefaultValue()

@@ -8,7 +8,9 @@ using UnityEngine;
 public class GCodePathStrategy : PathStrategy
 {
 
+    
     public TextAsset gcodeFile;
+    public int ignoreFirstNPositions = 0;
     
     public class GCodeWord
     {
@@ -139,6 +141,8 @@ public class GCodePathStrategy : PathStrategy
             return true;
         });
 
+        // skip first n words
+        gCodeWords = gCodeWords.Skip(ignoreFirstNPositions).ToList();
         Debug.Log($"Words : {gCodeWords.Count}");
         
         

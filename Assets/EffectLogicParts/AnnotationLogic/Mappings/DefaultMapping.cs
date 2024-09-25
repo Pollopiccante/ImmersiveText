@@ -29,9 +29,12 @@ public class DefaultMapping : AbstractMapping<DefaultTextDimensionsDataPoint, De
     {
         DefaultEffectDimensionsDataPoint outDimensions = new DefaultEffectDimensionsDataPoint();
 
+        // new default size: x2
+        outDimensions.Scale.value = 2f;
         
         if (textDimensions.Angry.value > 0.5f)
         {
+            
             outDimensions.Scale.value = 5f;
             outDimensions.Color.value = new Color(255, 0, 0);
             outDimensions.XWave.value = new WaveMotionData(0.005f, 200, 0);

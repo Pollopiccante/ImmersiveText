@@ -26,3 +26,5 @@ MonoBehaviour:
   meshes:
   - name: cube
     pathStrategy: {fileID: 11400000, guid: 8c3583b54df183ee7a408da10bfa33a4, type: 2}
+  - name: boat
+    pathStrategy: {fileID: 11400000, guid: 8d6706573c435909b86d5206da4f0da2, type: 2}

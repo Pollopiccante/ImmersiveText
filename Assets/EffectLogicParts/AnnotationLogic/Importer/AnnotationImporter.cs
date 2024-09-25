@@ -50,9 +50,10 @@ public abstract class AnnotationImporter: GenericSection
         Regex getStartRegex = new Regex("(.*?)(?=\\$\\()");
         Regex getMiddleRegex = new Regex("(((?<=(\\)\\$))([^)]*)(?=\\$\\())|((?<=\\$)\\(([^(]*)\\)(?=\\$)))", RegexOptions.Compiled);
         Regex getEndRegex = new Regex("(?<=\\)\\$)(.*?)$", RegexOptions.RightToLeft);
-
+        
         List<Match> matches = new List<Match>();
-
+        
+        
         // beginning
         MatchCollection startMatches = getStartRegex.Matches(content);
         if (startMatches.Count > 0)
@@ -66,8 +67,10 @@ public abstract class AnnotationImporter: GenericSection
 
 
         List<Tuple<string, ValueWrapper, int>> textValuePairs = new List<Tuple<string, ValueWrapper, int>>();
+        Debug.Log("MATCHES: ");
         foreach (Match m in matches)
         {
+            Debug.Log($"{m.ToString()}");
             string matchString = m.ToString();
             // empty
             if (matchString.Length == 0)

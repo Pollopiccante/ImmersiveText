@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e7f7f3ab4fcccb6280efbddc92f7162, type: 3}
-  m_Name: EiffelTowerGcode
+  m_Name: BoatGCodeStrat
   m_EditorClassIdentifier: 
   gcodeFile: {fileID: 4900000, guid: ef11061860a5fd0ee87c9c805897fad3, type: 3}
+  ignoreFirstNPositions: 36
