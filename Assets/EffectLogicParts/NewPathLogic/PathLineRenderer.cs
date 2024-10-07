@@ -12,7 +12,7 @@ public class PathLineRenderer : MonoBehaviour
     public bool showInsertSubPath = true;
 
     // basics section
-    public bool showRotationGizmos = true;
+    public bool showRotationGizmos = false;
     public bool showCurrentPositionGizmo = true;
     public Vector3 upAxisRoughDirection;
     // step to section

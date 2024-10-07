@@ -55,6 +55,17 @@ public class VFXUtil
         Texture2D letterTexture = PointCacheToTexture2D(insertionResult.lettersTexture);
         Texture2D scalesTexture = PointCacheToTexture2D(insertionResult.scalesTexture);
         
+
+        List<Vector3> colorsDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
+        List<Vector3> xWaveDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
+        List<Vector3> ASMDummy = Enumerable.Repeat(new Vector3(1f, 1f, 1f), insertionResult.scalesTexture.Count).ToList();
+        List<Vector3> startEndIndicesDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
+        Texture2D colorsTexture = PointCacheToTexture2D(colorsDummy);
+        Texture2D xWaveTexture = PointCacheToTexture2D(xWaveDummy);
+        Texture2D ASMTexture = PointCacheToTexture2D(ASMDummy);
+        Texture2D startEndIndicesTexture = PointCacheToTexture2D(startEndIndicesDummy);
+        
+        
         // create vfx data object, assign textures 
         VFXDataScriptableObject vfxData = ScriptableObject.CreateInstance<VFXDataScriptableObject>();
         vfxData.positionTexture = positionTexture;
@@ -62,6 +73,10 @@ public class VFXUtil
         vfxData.rotationTexture = rotationTexture;
         vfxData.letterTexture = letterTexture;
         vfxData.scaleTexture = scalesTexture;
+        vfxData.colorTexture = colorsTexture;
+        vfxData.xWaveMotionTexture = xWaveTexture;
+        vfxData.alphaSmoothnessMetalicTexture = ASMTexture;
+        vfxData.startEndIndexTexture = startEndIndicesTexture;
         // assign additional information
         vfxData.textureDimension = insertionResult.textureDimension;
         vfxData.letterScale = 1;

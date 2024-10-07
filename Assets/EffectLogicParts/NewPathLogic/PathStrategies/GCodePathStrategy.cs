@@ -11,6 +11,7 @@ public class GCodePathStrategy : PathStrategy
     
     public TextAsset gcodeFile;
     public int ignoreFirstNPositions = 0;
+    public bool extrusionOnly = false;
     
     public class GCodeWord
     {
@@ -123,6 +124,8 @@ public class GCodePathStrategy : PathStrategy
 
     public Path GetPathPrototype()
     {
+        List<int> holes = new List<int>();
+        
         // split gcode in lines
         string[] gcodeLines = gcodeFile.text.Split("\n");
 
@@ -130,14 +133,27 @@ public class GCodePathStrategy : PathStrategy
         
         // only take lines with "G1" (movements with extrusion)
         // only take lines with X,Y coordinate data
+        int holeIndex = 0;
         List<GCodeWord> gCodeWords = GCodeWord.FromGCodeLines(gcodeLines, gCodeWord =>
         {
+            
+            // take paths that have extrusion, also save holes
+            if (gCodeWord.relativeExtrusion <= 0.1f)
+            {
+                if (extrusionOnly && !holes.Contains(holeIndex))
+                {
+                    holes.Add(holeIndex);
+                }
+                
+                return false;
+            }
+                
             if (!gCodeWord.prefix.Equals("G1"))
                 return false;
             if (!gCodeWord.HasParam('X') || !gCodeWord.HasParam('Y'))
                 return false;
-            if (gCodeWord.relativeExtrusion <= 0f) // take paths that have extrusion
-                return false;
+            
+            holeIndex++;
             return true;
         });
 
@@ -150,16 +166,14 @@ public class GCodePathStrategy : PathStrategy
         Vector3[] positions = new Vector3[gCodeWords.Count];
         for (int i = 0; i < positions.Length; i++)
             positions[i] = gCodeWords[i].GetXYZ();
+
+      
+        // remove last hole
+        if(holes.Any()) 
+            holes.RemoveAt(holes.Count - 1);
         
-        // print distances
-        for (int i = 1; i < positions.Length; i++)
-        {
-            Debug.Log($"DIST: {Vector3.Distance(positions[i - 1], positions[i])}");
-        }
+        Debug.Log($"Holes: {holes.Count}");
+        return new Path(positions, holes);
         
-        Debug.Log($"posisiotns : {positions.Length}");
-        
-        // return path
-        return new Path(positions);
     }
 }

@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class MobyDickTextDimensionsDataPoint : BasicDimensionDataPoint 
@@ -75,7 +77,6 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
         // Basic: no metallic reflection, add some randomness to color, add some randomness to scale (minimal)
         if (textDimensions.ProfoundBasic.value == "basic")
         {
-            
             const float randomnessDegree = 0.2f;
             const float approachPercentage = 0.8f;
             // color
@@ -108,9 +109,52 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
             outDimensions.IndexStartEnd.value = new StartEndIndex(startIndex, endIndex);
         }
         
+        // Silent: small
+        // Loud: big
+        const float silentLoundScalingFactor = 2f;
+        if (textDimensions.SilentLoud.value < 0f)
+        {
+            finalScale /= Mathf.Abs(textDimensions.SilentLoud.value) * silentLoundScalingFactor;
+        }else if (textDimensions.SilentLoud.value > 0f)
+        {
+            finalScale *= Mathf.Abs(textDimensions.SilentLoud.value) * silentLoundScalingFactor;
+        }
+        
+        // sea related: wave motion, dark blue and white
+        if (textDimensions.SeaRelated.value != 0f)
+        {
+            Color[] deepOceanColors = new Color[5];
+            ColorUtility.TryParseHtmlString("#001a33", out deepOceanColors[0]);
+            ColorUtility.TryParseHtmlString("#003366", out deepOceanColors[1]);
+            ColorUtility.TryParseHtmlString("#004080", out deepOceanColors[2]);
+            ColorUtility.TryParseHtmlString("#0059b3", out deepOceanColors[3]);
+            ColorUtility.TryParseHtmlString("#0066cc", out deepOceanColors[4]);
+
+            int colorToPickFrom = Mathf.CeilToInt(textDimensions.SeaRelated.value * 5);
+            int pickedColorIndex = Random.Range(0, Math.Min(colorToPickFrom, 5));
+            Color pickedColor = deepOceanColors[pickedColorIndex];
+
+            finalColor = Color.Lerp(finalColor, pickedColor, Mathf.Max(0.4f, textDimensions.SeaRelated.value));
+            
+            // wave motion
+            outDimensions.XWave.value = new WaveMotionData(textDimensions.SeaRelated.value / 2, 0.5f, (index % 10f) / 10f);
+        }
+        
+        // Urban: fixed concrete size ratios (1, 2, 3, 4), like different sized Buildings
+        // Nature: Developing Golden Ratio
+        float scaleStep = finalScale / 2;
+        if (textDimensions.UrbanNature.value > 0f) // Nature
+        {
+            finalScale = scaleStep * (1 + Random.Range(0, 4));
+        }else if (textDimensions.UrbanNature.value < 0f) // Urban
+        {
+            finalScale = (scaleStep / 2f) + ((1f + (float) Math.Sin(index / 15f)) / 2) * (scaleStep * 3.5f);
+        }
+        
         
         outDimensions.Color.value = finalColor;
         outDimensions.Scale.value = finalScale;
+        
         
         // if (textDimensions.Sadness.value > 0.5f)
         // {

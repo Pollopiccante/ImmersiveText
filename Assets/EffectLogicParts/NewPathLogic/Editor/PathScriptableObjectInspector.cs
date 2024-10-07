@@ -40,56 +40,58 @@ public class PathScriptableObjectInspector : Editor
         instanciateVFXEffectInSceneImmediatly = EditorGUILayout.Toggle("instanciate VFXEffect in scene immediatly", instanciateVFXEffectInSceneImmediatly);
         if (GUILayout.Button("Convert to VFX data"))
         {
+            
             // dummy scaling
             List<float> letterScaling = Enumerable.Repeat(1f ,TextUtil.ToSingleLine(text).Replace(" ", "").Length).ToList();
-            
-            // get textures
-            TextInsertionResult insertionResult = castTarget.LoadPath().Copy().ConvertToPointData(text, alphabet, letterScaling);
-            
-            // create pCache files, fill them with point data
-            string imagePathTemplate = pathToSaveVFXData + DirConfiguration.GetPCacheFileNamingTemplate();
-            string posFileName = String.Format(imagePathTemplate, nameToSave, "pos");
-            string rotFileName = String.Format(imagePathTemplate, nameToSave, "rot");
-            string letterFileName = String.Format(imagePathTemplate, nameToSave, "letter");
-            WritePointCache(insertionResult.positionsTexture, posFileName);
-            WritePointCache(insertionResult.rotationsTexture, rotFileName);
-            WritePointCache(insertionResult.lettersTexture, letterFileName);
-            AssetDatabase.Refresh();
+            VFXUtil.CreateEffectFromPath(castTarget.LoadPath().Copy(), text, alphabet, letterScaling);
 
-            // import pCaches
-            AssetDatabase.ImportAsset(posFileName, ImportAssetOptions.ForceUpdate);
-            AssetDatabase.ImportAsset(rotFileName, ImportAssetOptions.ForceUpdate);
-            AssetDatabase.ImportAsset(letterFileName, ImportAssetOptions.ForceUpdate);
-
-            AssetDatabase.Refresh();
-
-            // read position part for each pCache
-            Texture2D positionTexture = ReadTextureFromPointCache(posFileName);
-            Texture2D rotationTexture = ReadTextureFromPointCache(rotFileName);
-            Texture2D letterTexture = ReadTextureFromPointCache(letterFileName);
-            
-            // create vfx data object, assign textures 
-            VFXDataScriptableObject vfxData = CreateInstance<VFXDataScriptableObject>();
-            vfxData.positionTexture = positionTexture;
-            vfxData.rotationTexture = rotationTexture;
-            vfxData.letterTexture = letterTexture;
-            // assign additional information
-            vfxData.textureDimension = insertionResult.textureDimension;
-            vfxData.letterScale = 1;
-            vfxData.numberOfElements = text.Replace(" ", "").Length;
-            // assign alphabet
-            vfxData.meshAlphabet = alphabet;
-            
-            // save vfx data as asset
-            AssetDatabase.CreateAsset(vfxData, pathToSaveVFXData + nameToSave + ".asset");
-            AssetDatabase.SaveAssets();
-            
-            // instanciate in scene
-            if (instanciateVFXEffectInSceneImmediatly)
-            {
-                VFXDataScriptableObject loadedData = AssetDatabase.LoadAssetAtPath(pathToSaveVFXData + nameToSave + ".asset", typeof(VFXDataScriptableObject)) as VFXDataScriptableObject;
-                VFXUtil.CreateEffectFromVFXData(loadedData);
-            }
+            // // get textures
+            // TextInsertionResult insertionResult = castTarget.LoadPath().Copy().ConvertToPointData(text, alphabet, letterScaling);
+            //
+            // // create pCache files, fill them with point data
+            // string imagePathTemplate = pathToSaveVFXData + DirConfiguration.GetPCacheFileNamingTemplate();
+            // string posFileName = String.Format(imagePathTemplate, nameToSave, "pos");
+            // string rotFileName = String.Format(imagePathTemplate, nameToSave, "rot");
+            // string letterFileName = String.Format(imagePathTemplate, nameToSave, "letter");
+            // WritePointCache(insertionResult.positionsTexture, posFileName);
+            // WritePointCache(insertionResult.rotationsTexture, rotFileName);
+            // WritePointCache(insertionResult.lettersTexture, letterFileName);
+            // AssetDatabase.Refresh();
+            //
+            // // import pCaches
+            // AssetDatabase.ImportAsset(posFileName, ImportAssetOptions.ForceUpdate);
+            // AssetDatabase.ImportAsset(rotFileName, ImportAssetOptions.ForceUpdate);
+            // AssetDatabase.ImportAsset(letterFileName, ImportAssetOptions.ForceUpdate);
+            //
+            // AssetDatabase.Refresh();
+            //
+            // // read position part for each pCache
+            // Texture2D positionTexture = ReadTextureFromPointCache(posFileName);
+            // Texture2D rotationTexture = ReadTextureFromPointCache(rotFileName);
+            // Texture2D letterTexture = ReadTextureFromPointCache(letterFileName);
+            //
+            // // create vfx data object, assign textures 
+            // VFXDataScriptableObject vfxData = CreateInstance<VFXDataScriptableObject>();
+            // vfxData.positionTexture = positionTexture;
+            // vfxData.rotationTexture = rotationTexture;
+            // vfxData.letterTexture = letterTexture;
+            // // assign additional information
+            // vfxData.textureDimension = insertionResult.textureDimension;
+            // vfxData.letterScale = 1;
+            // vfxData.numberOfElements = text.Replace(" ", "").Length;
+            // // assign alphabet
+            // vfxData.meshAlphabet = alphabet;
+            //
+            // // save vfx data as asset
+            // AssetDatabase.CreateAsset(vfxData, pathToSaveVFXData + nameToSave + ".asset");
+            // AssetDatabase.SaveAssets();
+            //
+            // // instanciate in scene
+            // if (instanciateVFXEffectInSceneImmediatly)
+            // {
+            //     VFXDataScriptableObject loadedData = AssetDatabase.LoadAssetAtPath(pathToSaveVFXData + nameToSave + ".asset", typeof(VFXDataScriptableObject)) as VFXDataScriptableObject;
+            //     VFXUtil.CreateEffectFromVFXData(loadedData);
+            // }
         }
         
         GUILayout.Space(30);

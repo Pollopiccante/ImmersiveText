@@ -143,17 +143,32 @@ public class Path
 {
     // input
     private Point[] _points; // position of each line corner
+    private List<int> _holes = new List<int>(); // positions that do not have a connection to the next line
     private Vector3 _pathUp; // direction perpendicular to the startPoint-EndPoint Axis, specifying the up direction of the whole path
     
     // internal
-    private float _pathProgress;
     private PathPosition _currentPathPosition;
 
-    public Path(Vector3[] points): this(points, Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), Vector3.up)
+    public Path(Vector3[] points): this(points, new List<int>(), Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), Vector3.up)
     {
     }
-    public Path(Vector3[] points, Vector3 pathUp): this(points, Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), pathUp)
+    public Path(Vector3[] points, Vector3 pathUp): this(points, new List<int>(), Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), pathUp)
     {
+    }
+    
+    public Path(Vector3[] points, List<int> holes): this(points, holes, Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), Vector3.up)
+    {
+    }
+
+    public Path(Point[] points, List<int> holes, Vector3 pathUp)
+    {
+        if (Vector3.Angle(pathUp, points[points.Length - 1].pos - points[0].pos) == 0)
+            throw new ArgumentException("pathUp direction can not be parallel to startPoint-endPoint Axis");
+        
+        _points = points;
+        _holes = holes;
+        _pathUp = pathUp;
+        _currentPathPosition = new PathPosition(0, 0f);
     }
 
     public Path(Point[] points, Vector3 pathUp)
@@ -161,12 +176,12 @@ public class Path
         if (Vector3.Angle(pathUp, points[points.Length - 1].pos - points[0].pos) == 0)
             throw new ArgumentException("pathUp direction can not be parallel to startPoint-endPoint Axis");
         
+        
         _points = points;
         _pathUp = pathUp;
-        _pathProgress = 0f;
         _currentPathPosition = new PathPosition(0, 0f);
     }
-    public Path(Vector3[] points, float[] rotationsIn, float[] rotationsOut, Vector3 pathUp)
+    public Path(Vector3[] points, List<int> holes, float[] rotationsIn, float[] rotationsOut, Vector3 pathUp)
     {
         // validate
         if (points.Length < 2)
@@ -175,12 +190,16 @@ public class Path
             throw new ArgumentException("rotation array length did not fit points array length; must be equal");
         if (Vector3.Angle(pathUp, points[points.Length - 1] - points[0]) == 0)
             throw new ArgumentException("pathUp direction can not be parallel to startPoint-endPoint Axis");
+        foreach (int hole in holes)
+            if (hole >= points.Length)
+                throw new ArgumentException($"holes can not exists in points that dont exists {points.Length} {hole}");
+        
         
         _points = new Point[points.Length];
         for (int i = 0; i < _points.Length; i++)
             _points[i] = new Point(points[i], rotationsIn[i], rotationsOut[i]);
+        _holes = holes;
         _pathUp = pathUp;
-        _pathProgress = 0f;
         _currentPathPosition = new PathPosition(0, 0f);
     }
     
@@ -216,7 +235,8 @@ public class Path
     {
         float l = 0;
         for (int i = 0; i < _points.Length - 1; i++)
-            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
+            if (_holes.Contains(i))
+                l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
         return l;
     }
 
@@ -225,7 +245,8 @@ public class Path
     {
         float l = 0;
         for (int i = _currentPathPosition.PointIndex; i < _points.Length - 1; i++)
-            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
+            if (_holes.Contains(i))
+                l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
         return l;
     }
     
@@ -234,14 +255,9 @@ public class Path
     {
         float l = 0;
         for (int i = _currentPathPosition.PointIndex; i >= 0; i--)
-            l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
+            if (_holes.Contains(i))
+                l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
         return l;
-    }
-
-    // remaining path length from current point on
-    public float GetRemainingLength()
-    {
-        return GetLength() * (1 - _pathProgress);
     }
     
     // virtual current point, that can be in between real points on the path
@@ -267,13 +283,13 @@ public class Path
     {
         return (_points[_points.Length - 1].pos - _points[0].pos).normalized;
     }
-
+    
     public Path Copy()
     {
         Point[] points = new Point[_points.Length];
         for(int i=0; i<_points.Length; i++)
             points[i] = _points[i].Copy();
-        return new Path(points, _pathUp);
+        return new Path(points, _holes, _pathUp);
     }
     
     // rotate all points around a pivot
@@ -323,6 +339,7 @@ public class Path
         for (int i = _currentPathPosition.PointIndex; i < _points.Length; i++)
         {
             float currentDist = Vector3.Distance(virtualCurrentPoint.pos, _points[i].pos);
+            // TODO what did it do before
             if (maxDist < currentDist)
             {
                 maxDist = currentDist;
@@ -431,6 +448,19 @@ public class Path
             List<Point> adjustedPoints = new List<Point>(_points);
             adjustedPoints.Insert(pp.PointIndex + 1, pp.GetVirtualPoint(this));
             _points = adjustedPoints.ToArray(); // write back adjusted points
+            
+            // adjust holes
+            List<int> newHoles = new List<int>();
+            foreach (int hole in _holes)
+            {
+                if (hole <= pp.PointIndex)
+                    newHoles.Add(hole);
+                else
+                    newHoles.Add(hole + 1);
+            }
+            _holes = newHoles;
+            
+            
             return new PathPosition(pp.PointIndex + 1, 0f);
         }
         return new PathPosition(pp.PointIndex, pp.InterPointProgress);
@@ -492,8 +522,20 @@ public class Path
         // current and final point are not removed
         int amountToRemove = finalPointPP.PointIndex - _currentPathPosition.PointIndex;
         List<Point> outPoints = new List<Point>(_points);
+        List<int> outHoles = new List<int>(_holes);
         outPoints.RemoveRange(_currentPathPosition.PointIndex + 1, amountToRemove);
-
+        outHoles = outHoles // adjust hole indices when removing a range
+            .FindAll(hole =>
+                hole < _currentPathPosition.PointIndex + 1 ||
+                _currentPathPosition.PointIndex + 1 + amountToRemove <= hole)
+            .Select(hole =>
+            {
+                int outHole = hole;
+                if (_currentPathPosition.PointIndex + 1 + amountToRemove <= hole)
+                    outHole += amountToRemove;
+                return outHole;
+            }).ToList();
+        
         // insert subPath
         List<Point> pointsToInsert = new List<Point>(subPath.GetPoints());
         // don't insert first point (already present)
@@ -502,11 +544,18 @@ public class Path
         pointsToInsert.RemoveAt(pointsToInsert.Count - 1);
         if (finalPointPP.InterPointProgress > 0f)
             pointsToInsert.Add(finalPoint);
-        // insert
+        // insert points
         outPoints.InsertRange(_currentPathPosition.PointIndex + 1, pointsToInsert.ToArray());
 
+        // insert holes
+        subPath._holes.ForEach(h =>
+        {
+            outHoles.Add(h + _currentPathPosition.PointIndex);
+        });
+        
         // save new points
         _points = outPoints.ToArray();
+        _holes = outHoles;
 
         // go to end of subgraph
         _currentPathPosition = new PathPosition(_currentPathPosition.PointIndex + pointsToInsert.Count, 0f);
@@ -567,6 +616,8 @@ public class Path
     // returns the number of points removed
     public int RemovePointsBetween(PathPosition startPathPosition, PathPosition endPathPosition)
     {
+        
+        
         // filter out all points in between
         List<Point> newPoints = new List<Point>();
         int pointsBefore = _points.Length;
@@ -579,6 +630,17 @@ public class Path
         _points = newPoints.ToArray();
         int pointsAfter = _points.Length;
 
+        // adjust holes
+        List<int> newHoles = new List<int>();
+        foreach (int hole in _holes)
+        {
+            if (hole <= startPathPosition.PointIndex)
+                newHoles.Add(hole);
+            else
+                newHoles.Add(hole - (pointsBefore - pointsAfter));
+        }
+        _holes = newHoles;
+        
         return pointsBefore - pointsAfter;
     }
     
@@ -652,7 +714,7 @@ public class Path
 
     // returns the position and rotation of each connection on the path,
     // rotations are averaged between start and end rotation
-    public List<Tuple<Vector3, Quaternion>> PositionRotationFormat(Quaternion preOffset=new Quaternion())
+    public List<Tuple<Vector3, Quaternion>> PositionRotationFormat(Quaternion preOffset=new Quaternion(), bool filterWithHoles = false)
     {
         List<Tuple<Vector3, Quaternion>> outPoints = new List<Tuple<Vector3, Quaternion>>();
         List<Tuple<Quaternion, Quaternion>> connectionRotations = GetAllConnectionRotations();
@@ -667,14 +729,84 @@ public class Path
             // apply offset to rotation
             Quaternion outRotation = averageRotation * preOffset;
 
+            if (filterWithHoles && (_holes.Contains(i) || i >= connectionRotations.Count - 1) && (_holes.Contains(i - 1) || i - 1 < 0))
+            {
+                Debug.Log("FILTERED WITH HOLES");
+                continue;
+            }
+            
             outPoints.Add(new Tuple<Vector3, Quaternion>(pointPos, outRotation));
         }
+        
         return outPoints;
     }
-    
+
+    public bool PathPositionsWithHoleInBetween(PathPosition from, PathPosition to)
+    {
+        // validate correct sequence
+        if (from.PointIndex > to.PointIndex ||
+            (from.PointIndex == to.PointIndex && from.InterPointProgress > to.InterPointProgress))
+        {
+            Debug.Log($"from: {from.PointIndex}; {from.InterPointProgress} to {to.PointIndex}; {to.InterPointProgress}");
+            throw new ArgumentException("from path position must be before to path position");
+        }
+
+        // check if from or to are in a hole
+        if (from.InterPointProgress > 0f && _holes.Contains(from.PointIndex))
+            return true;
+        if (to.InterPointProgress > 0f && _holes.Contains(to.PointIndex))
+            return true;
+        // on the same index: no hole
+        if (from.PointIndex == to.PointIndex || (to.PointIndex - from.PointIndex == 1))
+            return false;
+        // check if a hole is between them, if they are not on the same index
+        for (int i=from.PointIndex + 1; i<to.PointIndex; i++)
+            if (_holes.Contains(i))
+                return true;
+        // nothing found, no holes
+        return false;
+    }
+
+    public bool TakeValidPositionForLetterOfWidth(float letterWidth)
+    {
+        // check the letter would violate a hole restriction with its position
+        PathPosition currentPP = new PathPosition(_currentPathPosition.PointIndex, _currentPathPosition.InterPointProgress);
+        PathPosition nextPP = FindDistancedPathPosition(letterWidth);
+        if (nextPP == null)
+        {
+            return false;
+        }
+        bool foundPointAfterHole = true;
+        while (PathPositionsWithHoleInBetween(currentPP, nextPP))
+        {
+            // if violation happens: push letter to next segment (that is not a hole), and check again
+            foundPointAfterHole = false;
+            foreach (int hole in _holes)
+            {
+                if (hole >= currentPP.PointIndex)
+                {
+                    currentPP.PointIndex = hole + 1;
+                    while (_holes.Contains(currentPP.PointIndex))
+                        currentPP.PointIndex += 1;
+                    currentPP.InterPointProgress = 0f;
+
+                    SetPathPosition(currentPP);
+                            
+                    nextPP = FindDistancedPathPosition(letterWidth);
+                    foundPointAfterHole = true;
+                    break;
+                }
+            }
+            if (!foundPointAfterHole)
+                break;
+        }
+        return foundPointAfterHole;
+    }
     
     public TextInsertionResult ConvertToPointData(string text, AlphabethScriptableObject alphabet, List<float> scaleData, bool splitWords=true)
     {
+        _holes.Sort();
+        
         // prepare text
         string textWithoutSpace = text.Replace(" ", "");
         string[] words = text.Split(" ");
@@ -688,33 +820,68 @@ public class Path
         // enter letters by width, count inserted characters + spaces
         int insertedCharacters = 0;
         int insertedNonSpaceCharacters = 0;
-        for (int i = 0; i < words.Length; i++)
+        for (int wordsIndex = 0; wordsIndex < words.Length; wordsIndex++)
         {
-            string word = words[i];
+            string word = words[wordsIndex];
             
-            // move according to the width of the inserted letter, leave out last letter
-            for (int j = 0; j < word.Length - 1; j++)
+            // check if word is too long for current line
+            for (int letterIndex = 0; letterIndex < word.Length - 1; letterIndex++)
             {
-                char currentLetter = word[j];
-                if (!MoveDistanceInSpace(widthCache[currentLetter] * scaleData[insertedNonSpaceCharacters], true))
-                    break; // TODO REMOVE FOLLOWING PATH
+                char currentLetter = word[letterIndex];
+                float letterWidth = widthCache[currentLetter] * scaleData[insertedNonSpaceCharacters];
+                
+                // add new point
+                if (TakeValidPositionForLetterOfWidth(letterWidth))
+                {
+                    if (!MoveDistanceInSpace(letterWidth, true))
+                        break;
+                    insertedCharacters++;
+                    insertedNonSpaceCharacters++;
+                }
+            }
+            // final letter
+            float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
+            if (TakeValidPositionForLetterOfWidth(lastLetterWidth))
+            {
+                if (!MoveDistanceInSpace(lastLetterWidth, true))
+                    break;
+                insertedCharacters++;
                 insertedCharacters++;
                 insertedNonSpaceCharacters++;
             }
-            // final letter has additional width of trailing space
-            float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
-            if (!MoveDistanceInSpace(lastLetterWidth, true))
-                break; // TODO REMOVE FOLLOWING PATH
-            insertedCharacters++;
-            insertedCharacters++;
-            insertedNonSpaceCharacters++;
         }
+
+        
+        // // enter letters by width, count inserted characters + spaces
+        // int insertedCharacters = 0;
+        // int insertedNonSpaceCharacters = 0;
+        // for (int i = 0; i < words.Length; i++)
+        // {
+        //     string word = words[i];
+        //     
+        //     // move according to the width of the inserted letter, leave out last letter
+        //     for (int j = 0; j < word.Length - 1; j++)
+        //     {
+        //         char currentLetter = word[j];
+        //         if (!MoveDistanceInSpace(widthCache[currentLetter] * scaleData[insertedNonSpaceCharacters], true))
+        //             break; // TODO REMOVE FOLLOWING PATH
+        //         insertedCharacters++;
+        //         insertedNonSpaceCharacters++;
+        //     }
+        //     // final letter has additional width of trailing space
+        //     float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
+        //     if (!MoveDistanceInSpace(lastLetterWidth, true))
+        //         break; // TODO REMOVE FOLLOWING PATH
+        //     insertedCharacters++;
+        //     insertedCharacters++;
+        //     insertedNonSpaceCharacters++;
+        // }
         
         // after entering letters: see whats left
         string leftoverText = text.Substring(insertedCharacters - 1, text.Length - (insertedCharacters - 1));
         
         // get position and rotation information
-        List<Tuple<Vector3, Quaternion>> positionRotationInformation = PositionRotationFormat(Quaternion.FromToRotation(new Vector3(0,0,1), new Vector3(1,0,0)));
+        List<Tuple<Vector3, Quaternion>> positionRotationInformation = PositionRotationFormat(Quaternion.FromToRotation(new Vector3(0,0,1), new Vector3(1,0,0)), true);
 
         // color the textures of vfx
         List<Vector3> positions = new List<Vector3>();

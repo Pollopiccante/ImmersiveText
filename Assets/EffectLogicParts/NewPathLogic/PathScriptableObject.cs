@@ -6,6 +6,7 @@ using UnityEngine;
 public class PathScriptableObject : ScriptableObject
 {
     public Point[] points;
+    public List<int> holes;
     public Vector3 pathUp;
     [SerializeField]
     public PathPosition pathPosition;
@@ -16,7 +17,7 @@ public class PathScriptableObject : ScriptableObject
     {
         if (path == null)
         {
-            path = new Path(points, pathUp).Copy();
+            path = new Path(points, holes, pathUp).Copy();
             path.SetPathPosition(pathPosition);
         }
         
@@ -25,7 +26,7 @@ public class PathScriptableObject : ScriptableObject
 
     public void ReloadPath()
     {
-        path = new Path(points, pathUp).Copy();
+        path = new Path(points, holes, pathUp).Copy();
         path.SetPathPosition(pathPosition);
     }
 

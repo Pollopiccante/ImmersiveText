@@ -31,6 +31,7 @@ MonoBehaviour:
   - pos: {x: 10.01, y: 33.6, z: 0}
     rotIn: 0
     rotOut: 0
+  holes: 
   pathUp: {x: 1, y: 0, z: 0}
   pathPosition:
     PointIndex: 0
