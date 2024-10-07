@@ -9,7 +9,7 @@ using Object = UnityEngine.Object;
 
 public class VFXUtil
 {
-    public static void CreateEffectFromVFXData(VFXDataScriptableObject vfxData)
+    public static GameObject CreateEffectFromVFXData(VFXDataScriptableObject vfxData)
     {
         // create vfx instance
         GameObject vfxObject = GameObject.Instantiate(Resources.Load("Prefabs/StaticWordMeshEffect") as GameObject, new Vector3(0, 0, 0), Quaternion.identity);
@@ -41,6 +41,8 @@ public class VFXUtil
         // add reader stepper, and start it
         ReaderStepper readerStepper = vfxObject.AddComponent<ReaderStepper>();
         readerStepper.pause = false;
+
+        return vfxObject;
     }
     
     public static VFXDataScriptableObject CreateVFXDataFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)

@@ -1,7 +1,5 @@
-
-using System;
+using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.VFX;
 
 public enum ReaderControllerState
@@ -24,15 +22,24 @@ public class DistanceBasedReaderController : MonoBehaviour
     public float reading = 0f; // (0..1) (not reading..reading)
     public ReaderControllerState controllerState = ReaderControllerState.Idle;
     
-    private GameObject highlightSphere = null; 
-    private Vector3[] indexToPosMap;
+    [CanBeNull] private GameObject highlightSphere = null; 
+    [CanBeNull] private Vector3[] indexToPosMap;
     private int lastMinDistIndex = -1;
     private bool showHighlightSphere = true;
         
-    private IndexStepper _indexStepper;
-    private ReaderStepper _readerStepper;
+    [CanBeNull] private IndexStepper _indexStepper;
+    [CanBeNull] private ReaderStepper _readerStepper;
     private void Start()
     {
+        if (effect != null)
+        {
+            SetEffect(effect);
+        }
+    }
+
+    public void SetEffect(VisualEffect effect)
+    {
+        this.effect = effect;
         _indexStepper = effect.GetComponent<IndexStepper>();
         _readerStepper = effect.GetComponent<ReaderStepper>();
         
@@ -53,7 +60,8 @@ public class DistanceBasedReaderController : MonoBehaviour
         }
         
         // set sphere position
-        highlightSphere.transform.position = indexToPosMap[index];
+        if (indexToPosMap != null)
+            highlightSphere.transform.position = indexToPosMap[index];
     }
 
     private void RemoveHighLight()
@@ -71,6 +79,9 @@ public class DistanceBasedReaderController : MonoBehaviour
             highlightSphere = null;
             return;
         }
+        
+        if (_indexStepper == null || indexToPosMap == null)
+            return;
         
         // get current time index
         int indexTime = Mathf.FloorToInt(_indexStepper.currentIndexTime);
@@ -99,7 +110,7 @@ public class DistanceBasedReaderController : MonoBehaviour
 
     public void StartReading()
     {
-        if (lastMinDistIndex < 0 || IsReading())
+        if (lastMinDistIndex < 0 || IsReading() || _readerStepper == null)
             return;
 
         controllerState = ReaderControllerState.StartingToRead;
@@ -148,6 +159,9 @@ public class DistanceBasedReaderController : MonoBehaviour
     
     private void FocusReaderOnCamera()
     {
+        if (_readerStepper == null)
+            return;
+        
         _readerStepper.UpdateReaderPosition(
             leftLineTransform.position,
             rightLineTransform.position,
@@ -179,6 +193,14 @@ public class DistanceBasedReaderController : MonoBehaviour
         {
             StartReading();
         }
+    }
+
+    public void Reset()
+    {
+        if (_readerStepper == null)
+            return;
+        
+        _readerStepper.currentReadingTime = 0;
     }
     
     void Update()
