@@ -118,7 +118,7 @@ public class GCodePathStrategy : PathStrategy
     }
     protected override Path GetPath(string text, List<float> letterScaling, AlphabethScriptableObject alphabet)
     {
-        //TextInsertionResult textInsertionResult = GetPathPrototype().ConvertToPointData(text, alphabet, letterScaling);
+        TextInsertionResult textInsertionResult = GetPathPrototype().ConvertToPointData(text, alphabet, letterScaling);
         return GetPathPrototype();
     }
 

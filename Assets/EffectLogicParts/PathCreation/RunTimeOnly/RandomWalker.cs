@@ -225,6 +225,6 @@ public class RandomWalker : MonoBehaviour
         pathSo.points = pathCopy.GetPoints();
         pathSo.pathUp = pathCopy.GetUp().normalized;
         
-        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + $"RandomWalker_{DateTime.Now}.asset");
+        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + $"RandomWalker_{DateTime.Today.DayOfYear}_{DateTime.Now.Hour}_{DateTime.Now.Minute}.asset");
     }
 }

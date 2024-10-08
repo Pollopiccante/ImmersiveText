@@ -119,6 +119,8 @@ public class VFXUtil
         // convert to text dimension data points
         List<TextDimensions> textElements = completeAnnotation.Finish();
         
+        Debug.Log($"Number of Text Elements: {textElements.Count}");
+        
         // apply mapping to effect dimension data point space
         List<EffectDimensions> effectElements = mapping.ConvertMany(textElements);
 
@@ -130,7 +132,11 @@ public class VFXUtil
             eddp.GetType().GetMethod("Apply").Invoke(eddp, new []{vfxDataPoint});
             vfxDataPoints.Add(vfxDataPoint);
         }
+        
 
+        Debug.Log($"Number of VFX DATA Points: {vfxDataPoints.Count}");
+
+        
         // create vfx data from effect points
         AlphabethScriptableObject alphabet = Resources.Load<AlphabethScriptableObject>("alphabet/alphabeth_Absans-Regular");
         VFXDataScriptableObject vfxDataScriptableObject = VFXUtil.ToVfxDataScriptableObject(vfxDataPoints, path, alphabet);

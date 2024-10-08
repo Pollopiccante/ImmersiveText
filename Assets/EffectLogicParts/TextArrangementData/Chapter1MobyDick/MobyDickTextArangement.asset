@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MobyDickTextArangement
   m_EditorClassIdentifier: Assembly-CSharp::MobyDickTextArangement
   text: {fileID: 11400000, guid: 9c1f8179006168d9aaf9c717937f9235, type: 2}
-  mainPath: {fileID: 11400000, guid: a1a76bf98456f8ffa8821a71bfe62442, type: 2}
+  mainPath: {fileID: 11400000, guid: a2a01023ecaf01575b5ddd7a89bfc524, type: 2}
   completeAnnotationData:
   - SectionName: UrbanNature
     Data: {fileID: 11400000, guid: a08635465af03bae0a0134794086cbff, type: 2}

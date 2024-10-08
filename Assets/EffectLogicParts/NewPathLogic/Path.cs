@@ -805,7 +805,7 @@ public class Path
     
     public TextInsertionResult ConvertToPointData(string text, AlphabethScriptableObject alphabet, List<float> scaleData, bool splitWords=true)
     {
-        _holes.Sort();
+        //_holes.Sort();
         
         // prepare text
         string textWithoutSpace = text.Replace(" ", "");

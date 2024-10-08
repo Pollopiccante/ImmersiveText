@@ -50,8 +50,9 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
         outDimensions.IndexStartEnd.value = new StartEndIndex(index, index + 1);
         
         // effect dimension parts influenced by multiple text dimensions
-        Color finalColor = new Color(155, 155, 155);
-        float finalScale = 3f;
+        float colorProgress = (Mathf.Sin(((index % 30) / 30f * 360f) * Mathf.Deg2Rad) + 1) / 2f;
+        Color finalColor = Color.Lerp(new Color(0,0,128), new Color(173,216,230), colorProgress); // default color is sin wave blue
+        float finalScale = 2.1f;
         
         // MAPPING:
         // Sadness: smaller, add darkness to color
@@ -59,9 +60,7 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
         const float highSadnessScale = 0.3f;
         const float lowSadnessDarknessOffset = 0;
         const float highSadnessDarknessOffset = 230;
-        
-        
-        
+
         // Character: Ishmael: Blue
         if (textDimensions.Character.value == "Ishmael")
         {
@@ -143,14 +142,17 @@ public class MobyDickMapping : AbstractMapping<MobyDickTextDimensionsDataPoint, 
         // Urban: fixed concrete size ratios (1, 2, 3, 4), like different sized Buildings
         // Nature: Developing Golden Ratio
         float scaleStep = finalScale / 2;
-        if (textDimensions.UrbanNature.value > 0f) // Nature
+        if (textDimensions.UrbanNature.value < 0f) // Urban
         {
             finalScale = scaleStep * (1 + Random.Range(0, 4));
-        }else if (textDimensions.UrbanNature.value < 0f) // Urban
+        }else if (textDimensions.UrbanNature.value > 0f) // Nature
         {
-            finalScale = (scaleStep / 2f) + ((1f + (float) Math.Sin(index / 15f)) / 2) * (scaleStep * 3.5f);
+            float progressionAngle = (index % 30) / 30f * 360f;
+            float rad = progressionAngle * Mathf.Deg2Rad;
+            float sin = Mathf.Sin(rad);
+            float sinProgress = (sin + 1) / 2f;
+            finalScale = (scaleStep / 2f) + sinProgress * (scaleStep * 3.5f);
         }
-        
         
         outDimensions.Color.value = finalColor;
         outDimensions.Scale.value = finalScale;
