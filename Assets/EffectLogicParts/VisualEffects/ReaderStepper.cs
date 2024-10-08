@@ -55,11 +55,14 @@ public class ReaderStepper : MonoBehaviour
     {
         Vector3 newLeftLinePos = Vector3.Lerp(oldLeftLinePos, leftLinePos, 0.4f);
         Vector3 newRightLinePos = Vector3.Lerp(oldRightLinePos, rightLinePos, 0.4f);
-        
-        _effect.SetVector3("LinePositionLeft", newLeftLinePos);
-        _effect.SetVector3("LinePositionRight", newRightLinePos);
-        _effect.SetVector3("LineDirectionLeft", leftLineRot.eulerAngles);
-        _effect.SetVector3("LineDirectionRight", rightLineRot.eulerAngles);
+
+        if (_effect != null)
+        {
+            _effect.SetVector3("LinePositionLeft", newLeftLinePos);
+            _effect.SetVector3("LinePositionRight", newRightLinePos);
+            _effect.SetVector3("LineDirectionLeft", leftLineRot.eulerAngles);
+            _effect.SetVector3("LineDirectionRight", rightLineRot.eulerAngles);
+        }
 
         oldLeftLinePos = newLeftLinePos;
         oldRightLinePos = newRightLinePos;

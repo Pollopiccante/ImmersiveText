@@ -23,12 +23,9 @@ public class RandomWalker : MonoBehaviour
 
     public void Start()
     {
-        // initialize trail
-        _trail = gameObject.AddComponent<LineRenderer>();
-        _trail.SetMaterials(new List<Material>{lineMaterial});
-        AddTrailToPosition(transform.position);
-        // reset time
-        _timeSinceLastStep = 0f;
+        Reset();
+        
+        
     }
 
     static readonly float QUAD = .5f * MathF.PI;
@@ -163,6 +160,23 @@ public class RandomWalker : MonoBehaviour
 
     public void Reset()
     {
+        // try to get trail
+        LineRenderer lineComponent = gameObject.GetComponent<LineRenderer>();
+        if (lineComponent != null)
+            _trail = lineComponent;
+        else
+        {
+            // initialize trail
+            _trail = gameObject.AddComponent<LineRenderer>();
+        }
+
+        _trail.startWidth = 0.1f;
+        _trail.endWidth = 0.1f;
+        _trail.SetMaterials(new List<Material>{lineMaterial});
+        AddTrailToPosition(transform.position);
+        // reset time
+        _timeSinceLastStep = 0f;
+        
         _trail.positionCount = 0;
         _trail.SetPositions(new Vector3[] {transform.position});
         AddTrailToPosition(basePosition);
@@ -176,8 +190,6 @@ public class RandomWalker : MonoBehaviour
     {
         if (pause)
             return;
-        
-        Debug.Log(_timeSinceLastStep);
         
         float timePerStep = 1 / stepsPerSecond;
         _timeSinceLastStep += Time.deltaTime;
@@ -213,6 +225,6 @@ public class RandomWalker : MonoBehaviour
         pathSo.points = pathCopy.GetPoints();
         pathSo.pathUp = pathCopy.GetUp().normalized;
         
-        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + "RandomWalker.asset");
+        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + $"RandomWalker_{DateTime.Now}.asset");
     }
 }

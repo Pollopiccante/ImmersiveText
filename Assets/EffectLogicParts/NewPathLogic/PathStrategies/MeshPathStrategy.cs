@@ -62,6 +62,7 @@ public class MeshPathStrategy : PathStrategy
         {
             // calculate errors
             Path pathCopy = firstPath.Copy();
+            Debug.Log($"COMPLETE TEXT IN MESH PATH: {text.Substring(0, 20)}");
             TextInsertionResult result = pathCopy.ConvertToPointData(text, alphabet, letterScaling);
             int textNotInserted = result.leftoverText.Length;
         

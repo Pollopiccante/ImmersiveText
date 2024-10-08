@@ -621,13 +621,13 @@ MonoBehaviour:
   - name: TextureInput
     collapsed: 1
   - name: Basics
-    collapsed: 1
+    collapsed: 0
   - name: MeshInput
     collapsed: 1
   - name: InternalConfiguration
     collapsed: 1
   - name: CameraControlls
-    collapsed: 1
+    collapsed: 0
   uiBounds:
     serializedVersion: 2
     x: -5691
@@ -878,6 +878,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619964}
   - {fileID: 8926484042661619968}
   - {fileID: 8926484042661619976}
+  - {fileID: 8926484042661620001}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
@@ -1086,6 +1087,20 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: 
       m_SerializableObject: 
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: SpawnPosition
+    path: SpawnPosition
+    tooltip: 
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -19364,7 +19379,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616753}
   m_ExposedName: Positions
   m_Exposed: 1
-  m_Order: 5
+  m_Order: 9
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -19444,7 +19459,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616755}
   m_ExposedName: Rotations
   m_Exposed: 1
-  m_Order: 11
+  m_Order: 15
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -19524,7 +19539,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616757}
   m_ExposedName: Letters
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 2
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -23876,7 +23891,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617926}
   m_ExposedName: NumberOfElement
   m_Exposed: 1
-  m_Order: 15
+  m_Order: 2
   m_Category: Basics
   m_Min:
     m_Type:
@@ -23956,7 +23971,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617995}
   m_ExposedName: BaseColor
   m_Exposed: 1
-  m_Order: 28
+  m_Order: 3
   m_Category: Basics
   m_Min:
     m_Type:
@@ -24164,7 +24179,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618007}
   m_ExposedName: LetterScale
   m_Exposed: 1
-  m_Order: 30
+  m_Order: 4
   m_Category: Basics
   m_Min:
     m_Type:
@@ -24579,7 +24594,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618093}
   m_ExposedName: Mesh_ 1
   m_Exposed: 1
-  m_Order: 21
+  m_Order: 24
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -24659,7 +24674,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618095}
   m_ExposedName: Mesh_ 2
   m_Exposed: 1
-  m_Order: 22
+  m_Order: 25
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -24739,7 +24754,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618097}
   m_ExposedName: Mesh_ 3
   m_Exposed: 1
-  m_Order: 23
+  m_Order: 26
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -24819,7 +24834,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618099}
   m_ExposedName: Mesh_ 4
   m_Exposed: 1
-  m_Order: 24
+  m_Order: 27
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -24899,7 +24914,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618101}
   m_ExposedName: Mesh_ 5
   m_Exposed: 1
-  m_Order: 25
+  m_Order: 28
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -24979,7 +24994,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618103}
   m_ExposedName: Mesh_ 6
   m_Exposed: 1
-  m_Order: 26
+  m_Order: 29
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25059,7 +25074,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618105}
   m_ExposedName: Mesh_ 7
   m_Exposed: 1
-  m_Order: 27
+  m_Order: 30
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25139,7 +25154,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618107}
   m_ExposedName: Mesh_ 8
   m_Exposed: 1
-  m_Order: 29
+  m_Order: 31
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25219,7 +25234,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618109}
   m_ExposedName: Mesh_ 9
   m_Exposed: 1
-  m_Order: 31
+  m_Order: 32
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25299,7 +25314,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618111}
   m_ExposedName: Mesh_ 10
   m_Exposed: 1
-  m_Order: 32
+  m_Order: 33
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25379,7 +25394,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618113}
   m_ExposedName: Mesh_ 11
   m_Exposed: 1
-  m_Order: 33
+  m_Order: 34
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25459,7 +25474,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618115}
   m_ExposedName: Mesh_ 12
   m_Exposed: 1
-  m_Order: 34
+  m_Order: 35
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25539,7 +25554,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618117}
   m_ExposedName: Mesh_ 13
   m_Exposed: 1
-  m_Order: 35
+  m_Order: 36
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25619,7 +25634,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618119}
   m_ExposedName: Mesh_ 14
   m_Exposed: 1
-  m_Order: 36
+  m_Order: 37
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25699,7 +25714,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618121}
   m_ExposedName: Mesh_ 15
   m_Exposed: 1
-  m_Order: 37
+  m_Order: 38
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25779,7 +25794,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618123}
   m_ExposedName: Mesh_ 16
   m_Exposed: 1
-  m_Order: 38
+  m_Order: 39
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25859,7 +25874,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618125}
   m_ExposedName: Mesh_ 17
   m_Exposed: 1
-  m_Order: 39
+  m_Order: 40
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -25939,7 +25954,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618127}
   m_ExposedName: Mesh_ 18
   m_Exposed: 1
-  m_Order: 40
+  m_Order: 41
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26019,7 +26034,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618129}
   m_ExposedName: Mesh_ 19
   m_Exposed: 1
-  m_Order: 41
+  m_Order: 42
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26099,7 +26114,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618131}
   m_ExposedName: Mesh_ 20
   m_Exposed: 1
-  m_Order: 42
+  m_Order: 43
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26179,7 +26194,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618133}
   m_ExposedName: Mesh_ 21
   m_Exposed: 1
-  m_Order: 43
+  m_Order: 44
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26259,7 +26274,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618135}
   m_ExposedName: Mesh_ 22
   m_Exposed: 1
-  m_Order: 44
+  m_Order: 45
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26339,7 +26354,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618137}
   m_ExposedName: Mesh_ 23
   m_Exposed: 1
-  m_Order: 45
+  m_Order: 46
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26419,7 +26434,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618139}
   m_ExposedName: Mesh_ 24
   m_Exposed: 1
-  m_Order: 46
+  m_Order: 47
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26499,7 +26514,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618141}
   m_ExposedName: Mesh_ 25
   m_Exposed: 1
-  m_Order: 47
+  m_Order: 48
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26579,7 +26594,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618143}
   m_ExposedName: Mesh_ 26
   m_Exposed: 1
-  m_Order: 48
+  m_Order: 49
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26659,7 +26674,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618145}
   m_ExposedName: Mesh_ 27
   m_Exposed: 1
-  m_Order: 49
+  m_Order: 50
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26739,7 +26754,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618147}
   m_ExposedName: Mesh_ 28
   m_Exposed: 1
-  m_Order: 50
+  m_Order: 51
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26819,7 +26834,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618149}
   m_ExposedName: Mesh_ 29
   m_Exposed: 1
-  m_Order: 51
+  m_Order: 52
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26899,7 +26914,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618151}
   m_ExposedName: Mesh_ 30
   m_Exposed: 1
-  m_Order: 52
+  m_Order: 53
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -26979,7 +26994,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618153}
   m_ExposedName: Mesh_ 31
   m_Exposed: 1
-  m_Order: 53
+  m_Order: 54
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27059,7 +27074,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618155}
   m_ExposedName: Mesh_ 32
   m_Exposed: 1
-  m_Order: 54
+  m_Order: 55
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27139,7 +27154,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618157}
   m_ExposedName: Mesh_ 33
   m_Exposed: 1
-  m_Order: 55
+  m_Order: 56
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27219,7 +27234,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618159}
   m_ExposedName: Mesh_ 34
   m_Exposed: 1
-  m_Order: 56
+  m_Order: 57
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27299,7 +27314,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618161}
   m_ExposedName: Mesh_ 35
   m_Exposed: 1
-  m_Order: 57
+  m_Order: 58
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27379,7 +27394,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618163}
   m_ExposedName: Mesh_ 36
   m_Exposed: 1
-  m_Order: 58
+  m_Order: 59
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27459,7 +27474,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618165}
   m_ExposedName: Mesh_ 37
   m_Exposed: 1
-  m_Order: 59
+  m_Order: 60
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27539,7 +27554,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618167}
   m_ExposedName: Mesh_ 38
   m_Exposed: 1
-  m_Order: 60
+  m_Order: 61
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27619,7 +27634,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618169}
   m_ExposedName: Mesh_ 39
   m_Exposed: 1
-  m_Order: 61
+  m_Order: 62
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27699,7 +27714,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618171}
   m_ExposedName: Mesh_ 40
   m_Exposed: 1
-  m_Order: 62
+  m_Order: 63
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27779,7 +27794,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618173}
   m_ExposedName: Mesh_ 41
   m_Exposed: 1
-  m_Order: 63
+  m_Order: 64
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27859,7 +27874,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618175}
   m_ExposedName: Mesh_ 42
   m_Exposed: 1
-  m_Order: 64
+  m_Order: 65
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -27939,7 +27954,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618177}
   m_ExposedName: Mesh_ 43
   m_Exposed: 1
-  m_Order: 65
+  m_Order: 66
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28019,7 +28034,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618179}
   m_ExposedName: Mesh_ 44
   m_Exposed: 1
-  m_Order: 66
+  m_Order: 67
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28099,7 +28114,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618181}
   m_ExposedName: Mesh_ 45
   m_Exposed: 1
-  m_Order: 67
+  m_Order: 68
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28179,7 +28194,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618183}
   m_ExposedName: Mesh_ 46
   m_Exposed: 1
-  m_Order: 68
+  m_Order: 69
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28259,7 +28274,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618185}
   m_ExposedName: Mesh_ 47
   m_Exposed: 1
-  m_Order: 69
+  m_Order: 70
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28339,7 +28354,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618187}
   m_ExposedName: Mesh_ 48
   m_Exposed: 1
-  m_Order: 70
+  m_Order: 71
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28419,7 +28434,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618189}
   m_ExposedName: Mesh_ 49
   m_Exposed: 1
-  m_Order: 71
+  m_Order: 72
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28499,7 +28514,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618191}
   m_ExposedName: Mesh_ 50
   m_Exposed: 1
-  m_Order: 72
+  m_Order: 73
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28579,7 +28594,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618193}
   m_ExposedName: Mesh_ 51
   m_Exposed: 1
-  m_Order: 73
+  m_Order: 74
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28659,7 +28674,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618195}
   m_ExposedName: Mesh_ 52
   m_Exposed: 1
-  m_Order: 74
+  m_Order: 75
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28739,7 +28754,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618197}
   m_ExposedName: Mesh_ 53
   m_Exposed: 1
-  m_Order: 75
+  m_Order: 76
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28819,7 +28834,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618199}
   m_ExposedName: Mesh_ 54
   m_Exposed: 1
-  m_Order: 76
+  m_Order: 77
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28899,7 +28914,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618201}
   m_ExposedName: Mesh_ 55
   m_Exposed: 1
-  m_Order: 77
+  m_Order: 78
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -28979,7 +28994,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618203}
   m_ExposedName: Mesh_ 56
   m_Exposed: 1
-  m_Order: 78
+  m_Order: 79
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29059,7 +29074,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618205}
   m_ExposedName: Mesh_ 57
   m_Exposed: 1
-  m_Order: 79
+  m_Order: 80
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29139,7 +29154,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618207}
   m_ExposedName: Mesh_ 58
   m_Exposed: 1
-  m_Order: 80
+  m_Order: 81
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29219,7 +29234,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618209}
   m_ExposedName: Mesh_ 59
   m_Exposed: 1
-  m_Order: 81
+  m_Order: 82
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29299,7 +29314,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618211}
   m_ExposedName: Mesh_ 60
   m_Exposed: 1
-  m_Order: 82
+  m_Order: 83
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29379,7 +29394,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618213}
   m_ExposedName: Mesh_ 61
   m_Exposed: 1
-  m_Order: 83
+  m_Order: 84
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29459,7 +29474,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618215}
   m_ExposedName: Mesh_ 62
   m_Exposed: 1
-  m_Order: 84
+  m_Order: 85
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29539,7 +29554,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618217}
   m_ExposedName: Mesh_ 63
   m_Exposed: 1
-  m_Order: 85
+  m_Order: 86
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29619,7 +29634,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618219}
   m_ExposedName: Mesh_ 64
   m_Exposed: 1
-  m_Order: 86
+  m_Order: 87
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29699,7 +29714,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618221}
   m_ExposedName: Mesh_ 65
   m_Exposed: 1
-  m_Order: 87
+  m_Order: 88
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29779,7 +29794,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618223}
   m_ExposedName: Mesh_ 66
   m_Exposed: 1
-  m_Order: 88
+  m_Order: 89
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29859,7 +29874,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618225}
   m_ExposedName: Mesh_ 67
   m_Exposed: 1
-  m_Order: 89
+  m_Order: 90
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -29939,7 +29954,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618227}
   m_ExposedName: Mesh_ 68
   m_Exposed: 1
-  m_Order: 90
+  m_Order: 91
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30019,7 +30034,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618229}
   m_ExposedName: Mesh_ 69
   m_Exposed: 1
-  m_Order: 91
+  m_Order: 92
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30099,7 +30114,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618231}
   m_ExposedName: Mesh_ 70
   m_Exposed: 1
-  m_Order: 92
+  m_Order: 93
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30179,7 +30194,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618233}
   m_ExposedName: Mesh_ 71
   m_Exposed: 1
-  m_Order: 93
+  m_Order: 94
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30259,7 +30274,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618235}
   m_ExposedName: Mesh_ 72
   m_Exposed: 1
-  m_Order: 94
+  m_Order: 95
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30339,7 +30354,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618237}
   m_ExposedName: Mesh_ 73
   m_Exposed: 1
-  m_Order: 95
+  m_Order: 96
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30419,7 +30434,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618239}
   m_ExposedName: Mesh_ 74
   m_Exposed: 1
-  m_Order: 96
+  m_Order: 97
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30499,7 +30514,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618241}
   m_ExposedName: Mesh_ 75
   m_Exposed: 1
-  m_Order: 97
+  m_Order: 98
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30579,7 +30594,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618243}
   m_ExposedName: Mesh_ 76
   m_Exposed: 1
-  m_Order: 98
+  m_Order: 99
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30659,7 +30674,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618245}
   m_ExposedName: Mesh_ 77
   m_Exposed: 1
-  m_Order: 99
+  m_Order: 100
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30739,7 +30754,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618247}
   m_ExposedName: Mesh_ 78
   m_Exposed: 1
-  m_Order: 100
+  m_Order: 101
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30819,7 +30834,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618249}
   m_ExposedName: Mesh_ 79
   m_Exposed: 1
-  m_Order: 101
+  m_Order: 102
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30899,7 +30914,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618251}
   m_ExposedName: Mesh_ 80
   m_Exposed: 1
-  m_Order: 102
+  m_Order: 103
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -30979,7 +30994,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618253}
   m_ExposedName: Mesh_ 81
   m_Exposed: 1
-  m_Order: 103
+  m_Order: 104
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31059,7 +31074,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618255}
   m_ExposedName: Mesh_ 82
   m_Exposed: 1
-  m_Order: 104
+  m_Order: 105
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31139,7 +31154,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618257}
   m_ExposedName: Mesh_ 83
   m_Exposed: 1
-  m_Order: 105
+  m_Order: 106
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31219,7 +31234,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618259}
   m_ExposedName: Mesh_ 84
   m_Exposed: 1
-  m_Order: 106
+  m_Order: 107
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31299,7 +31314,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618261}
   m_ExposedName: Mesh_ 85
   m_Exposed: 1
-  m_Order: 107
+  m_Order: 108
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31379,7 +31394,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618263}
   m_ExposedName: Mesh_ 86
   m_Exposed: 1
-  m_Order: 108
+  m_Order: 109
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31459,7 +31474,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618265}
   m_ExposedName: Mesh_ 87
   m_Exposed: 1
-  m_Order: 109
+  m_Order: 110
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31539,7 +31554,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618267}
   m_ExposedName: Mesh_ 88
   m_Exposed: 1
-  m_Order: 110
+  m_Order: 111
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31619,7 +31634,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618269}
   m_ExposedName: Mesh_ 89
   m_Exposed: 1
-  m_Order: 111
+  m_Order: 112
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31699,7 +31714,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618271}
   m_ExposedName: Mesh_ 90
   m_Exposed: 1
-  m_Order: 112
+  m_Order: 113
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31779,7 +31794,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618273}
   m_ExposedName: Mesh_ 91
   m_Exposed: 1
-  m_Order: 113
+  m_Order: 114
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31859,7 +31874,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618275}
   m_ExposedName: Mesh_ 92
   m_Exposed: 1
-  m_Order: 114
+  m_Order: 115
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -31939,7 +31954,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618277}
   m_ExposedName: Mesh_ 93
   m_Exposed: 1
-  m_Order: 115
+  m_Order: 116
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -32019,7 +32034,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618281}
   m_ExposedName: Mesh_ 0
   m_Exposed: 1
-  m_Order: 19
+  m_Order: 22
   m_Category: MeshInput
   m_Min:
     m_Type:
@@ -32229,7 +32244,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618310}
   m_ExposedName: ScalingOffset
   m_Exposed: 1
-  m_Order: 116
+  m_Order: 117
   m_Category: InternalConfiguration
   m_Min:
     m_Type:
@@ -32315,7 +32330,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618312}
   m_ExposedName: Scalings
   m_Exposed: 1
-  m_Order: 13
+  m_Order: 17
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -32697,7 +32712,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618323}
   m_ExposedName: Colors
   m_Exposed: 1
-  m_Order: 14
+  m_Order: 18
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -48209,7 +48224,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619113}
   m_ExposedName: XWaveMotions
   m_Exposed: 1
-  m_Order: 16
+  m_Order: 19
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -48913,7 +48928,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619133}
   m_ExposedName: Alpha_Smoothness_Metalic
   m_Exposed: 1
-  m_Order: 17
+  m_Order: 20
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -49880,7 +49895,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619175}
   m_ExposedName: indexTime
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 6
   m_Category: External
   m_Min:
     m_Type:
@@ -49973,7 +49988,8 @@ MonoBehaviour:
       m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661620002}
 --- !u!114 &8926484042661619192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50406,7 +50422,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619213}
   m_ExposedName: SpawnPositions
   m_Exposed: 1
-  m_Order: 20
+  m_Order: 23
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -50546,7 +50562,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619228}
   m_ExposedName: StartEndIndices
   m_Exposed: 1
-  m_Order: 18
+  m_Order: 21
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -51461,7 +51477,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619305}
   m_ExposedName: CameraTransform
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 8
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -51956,7 +51972,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619319}
   m_ExposedName: SnapToCameraLinePercentage
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 4
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -53623,7 +53639,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619441}
   m_ExposedName: LinePositionLeft
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 10
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -53829,7 +53845,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619446}
   m_ExposedName: LinePositionRight
   m_Exposed: 1
-  m_Order: 8
+  m_Order: 12
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -55677,7 +55693,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619501}
   m_ExposedName: ReadingIndex
   m_Exposed: 1
-  m_Order: 12
+  m_Order: 16
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -58514,7 +58530,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619678}
   m_ExposedName: LinePositions
   m_Exposed: 1
-  m_Order: 9
+  m_Order: 13
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -62878,7 +62894,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619840}
   m_ExposedName: LineDirectionLeft
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 11
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -63060,7 +63076,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619845}
   m_ExposedName: LineDirectionRight
   m_Exposed: 1
-  m_Order: 10
+  m_Order: 14
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -67236,4 +67252,186 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
+  m_LinkedSlots: []
+--- !u!114 &8926484042661620001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e0fca1717dde4aaa144f48232aa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661620002}
+  m_ExposedName: SpawnPosition
+  m_Exposed: 1
+  m_Order: 0
+  m_Category: Basics
+  m_Min:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_Max:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_IsOutput: 0
+  m_EnumValues: []
+  m_ValueFilter: 0
+  m_Tooltip: 
+  m_Nodes:
+  - m_Id: 0
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661620002}
+      inputSlot: {fileID: 8926484042661619191}
+    position: {x: -802, y: 1007}
+    expandedSlots: []
+    expanded: 0
+--- !u!114 &8926484042661620002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac39bd03fca81b849929b9c966f1836a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children:
+  - {fileID: 8926484042661620003}
+  - {fileID: 8926484042661620004}
+  - {fileID: 8926484042661620005}
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661620002}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661620001}
+    m_Value:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: 
+    m_Space: 2147483647
+  m_Property:
+    name: o
+    m_serializedType:
+      m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  m_Direction: 1
+  m_LinkedSlots:
+  - {fileID: 8926484042661619191}
+--- !u!114 &8926484042661620003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 8926484042661620002}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661620002}
+  m_MasterData:
+    m_Owner: {fileID: 0}
+    m_Value:
+      m_Type:
+        m_SerializableType: 
+      m_SerializableObject: 
+    m_Space: 2147483647
+  m_Property:
+    name: x
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots: []
+--- !u!114 &8926484042661620004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 8926484042661620002}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661620002}
+  m_MasterData:
+    m_Owner: {fileID: 0}
+    m_Value:
+      m_Type:
+        m_SerializableType: 
+      m_SerializableObject: 
+    m_Space: 2147483647
+  m_Property:
+    name: y
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots: []
+--- !u!114 &8926484042661620005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 8926484042661620002}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661620002}
+  m_MasterData:
+    m_Owner: {fileID: 0}
+    m_Value:
+      m_Type:
+        m_SerializableType: 
+      m_SerializableObject: 
+    m_Space: 2147483647
+  m_Property:
+    name: z
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
   m_LinkedSlots: []

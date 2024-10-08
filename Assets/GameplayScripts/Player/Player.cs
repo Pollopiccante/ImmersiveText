@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     // internal variables
     private float _xRotation;
     private float _yRotation;
+
+    public bool movementActive = true;
     
     void Start()
     {
@@ -58,12 +60,14 @@ public class Player : MonoBehaviour
             _xRotation = _xRotationLimitUpper;
         if (_xRotation < _xRotationLimitLower)
             _xRotation = _xRotationLimitLower;
-        
-        
-        _characterController.Move(move * speed * Time.deltaTime * 10);
-        transform.rotation = Quaternion.Euler(0, _yRotation, 0);
 
-        _camera.transform.localRotation = Quaternion.Euler(_xRotation, 0, 0);
+        if (movementActive)
+        {
+            _characterController.Move(move * speed * Time.deltaTime * 10);
+            transform.rotation = Quaternion.Euler(0, _yRotation, 0);
+
+            _camera.transform.localRotation = Quaternion.Euler(_xRotation, 0, 0);
+        }
     }
 
     public Quaternion GetPlayerRotation()

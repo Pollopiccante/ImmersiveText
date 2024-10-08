@@ -45,7 +45,7 @@ public class VFXUtil
         return vfxObject;
     }
     
-    public static VFXDataScriptableObject CreateVFXDataFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)
+    public static VFXDataScriptableObject CreateVFXDataFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling, bool flyIn=false)
     {
         // get textures as pCaches
         TextInsertionResult insertionResult = path.Copy().ConvertToPointData(text, alphabet, letterScaling);
@@ -61,7 +61,12 @@ public class VFXUtil
         List<Vector3> colorsDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
         List<Vector3> xWaveDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
         List<Vector3> ASMDummy = Enumerable.Repeat(new Vector3(1f, 1f, 1f), insertionResult.scalesTexture.Count).ToList();
-        List<Vector3> startEndIndicesDummy = Enumerable.Repeat(new Vector3(), insertionResult.scalesTexture.Count).ToList();
+        
+        List<Vector3> startEndIndicesDummy = new List<Vector3>();
+        for (int i = 0; i < insertionResult.positionsTexture.Count; i++)
+        {
+            startEndIndicesDummy.Add(new Vector3(i,i + 5,0));
+        }
         Texture2D colorsTexture = PointCacheToTexture2D(colorsDummy);
         Texture2D xWaveTexture = PointCacheToTexture2D(xWaveDummy);
         Texture2D ASMTexture = PointCacheToTexture2D(ASMDummy);
@@ -89,9 +94,9 @@ public class VFXUtil
         return vfxData;
     }
 
-    public static void CreateEffectFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)
+    public static GameObject CreateEffectFromPath(Path path, string text, AlphabethScriptableObject alphabet, List<float> letterScaling)
     {
-        CreateEffectFromVFXData(CreateVFXDataFromPath(path, text, alphabet, letterScaling));
+        return CreateEffectFromVFXData(CreateVFXDataFromPath(path, text, alphabet, letterScaling, true));
     }
     
     private static Texture2D PointCacheToTexture2D(List<Vector3> pointCache)
@@ -187,7 +192,8 @@ public class VFXUtil
             completeText += dataPoints[i].letter;
             completeLetterScaling.Add(dataPoints[i].scale);
         }
-
+        
+        Debug.Log($"COMPLETE text: {completeText.Substring(0, 20)}");
         // get textures as pCaches
         TextInsertionResult insertionResult = basePathCopy.Copy().ConvertToPointData(completeText, alphabet, completeLetterScaling);
         

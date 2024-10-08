@@ -524,7 +524,8 @@ public class Path
         List<Point> outPoints = new List<Point>(_points);
         List<int> outHoles = new List<int>(_holes);
         outPoints.RemoveRange(_currentPathPosition.PointIndex + 1, amountToRemove);
-        outHoles = outHoles // adjust hole indices when removing a range
+        
+        /*outHoles = outHoles // adjust hole indices when removing a range
             .FindAll(hole =>
                 hole < _currentPathPosition.PointIndex + 1 ||
                 _currentPathPosition.PointIndex + 1 + amountToRemove <= hole)
@@ -534,7 +535,7 @@ public class Path
                 if (_currentPathPosition.PointIndex + 1 + amountToRemove <= hole)
                     outHole += amountToRemove;
                 return outHole;
-            }).ToList();
+            }).ToList();*/
         
         // insert subPath
         List<Point> pointsToInsert = new List<Point>(subPath.GetPoints());
@@ -731,7 +732,6 @@ public class Path
 
             if (filterWithHoles && (_holes.Contains(i) || i >= connectionRotations.Count - 1) && (_holes.Contains(i - 1) || i - 1 < 0))
             {
-                Debug.Log("FILTERED WITH HOLES");
                 continue;
             }
             
@@ -834,20 +834,30 @@ public class Path
                 if (TakeValidPositionForLetterOfWidth(letterWidth))
                 {
                     if (!MoveDistanceInSpace(letterWidth, true))
+                    {
                         break;
+                    }
                     insertedCharacters++;
                     insertedNonSpaceCharacters++;
+                    
+                    Debug.Log($"Inserted: {currentLetter} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
                 }
             }
             // final letter
+            Debug.Log($"lengths: {widthCache.Count} {word.Length} {scaleData.Count}");
+            
             float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
             if (TakeValidPositionForLetterOfWidth(lastLetterWidth))
             {
                 if (!MoveDistanceInSpace(lastLetterWidth, true))
+                {
                     break;
+                }
                 insertedCharacters++;
                 insertedCharacters++;
                 insertedNonSpaceCharacters++;
+                Debug.Log($"Inserted with space: {word[word.Length - 1]} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
+
             }
         }
 
