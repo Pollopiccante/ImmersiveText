@@ -7,10 +7,10 @@ using UnityEngine.Serialization;
 public class MeshPathStrategy : PathStrategy
 {
     public Mesh mesh;
+    public float meshScaling = 30;
     private static readonly float _lettersPerSection = 3f;
     private static float _errorPercentage = 0.05f;
     private static int maxIterations = 10;
-    private static float _meshScaling = 30;
 
     public MeshPathStrategy(Mesh mesh)
     {
@@ -50,9 +50,12 @@ public class MeshPathStrategy : PathStrategy
             float scaling = Mathf.Pow(newScalingFactor, 1f / 3f);
             preScaledMesh = ScaleMesh(preScaledMesh, scaling);
         }
+        
 
+        
         // create first path
         Path firstPath = MeshToPath.ConvertMeshToPath(preScaledMesh, unitSize);
+        
         
         // Step 2: further correct the mesh scale by calculating error over real letter insertion
         Path bestPath = null; // most optimal, slightly too short path

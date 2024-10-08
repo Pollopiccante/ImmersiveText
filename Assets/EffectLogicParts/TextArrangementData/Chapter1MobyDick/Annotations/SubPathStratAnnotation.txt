@@ -126,7 +126,7 @@ everybody else is one way or other served in much the same way- either
 in a physical or metaphysical point of view, that is; and so the
 universal thump is passed round, and all hands should rub each other's
 shoulder-blades, and be content.
-  Again, I always go to sea as a sailor, because they make a point
+  $(Again, I always go to sea as a sailor, because they make a point
 of paying me for my trouble, whereas they never pay passengers a
 single penny that I ever heard of. On the contrary, passengers
 themselves must pay. And there is all the difference in the world
@@ -136,7 +136,7 @@ us. But being paid,- what will compare with it? The urbane activity
 with which a man receives money is really marvellous, considering that
 we so earnestly believe money to be the root of all earthly ills,
 and that on no account can a monied man enter heaven. Ah! how
-cheerfully we consign ourselves to perdition!
+cheerfully we consign ourselves to perdition!|boat)$
   Finally, I always go to sea as a sailor, because of the wholesome
 exercise and pure air of the fore-castle deck. For as in this world,
 head winds are far more prevalent than winds from astern (that is,

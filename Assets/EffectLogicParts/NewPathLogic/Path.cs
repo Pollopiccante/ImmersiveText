@@ -235,7 +235,7 @@ public class Path
     {
         float l = 0;
         for (int i = 0; i < _points.Length - 1; i++)
-            if (_holes.Contains(i))
+            if (_holes != null && _holes.Contains(i))
                 l += Vector3.Distance(_points[i + 1].pos, _points[i].pos);
         return l;
     }

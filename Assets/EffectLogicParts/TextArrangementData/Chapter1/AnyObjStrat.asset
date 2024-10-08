@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2d649018ca7bcdb0880c203a23f6c10, type: 3}
-  m_Name: CubeStrat
+  m_Name: AnyObjStrat
   m_EditorClassIdentifier: 
   mesh: {fileID: -5876688374695104875, guid: 0de58fadeda13c052b492ed015cc6937, type: 3}
-  meshScaling: 30
+  meshScaling: 1000

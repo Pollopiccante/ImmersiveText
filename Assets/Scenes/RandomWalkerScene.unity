@@ -2287,8 +2287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePosition: {x: 11, y: 13, z: -77}
   pause: 1
-  stepDistance: 1
-  stepsPerSecond: 10
+  stepDistance: 10
+  stepsPerSecond: 7.67
   maximumAngle: 25
   leaveTrail: 1
   lineMaterial: {fileID: 2100000, guid: f2076253bdfa71d3b91ac90d3ba8094b, type: 2}

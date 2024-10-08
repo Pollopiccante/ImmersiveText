@@ -28,7 +28,6 @@ public class PathManager : EditorWindow
         {
             PathLineRenderer.CreateFromPath(this.pathStrategy.GetPathPrototype());
         }
-        
         GUILayout.EndVertical();
     }
 }
