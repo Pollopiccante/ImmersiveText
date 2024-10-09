@@ -149,6 +149,8 @@ public class Path
     // internal
     private PathPosition _currentPathPosition;
 
+
+    
     public Path(Vector3[] points): this(points, new List<int>(), Enumerable.Repeat(0f, points.Length).ToArray(), Enumerable.Repeat(0f, points.Length).ToArray(), Vector3.up)
     {
     }
@@ -162,6 +164,8 @@ public class Path
 
     public Path(Point[] points, List<int> holes, Vector3 pathUp)
     {
+        
+        Debug.Log($"up: {pathUp} other: {points[points.Length - 1].pos - points[0].pos}");
         if (Vector3.Angle(pathUp, points[points.Length - 1].pos - points[0].pos) == 0)
             throw new ArgumentException("pathUp direction can not be parallel to startPoint-endPoint Axis");
         
@@ -173,6 +177,8 @@ public class Path
 
     public Path(Point[] points, Vector3 pathUp)
     {
+        Debug.Log($"Pathup: {pathUp}");
+        
         if (Vector3.Angle(pathUp, points[points.Length - 1].pos - points[0].pos) == 0)
             throw new ArgumentException("pathUp direction can not be parallel to startPoint-endPoint Axis");
         

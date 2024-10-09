@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class OptionsController : MonoBehaviour
 {
+    public LoadButtonHandler loadButtonHandler;
     
     private bool open;
     
@@ -36,6 +37,9 @@ public class OptionsController : MonoBehaviour
         gameObject.SetActive(true);
         Time.timeScale = 0;        
         Cursor.lockState = CursorLockMode.None;
+        
+        if (loadButtonHandler != null)
+            loadButtonHandler.LoadDataToTextFields();
     }
     
     public void Exit()

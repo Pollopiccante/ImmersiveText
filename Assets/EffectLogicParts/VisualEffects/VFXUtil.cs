@@ -199,7 +199,8 @@ public class VFXUtil
             completeLetterScaling.Add(dataPoints[i].scale);
         }
         
-        Debug.Log($"COMPLETE text: {completeText.Substring(0, 20)}");
+        Debug.Log($"all LETTERS: {completeText.Length}");
+        
         // get textures as pCaches
         TextInsertionResult insertionResult = basePathCopy.Copy().ConvertToPointData(completeText, alphabet, completeLetterScaling);
         
