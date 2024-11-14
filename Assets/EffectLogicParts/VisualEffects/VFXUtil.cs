@@ -243,7 +243,8 @@ public class VFXUtil
        
         return vfxData;
     }
-
+    
+    #if (UNITY_EDITOR)
     public static void SaveVFXData(VFXDataScriptableObject data, string name)
     {
         string fileNameTemplate = DirConfiguration.Instance.vfxDataScriptableObjectDir + DirConfiguration.GetPCacheFileNamingTemplate();
@@ -309,7 +310,8 @@ public class VFXUtil
         AssetDatabase.SaveAssets();
         Debug.Log($"SAVED TO: {DirConfiguration.Instance.vfxDataScriptableObjectDir + name + ".asset"}");
     }
-
+    #endif
+    
     private static void WritePointCache(Texture2D texture2D, string fileName)
     {
         List<Vector3> convertedTexture = texture2D.GetPixels().Select(px => new Vector3(px.r, px.g, px.b)).ToList();
@@ -338,6 +340,8 @@ public class VFXUtil
             sw.Close();
         }
     }
+    
+    #if (UNITY_EDITOR)
     private static Texture2D ReadTextureFromPointCache(string filename)
     {
         Object[] allAssetsAtPath = AssetDatabase.LoadAllAssetsAtPath(filename);
@@ -351,5 +355,5 @@ public class VFXUtil
 
         return positionTexture;
     }
-    
+    #endif   
 }

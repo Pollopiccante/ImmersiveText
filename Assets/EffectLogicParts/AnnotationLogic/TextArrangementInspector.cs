@@ -1,3 +1,6 @@
+#if (UNITY_EDITOR)
+
+
 using UnityEditor;
 using UnityEngine;
 
@@ -32,3 +35,4 @@ public class TextArrangementInspector : Editor
         }
     }
 }
+#endif

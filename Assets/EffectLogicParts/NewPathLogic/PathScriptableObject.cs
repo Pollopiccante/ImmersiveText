@@ -52,10 +52,11 @@ public class PathScriptableObject : ScriptableObject
         lr.startWidth = 0.1f;
         lr.endWidth = 0.1f;
         
+        #if (UNITY_EDITOR)
         // add PathLineRenderer
         PathLineRenderer plr = pathObjParent.AddComponent<PathLineRenderer>();
         plr.upAxisRoughDirection = pathUp;
         plr.SetPSO(this);
-
+        #endif
     }
 }

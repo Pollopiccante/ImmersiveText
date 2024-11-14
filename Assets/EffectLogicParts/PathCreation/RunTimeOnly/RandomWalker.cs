@@ -216,6 +216,8 @@ public class RandomWalker : MonoBehaviour
         return new Path(positions, pathUp.normalized);
     }
 
+    #if (UNITY_EDITOR)
+
     public void SaveAsScriptableObject()
     {
         PathScriptableObject pathSo = ScriptableObject.CreateInstance<PathScriptableObject>();
@@ -227,4 +229,5 @@ public class RandomWalker : MonoBehaviour
         
         AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + $"RandomWalker_{DateTime.Today.DayOfYear}_{DateTime.Now.Hour}_{DateTime.Now.Minute}.asset");
     }
+    #endif
 }

@@ -1,3 +1,5 @@
+#if (UNITY_EDITOR)
+
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -106,3 +108,4 @@ public class GenericSectionInspector : Editor
         }
     }
 }
+#endif

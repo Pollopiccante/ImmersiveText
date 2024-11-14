@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Reflection;
-using Unity.VisualScripting.ReorderableList.Element_Adder_Menu;
-using UnityEditor;
 using UnityEngine;
 
 [Serializable]
@@ -133,8 +130,10 @@ public class TextArangement<TextDimensions, EffectDimensions> : InspectableTextA
         VFXUtil.CreateEffectFromVFXData(CreateVfxEffectData());
     }
 
+    #if (UNITY_EDITOR)
     override public void SaveVfxData(string fileName)
     {
         VFXUtil.SaveVFXData(CreateVfxEffectData(), fileName);
     }
+    #endif
 }

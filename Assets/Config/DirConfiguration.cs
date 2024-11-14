@@ -1,3 +1,5 @@
+#if (UNITY_EDITOR) 
+
 using System;
 using UnityEditor;
 using UnityEngine;
@@ -43,3 +45,4 @@ static class MySingletonMenuItems
         DirConfiguration test = DirConfiguration.Instance;
     }
 }
+#endif
