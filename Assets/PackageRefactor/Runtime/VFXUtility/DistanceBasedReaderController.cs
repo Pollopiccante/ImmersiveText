@@ -13,7 +13,6 @@ public class DistanceBasedReaderController : MonoBehaviour
 {
     // mandatory connections
     public VisualEffect effect;
-    public Player player;
     public Transform leftLineTransform;
     public Transform rightLineTransform;
 
