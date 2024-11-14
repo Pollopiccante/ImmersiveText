@@ -149,7 +149,7 @@ public class Test : MonoBehaviour
         
         
         
-        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.pathScriptableObjectDir + $"Fractal_{DateTime.Today.DayOfYear}_{DateTime.Now.Hour}_{DateTime.Now.Minute}_{DateTime.Now.Second}.asset");
+        AssetDatabase.CreateAsset(pathSo, DirConfiguration.Instance.GetPathScriptableObjectDir() + $"Fractal_{DateTime.Today.DayOfYear}_{DateTime.Now.Hour}_{DateTime.Now.Minute}_{DateTime.Now.Second}.asset");
         
     }
 }

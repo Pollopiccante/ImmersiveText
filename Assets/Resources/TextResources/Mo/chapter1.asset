@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f60ca3a521f1db941b0d8850beb1b623, type: 3}
+  m_Script: {fileID: 11500000, guid: dfa4b962e14cdcd2c8d3ea8d04c62290, type: 3}
   m_Name: chapter1
   m_EditorClassIdentifier: 
-  chapterTitle: CHAPTER 2,   The Carpet-Bag
-  content: 1
+  chapterTitle: 
+  content: 

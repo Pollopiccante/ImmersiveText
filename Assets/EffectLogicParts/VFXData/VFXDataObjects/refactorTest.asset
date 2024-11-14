@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1c393fbcc822b09fae3858966ece4, type: 3}
+  m_Name: refactorTest
+  m_EditorClassIdentifier: 
+  meshAlphabet: {fileID: 11400000, guid: f4bd7f4f7847dc642bfb669480398939, type: 2}
+  numberOfElements: 9983
+  letterScale: 1
+  textureDimension: 100
+  letterTexture: {fileID: 6918954641851045129, guid: 0d83331ed326fac5596491e65fd83a76, type: 3}
+  positionTexture: {fileID: 6918954641851045129, guid: d9419ae8058404905a629e440f661edc, type: 3}
+  linePositionTexture: {fileID: 6918954641851045129, guid: 96cce2f1b3bf7b8369b3a3c9181cd87e, type: 3}
+  rotationTexture: {fileID: 6918954641851045129, guid: d2e8a2b00d543200fb396fd0752a6ebc, type: 3}
+  scaleTexture: {fileID: 6918954641851045129, guid: 0e602e4996cd5fe83afc5273a872f29c, type: 3}
+  colorTexture: {fileID: 6918954641851045129, guid: c1984c20ca70c1d569b1c52d655c997c, type: 3}
+  xWaveMotionTexture: {fileID: 6918954641851045129, guid: 343200e762ae6505abf324b42b39d0bf, type: 3}
+  alphaSmoothnessMetalicTexture: {fileID: 6918954641851045129, guid: 6c3aaf541e1088f1180d941cf1ce0b29, type: 3}
+  startEndIndexTexture: {fileID: 6918954641851045129, guid: 94dee7d4b16684d6680ed047a3a8ea4c, type: 3}

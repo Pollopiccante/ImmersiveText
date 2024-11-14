@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7e41df8e3cac65358c473a8d961d113, type: 3}
-  m_Name: book
+  m_Script: {fileID: 11500000, guid: c54937fb8dca4706f82db3eed5a13234, type: 3}
+  m_Name: DirConfig
   m_EditorClassIdentifier: 
-  title: 
-  author: 
-  chapters: []
-  characters: []
+  pathScriptableObjectDir: DataObjects/PathObjects/
+  vfxDataScriptableObjectDir: DataObjects/VFXObjects/

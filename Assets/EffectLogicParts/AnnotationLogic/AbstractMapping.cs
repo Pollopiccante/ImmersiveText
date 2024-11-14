@@ -9,6 +9,7 @@ public abstract class AbstractMapping<TextDimensions, EffectDimensions>
         
         return textDimensionsListing.Select((elem, i) => Convert(elem, i)).ToList();
     }
+    
 }
 
 

@@ -4,40 +4,6 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-[Serializable]
-public class AnnotationData
-
-{
-    public string SectionName;
-    public GenericSection Data;
-
-    public AnnotationData(string sectionName, GenericSection data)
-    {
-        SectionName = sectionName;
-        Data = data;
-    }
-}
-
-
-public class InspectableTextArrangement : ScriptableObject
-{
-    public virtual void MakeValid()
-    {
-        
-    }
-
-    public virtual void CreateVfxEffect()
-    {
-        
-    }
-
-    public virtual void SaveVfxData(string fileName)
-    {
-        
-    }
-
-}
-
 public class TextArangement<TextDimensions, EffectDimensions> : InspectableTextArrangement
 {
     public TextScriptableObject text;
