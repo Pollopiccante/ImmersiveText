@@ -44,6 +44,7 @@ public class NewTextArrangement : ScriptableObject
         
         CompleteAnnotation<Dictionary<string, object>> completeTextNotation = new CompleteAnnotation<Dictionary<string, object>>(importedDimensions);
 
+
         return VFXUtil.newCreateVFX(completeTextNotation, mapping, mainPath.LoadPath());
     }
     

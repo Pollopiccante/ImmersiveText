@@ -57,8 +57,7 @@ public class GenericSectionInspector : Editor
     {
         GenericSection castTarget = (GenericSection) target;
 
-        if (castTarget.type != AllowedGenericTypes.GENERIC_SECTION)
-            base.OnInspectorGUI();
+        base.OnInspectorGUI();
     }
     
     
@@ -101,8 +100,6 @@ public class GenericSectionInspector : Editor
                 return "charValue";
             case AllowedGenericTypes.MESH_PATH_STRATEGY:
                 return "meshPathStrategyValue";
-            case AllowedGenericTypes.GENERIC_SECTION:
-                return "genericSectionValue";
             default:
                 return "floatValue";
         }

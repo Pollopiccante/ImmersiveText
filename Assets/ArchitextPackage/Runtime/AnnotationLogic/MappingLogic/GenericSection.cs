@@ -13,8 +13,6 @@ public enum AllowedGenericTypes
     STRING = 3,
     BOOL = 4,
     MESH_PATH_STRATEGY = 5,
-    [Obsolete]
-    GENERIC_SECTION = 6,
 }
 
 

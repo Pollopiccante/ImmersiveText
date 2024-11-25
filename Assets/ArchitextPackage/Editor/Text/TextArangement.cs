@@ -69,6 +69,8 @@ public class TextArangement<TextDimensions, EffectDimensions> : InspectableTextA
 
     public VFXDataScriptableObject CreateVfxEffectData()
     {
+        Debug.Log("OLD CREATE VFX EFFECT DATA");
+        
         // create mapping
         Type mapType = Type.GetType(mappingName);
         if (mapType == null)

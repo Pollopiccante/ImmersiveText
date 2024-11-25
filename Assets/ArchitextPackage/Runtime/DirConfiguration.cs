@@ -8,7 +8,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DirConfiguration", menuName = "ScriptableObjects/DirConfiguration", order = 1)]
 public class DirConfiguration : ScriptableObject
 {
-    public static string _dirConfigPath = "Assets/PackageRefactor/DirConfig.asset";
+    public static string _dirConfigPath = "Assets/ArchitextPackage/DirConfig.asset"; // TODO this needs to work after package import too
     private static DirConfiguration _instance;
 
     public static DirConfiguration Instance
