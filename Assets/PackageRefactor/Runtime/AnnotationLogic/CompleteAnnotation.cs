@@ -21,7 +21,7 @@ public class CompleteAnnotation<T>
     }
     public CompleteAnnotation(Dictionary<string, GenericSection> importedDimensions)
     {
-        _dimensionsToImport = typeof(T).GetFields().Length;
+        _dimensionsToImport = importedDimensions.Keys.Count;
         _importedDimensions = importedDimensions;
     }
 
@@ -48,6 +48,42 @@ public class CompleteAnnotation<T>
         
         // import
         _importedDimensions.Add(fieldName, section);
+    }
+
+    public List<Dictionary<string, object>> NewFinish()
+    {
+        // check if all dimensions were imported
+        if (_importedDimensions.Count != _dimensionsToImport) 
+            throw new Exception($"Not all dimensions were imported. Imported: {_importedDimensions.Count}, Needed: {_dimensionsToImport}");
+        
+        // recalculate length
+        foreach (GenericSection sec in _importedDimensions.Values)
+            if (sec.GetLength() > _finalPosition)
+                _finalPosition = sec.GetLength();
+
+        
+        List<Dictionary<string, object>> outList = new List<Dictionary<string, object>>();
+        // iterate initial to final position
+        for (int i = 0; i < _finalPosition; i++)
+        {
+            Dictionary<string, object> element = new Dictionary<string, object>();
+            foreach (string field in _importedDimensions.Keys)
+            {
+                GenericSection section = _importedDimensions[field];
+                if (!section.Contains(i))
+                {
+                    element[field] = null;
+                }
+                else
+                {
+                    ValueWrapper value = section.GetValueAt(i);
+                    element[field] = value.getValue();
+                }
+            }
+            outList.Add(element);
+        }
+
+        return outList;
     }
 
     public List<T> Finish()
@@ -93,3 +129,5 @@ public class CompleteAnnotation<T>
         return outList;
     }
 }
+
+

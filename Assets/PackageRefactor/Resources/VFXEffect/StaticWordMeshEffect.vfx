@@ -617,17 +617,17 @@ MonoBehaviour:
     textSize: Small
   categories:
   - name: External
-    collapsed: 1
+    collapsed: 0
   - name: TextureInput
     collapsed: 1
   - name: Basics
-    collapsed: 0
+    collapsed: 1
   - name: MeshInput
     collapsed: 1
   - name: InternalConfiguration
     collapsed: 1
   - name: CameraControlls
-    collapsed: 0
+    collapsed: 1
   uiBounds:
     serializedVersion: 2
     x: -5691
@@ -49895,7 +49895,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619175}
   m_ExposedName: indexTime
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 0
   m_Category: External
   m_Min:
     m_Type:

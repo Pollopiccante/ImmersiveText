@@ -5549,7 +5549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 0}
-  player: {fileID: 1691855846}
   leftLineTransform: {fileID: 422750617}
   rightLineTransform: {fileID: 1426617074}
   showHighlighterDistance: 40

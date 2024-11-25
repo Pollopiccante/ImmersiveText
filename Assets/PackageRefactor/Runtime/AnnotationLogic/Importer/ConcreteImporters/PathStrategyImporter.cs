@@ -30,7 +30,7 @@ public class PathStrategyImporter : AnnotationImporter
             Debug.Log($"PAIR: {pair.name} EncodedValue: {encodedValue}");
             if (pair.name.Equals(encodedValue))
             {
-                vw.meshPathStrategyValue = pair.pathStrategy;
+                vw.objectValue = pair.pathStrategy;
                 return vw;
             }
         }
@@ -40,7 +40,7 @@ public class PathStrategyImporter : AnnotationImporter
     public override ValueWrapper GetDefaultValue()
     {
         ValueWrapper vw = new ValueWrapper();
-        vw.meshPathStrategyValue = SkipPathStrategy.Default();
+        vw.objectValue = SkipPathStrategy.Default();
         return vw;
     }
 }

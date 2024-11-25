@@ -8,7 +8,7 @@ public class FloatImporter : AnnotationImporter
     public override ValueWrapper ReadValue(string encodedValue)
     {
         ValueWrapper vw = new ValueWrapper();
-        vw.floatValue = float.Parse(encodedValue, CultureInfo.InvariantCulture);
+        vw.objectValue = float.Parse(encodedValue, CultureInfo.InvariantCulture);
         return vw;
     }
 

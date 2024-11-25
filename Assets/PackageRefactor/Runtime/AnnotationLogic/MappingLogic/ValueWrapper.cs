@@ -7,6 +7,11 @@ using UnityEngine;
 [Serializable]
 public class ValueWrapper
 {
+
+    public object getValue()
+    {
+        return objectValue;
+    }
     public object getValue(Type type)
     {
         if (type == typeof(char))
@@ -23,6 +28,7 @@ public class ValueWrapper
         throw new System.ArgumentException($"type {type} is not present in wrapper object");
     }
     
+    public object objectValue;
     public int integerValue;
     public char charValue;
     public float floatValue;
@@ -37,7 +43,7 @@ public class ValueWrapper
         foreach (char c in s)
         {
             ValueWrapper vw = new ValueWrapper();
-            vw.charValue = c;
+            vw.objectValue = c;
             valuesList.Add(vw);
         }
         return valuesList;
@@ -49,7 +55,7 @@ public class ValueWrapper
         foreach (GenericSection s in sections)
         {
             ValueWrapper vw = new ValueWrapper();
-            vw.genericSectionValue = s;
+            vw.objectValue = s;
             valuesList.Add(vw);
         }
         return valuesList;

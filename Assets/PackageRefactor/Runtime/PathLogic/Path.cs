@@ -846,7 +846,7 @@ public class Path
                     insertedCharacters++;
                     insertedNonSpaceCharacters++;
                     
-                    Debug.Log($"Inserted: {currentLetter} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
+                    // Debug.Log($"Inserted: {currentLetter} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
                 }
             }
             // final letter
