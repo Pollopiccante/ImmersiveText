@@ -114,7 +114,7 @@ public class VFXUtil
         return texture;
     }
 
-    public static VFXDataScriptableObject newCreateVFX(CompleteAnnotation<Dictionary<string, object>> completeAnnotation, GenericMapping mapping, Path path)
+    public static VFXDataScriptableObject newCreateVFX(CompleteAnnotation<Dictionary<string, object>> completeAnnotation, GenericMapping mapping, Path path, AlphabethScriptableObject alphabeth)
     {
         List<Dictionary<string, object>> textElements = completeAnnotation.NewFinish();
    
@@ -139,8 +139,7 @@ public class VFXUtil
         Debug.Log($"Number of VFX DATA Points: {vfxDataPoints.Count}");
 
         // create vfx data from effect points
-        AlphabethScriptableObject alphabet = Resources.Load<AlphabethScriptableObject>("alphabet/alphabeth_Absans-Regular");
-        VFXDataScriptableObject vfxDataScriptableObject = VFXUtil.ToVfxDataScriptableObject(vfxDataPoints, path, alphabet);
+        VFXDataScriptableObject vfxDataScriptableObject = VFXUtil.ToVfxDataScriptableObject(vfxDataPoints, path, alphabeth);
 
         return vfxDataScriptableObject;
     }

@@ -18,7 +18,9 @@ public class NewTextArrangement : ScriptableObject
 
     public TextScriptableObject text;
     public PathScriptableObject mainPath;
-
+    public AlphabethScriptableObject alphabeth;
+    
+    
     public List<StringSectionMapping> genericSections;
     // public AnnotationData[] completeAnnotationData;
     
@@ -45,7 +47,7 @@ public class NewTextArrangement : ScriptableObject
         CompleteAnnotation<Dictionary<string, object>> completeTextNotation = new CompleteAnnotation<Dictionary<string, object>>(importedDimensions);
 
 
-        return VFXUtil.newCreateVFX(completeTextNotation, mapping, mainPath.LoadPath());
+        return VFXUtil.newCreateVFX(completeTextNotation, mapping, mainPath.LoadPath(), alphabeth);
     }
     
     public void CreateVfxEffect()

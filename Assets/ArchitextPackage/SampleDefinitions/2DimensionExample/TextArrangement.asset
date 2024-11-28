@@ -15,6 +15,7 @@ MonoBehaviour:
   Definition: {fileID: 11400000, guid: 3de7400f6ccaea937b7171b6b0323f84, type: 2}
   text: {fileID: 11400000, guid: e3b0d1e865acc227a9302c6a11a00fba, type: 2}
   mainPath: {fileID: 11400000, guid: a2a01023ecaf01575b5ddd7a89bfc524, type: 2}
+  alphabeth: {fileID: 11400000, guid: d34c6942181d61f91a7b0e09acef70e4, type: 2}
   genericSections:
   - sectionName: Sadness
     Section: {fileID: 11400000, guid: b885c3a164e69bd71ba708886c70c33c, type: 2}
