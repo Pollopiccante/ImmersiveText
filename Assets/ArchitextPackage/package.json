@@ -20,5 +20,6 @@
   "dependencies": {
     "com.unity.render-pipelines.universal": "14.0.10",
     "com.unity.visualeffectgraph": "14.0.10"
-  }
+  },
+  "hideInEditor": false
 }
