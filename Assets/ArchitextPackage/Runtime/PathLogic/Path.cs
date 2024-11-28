@@ -815,7 +815,7 @@ public class Path
         
         // prepare text
         string textWithoutSpace = text.Replace(" ", "");
-        string[] words = text.Split(" ");
+        string[] words = text.Split(" ").ToList().FindAll(w => !String.IsNullOrEmpty(w)).ToArray();
         
         // get size of textures
         int textureSize = Mathf.CeilToInt(Mathf.Sqrt(textWithoutSpace.Length));
@@ -850,8 +850,7 @@ public class Path
                 }
             }
             // final letter
-            Debug.Log($"lengths: {widthCache.Count} {word.Length} {scaleData.Count}");
-            
+            // Debug.Log($"lengths: {widthCache.Count} {word.Length} {scaleData.Count}");
             float lastLetterWidth = (widthCache[word[word.Length - 1]] + alphabet.spaceWidth) * scaleData[insertedNonSpaceCharacters];
             if (TakeValidPositionForLetterOfWidth(lastLetterWidth))
             {
@@ -862,7 +861,7 @@ public class Path
                 insertedCharacters++;
                 insertedCharacters++;
                 insertedNonSpaceCharacters++;
-                Debug.Log($"Inserted with space: {word[word.Length - 1]} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
+                // Debug.Log($"Inserted with space: {word[word.Length - 1]} insertedChars: {insertedCharacters} insertedNonSpaceChars: {insertedNonSpaceCharacters}");
 
             }
         }

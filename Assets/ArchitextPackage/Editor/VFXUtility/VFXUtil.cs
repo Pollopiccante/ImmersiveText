@@ -122,6 +122,7 @@ public class VFXUtil
         // apply mapping to effect dimension data point space
         List<Dictionary<string, object>> effectElements = mapping.ConvertMany(textElements);
        
+        
         // apply effect dimension elements to vfx data points
         List<VfxDataPoint> vfxDataPoints = new List<VfxDataPoint>();
         foreach (Dictionary<string, object> eddp in effectElements)
@@ -208,6 +209,7 @@ public class VFXUtil
             }
             else
             {
+                Debug.Log($"apply Strategy: {currentStrategy.name}");
                 // apply strategy to the base path
                 currentStrategy.Apply(basePathCopy, groupText, letterScaling, alphabet);
 

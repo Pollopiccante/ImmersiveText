@@ -22,7 +22,9 @@ public class MyTestMapping : GenericMapping
         if (inputData.Keys.Contains("blueness"))
             dpToApplyTo.color = new Color(255, 255, 255 * (float)inputData["blueness"]);
         if (inputData.Keys.Contains("Letter"))
-            dpToApplyTo.letter = (char)inputData["Letter"];
+            dpToApplyTo.letter = (char)inputData["Letter"];      
+        if (inputData.Keys.Contains("SubPath"))
+            dpToApplyTo.subPathStrategy = (PathStrategy)inputData["SubPath"];
         if (inputData.Keys.Contains("indexStart"))
             dpToApplyTo.indexStart = (int)inputData["indexStart"];
         if (inputData.Keys.Contains("indexEnd"))
@@ -33,8 +35,6 @@ public class MyTestMapping : GenericMapping
     public override Dictionary<string, object> SimpleConvert(Dictionary<string, object> textDimensions, int index)
     {
         Dictionary<string, object> dataOut = new Dictionary<string, object>();
-        
-        
         foreach (string textDimensionsKey in textDimensions.Keys)
         {
             object value = textDimensions[textDimensionsKey];
@@ -45,11 +45,13 @@ public class MyTestMapping : GenericMapping
                 dataOut.Add("blueness",(float)value);
             if (textDimensionsKey.Equals("Letter"))
                 dataOut.Add("Letter",(char)value);
+            if (textDimensionsKey.Equals("SubPath"))
+                dataOut.Add("SubPath",(PathStrategy)value);
         }
         dataOut.Add("indexStart", index);
         dataOut.Add("indexEnd", index + 1);
         
-        Debug.Log($"LETTER: {dataOut["Letter"]}");
+        // Debug.Log($"LETTER: {dataOut["Letter"]}");
 
         return dataOut;
     }

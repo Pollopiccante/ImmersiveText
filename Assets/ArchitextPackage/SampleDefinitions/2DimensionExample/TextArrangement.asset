@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93494a667b7774fec9dbdaa582c27b9d, type: 3}
-  m_Name: newTA
+  m_Name: TextArrangement
   m_EditorClassIdentifier: 
   Definition: {fileID: 11400000, guid: 3de7400f6ccaea937b7171b6b0323f84, type: 2}
   text: {fileID: 11400000, guid: e3b0d1e865acc227a9302c6a11a00fba, type: 2}

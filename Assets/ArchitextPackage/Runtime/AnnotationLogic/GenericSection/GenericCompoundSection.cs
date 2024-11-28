@@ -8,7 +8,7 @@ public class GenericCompoundSection : GenericSection
 
     public override dynamic GetValueAt(int index)
     {
-        GenericSection[] parts = values.Select(v => v.genericSectionValue).ToArray();
+        GenericSection[] parts = values.Select(v => (GenericSection)v.objectValue).ToArray();
         
         GenericSection part = null;
         for (int i = 0; i < parts.Length; i++)
@@ -29,7 +29,7 @@ public class GenericCompoundSection : GenericSection
 
     public override int GetLength()
     {
-        GenericSection[] parts = values.Select(v => v.genericSectionValue).ToArray();
+        GenericSection[] parts = values.Select(v => (GenericSection)v.objectValue).ToArray();
         int length = 0;
         foreach (GenericSection section in parts)
             length += section.GetLength();

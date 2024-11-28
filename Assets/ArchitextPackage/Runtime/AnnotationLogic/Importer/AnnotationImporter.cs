@@ -11,7 +11,6 @@ public abstract class AnnotationImporter: GenericSection
     public abstract ValueWrapper ReadValue(string encodedValue);
     public abstract ValueWrapper GetDefaultValue();
 
-
     private GenericSection _sectionInstance = null;
     public GenericSection GetSectionInstance()
     {
@@ -105,8 +104,11 @@ public abstract class AnnotationImporter: GenericSection
             genericIdentitySection.value = pairs.Item2;
             genericIdentitySection.length = pairs.Item3;
 
-            compoundSection.values[i].genericSectionValue = genericIdentitySection;
+            compoundSection.values[i].objectValue = genericIdentitySection;
         }
+        
+        Debug.Log($"new compound section: {compoundSection.value.objectValue} {compoundSection.values.Count}");
+        
         
         return compoundSection;
     }

@@ -64,6 +64,8 @@ public class CompleteAnnotation<T>
         
         List<Dictionary<string, object>> outList = new List<Dictionary<string, object>>();
         // iterate initial to final position
+        
+        
         for (int i = 0; i < _finalPosition; i++)
         {
             Dictionary<string, object> element = new Dictionary<string, object>();
@@ -74,6 +76,7 @@ public class CompleteAnnotation<T>
                 {
                     element[field] = null;
                 }
+                
                 else
                 {
                     ValueWrapper value = section.GetValueAt(i);

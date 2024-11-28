@@ -30,6 +30,7 @@ public class PathStrategyImporter : AnnotationImporter
             Debug.Log($"PAIR: {pair.name} EncodedValue: {encodedValue}");
             if (pair.name.Equals(encodedValue))
             {
+                Debug.Log($"returned path strat value: {pair.pathStrategy.name}");
                 vw.objectValue = pair.pathStrategy;
                 return vw;
             }
