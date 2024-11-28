@@ -25,7 +25,7 @@ public abstract class GenericSection : ScriptableObject
     [HideInInspector]
     public List<ValueWrapper> values = new List<ValueWrapper>();
 
-    public abstract dynamic GetValueAt(int index);
+    public abstract object GetValueAt(int index);
     public abstract int GetLength();
     public abstract bool MustForceIterable();
 

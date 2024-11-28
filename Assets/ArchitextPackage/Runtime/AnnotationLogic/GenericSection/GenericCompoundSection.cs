@@ -6,7 +6,7 @@ using UnityEngine;
 public class GenericCompoundSection : GenericSection
 {
 
-    public override dynamic GetValueAt(int index)
+    public override object GetValueAt(int index)
     {
         GenericSection[] parts = values.Select(v => (GenericSection)v.objectValue).ToArray();
         

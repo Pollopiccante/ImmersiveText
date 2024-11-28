@@ -79,7 +79,7 @@ public class CompleteAnnotation<T>
                 
                 else
                 {
-                    ValueWrapper value = section.GetValueAt(i);
+                    ValueWrapper value = (ValueWrapper)section.GetValueAt(i);
                     element[field] = value.getValue();
                 }
             }
@@ -116,12 +116,12 @@ public class CompleteAnnotation<T>
                 }
                 else
                 {
-                    ValueWrapper value = section.GetValueAt(i);
+                    ValueWrapper value = (ValueWrapper)section.GetValueAt(i);
                     value = (ValueWrapper)section.GetValueAt(i);
 
                     // set value
                     Type dimensionType = typeof(T).GetField(field).FieldType;
-                    dynamic wrappedValue = Activator.CreateInstance(dimensionType);
+                    object wrappedValue = Activator.CreateInstance(dimensionType);
 
                     typeof(T).GetField(field).FieldType.GetField("value").SetValue(wrappedValue, value.getValue(typeof(T).GetField(field).FieldType.GetField("value").FieldType));
                     typeof(T).GetField(field).SetValue(element, wrappedValue);

@@ -19,7 +19,7 @@ public abstract class AnnotationImporter: GenericSection
         return _sectionInstance;
     }
     
-    public override dynamic GetValueAt(int index)
+    public override object GetValueAt(int index)
     {
         return GetSectionInstance().GetValueAt(index);
         // return Import().GetValueAt(index);

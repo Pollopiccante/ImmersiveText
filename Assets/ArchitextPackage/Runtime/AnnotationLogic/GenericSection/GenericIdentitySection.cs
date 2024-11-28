@@ -9,7 +9,7 @@ public class GenericIdentitySection : GenericSection
 {
     public int length;
     
-    public override dynamic GetValueAt(int index)
+    public override object GetValueAt(int index)
     {
         return value;
     }

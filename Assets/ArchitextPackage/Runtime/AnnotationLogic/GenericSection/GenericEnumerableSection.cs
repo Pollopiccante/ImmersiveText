@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class GenericEnumerableSection : GenericSection
 { 
-    public override dynamic GetValueAt(int index)
+    public override object GetValueAt(int index)
     {
         return values.ElementAt(index);
     }
