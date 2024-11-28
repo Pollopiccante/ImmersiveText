@@ -16,5 +16,9 @@
     "email": "richard_mueller4@aol.de",
     "url": "https://github.com/Pollopiccante"
   },
-  "unityRelease": "29f1"
+  "unityRelease": "29f1",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.10",
+    "com.unity.visualeffectgraph": "14.0.10"
+  }
 }
