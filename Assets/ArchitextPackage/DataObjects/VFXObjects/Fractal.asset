@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1c393fbcc822b09fae3858966ece4, type: 3}
+  m_Name: Fractal
+  m_EditorClassIdentifier: 
+  meshAlphabet: {fileID: 11400000, guid: d34c6942181d61f91a7b0e09acef70e4, type: 2}
+  numberOfElements: 9975
+  letterScale: 1
+  textureDimension: 100
+  letterTexture: {fileID: 6918954641851045129, guid: 62cfac1d4c8343d608a2a8b6af34c764, type: 3}
+  positionTexture: {fileID: 6918954641851045129, guid: 49aa03fddf83959a5a29062f487f0b23, type: 3}
+  linePositionTexture: {fileID: 6918954641851045129, guid: fdca1d0c91e5fec0eadad06364b5ac29, type: 3}
+  rotationTexture: {fileID: 6918954641851045129, guid: c4f9e88607cd07801a0917efcb458cb4, type: 3}
+  scaleTexture: {fileID: 6918954641851045129, guid: 676d0a75ea31db9d0a06f3baf4cab52a, type: 3}
+  colorTexture: {fileID: 6918954641851045129, guid: 600c61a4744a069b58f84c2247f102d2, type: 3}
+  xWaveMotionTexture: {fileID: 6918954641851045129, guid: 1b82c60d64ff7665fb82012f854179e1, type: 3}
+  alphaSmoothnessMetalicTexture: {fileID: 6918954641851045129, guid: 19bf4bc4be0b206edab606896dfc591a, type: 3}
+  startEndIndexTexture: {fileID: 6918954641851045129, guid: 41dc913fab09802cbb6d6629c69202de, type: 3}
