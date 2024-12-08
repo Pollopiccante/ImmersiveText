@@ -134,10 +134,6 @@ public class VFXUtil
             vfxDataPoints.Add(vfxDataPoint);
         }
 
-        Debug.Log($"datapointletters: {new string(vfxDataPoints.Select(dp => dp.letter).ToArray())}");
-        
-        Debug.Log($"Number of VFX DATA Points: {vfxDataPoints.Count}");
-
         // create vfx data from effect points
         VFXDataScriptableObject vfxDataScriptableObject = VFXUtil.ToVfxDataScriptableObject(vfxDataPoints, path, alphabeth);
 
@@ -208,7 +204,7 @@ public class VFXUtil
             }
             else
             {
-                Debug.Log($"apply Strategy: {currentStrategy.name}");
+                Debug.Log($"apply Strategy: {currentStrategy.GetType()}");
                 // apply strategy to the base path
                 currentStrategy.Apply(basePathCopy, groupText, letterScaling, alphabet);
 
@@ -219,6 +215,7 @@ public class VFXUtil
             }
         }
         // apply last strategy to the base path
+        Debug.Log($"apply Strategy: {currentStrategy.GetType()}");
         currentStrategy.Apply(basePathCopy, groupText, letterScaling, alphabet);
 
         // STEP 2: create vfx data by inserting the complete text into the base path

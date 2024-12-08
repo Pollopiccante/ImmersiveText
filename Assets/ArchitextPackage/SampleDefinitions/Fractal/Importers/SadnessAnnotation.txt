@@ -2,11 +2,11 @@ Call me Ishmael. Some years ago- never mind how long precisely-
 having little or no money in my purse, and nothing particular to
 interest me on shore, I thought I would sail about a little and see
 the watery part of the world. It is a way I have of driving off the
-spleen and regulating the circulation. Whenever I find myself
+spleen and regulating the circulation. $(Whenever I find myself
 growing grim about the mouth; whenever it is a damp, drizzly
 November in my soul; whenever I find myself involuntarily pausing
 before coffin warehouses, and bringing up the rear of every funeral
-I meet; and especially whenever my hypos get such an upper hand of me,
+I meet; and especially whenever my hypos get such an upper hand of me,|1.0)$
 that it requires a strong moral principle to prevent me from
 deliberately stepping into the street, and methodically knocking
 people's hats off- then, I account it high time to get to sea as
@@ -30,7 +30,7 @@ the pier-heads; some looking over the bulwarks of ships from China;
 some high aloft in the rigging, as if striving to get a still better
 seaward peep. But these are all landsmen; of week days pent up in lath
 and plaster- tied to counters, nailed to benches, clinched to desks.
-How then is this? Are the green fields gone? What do they here?
+How then is this? $(Are the green fields gone? What do they here?|0.5)$
   But look! here come more crowds, pacing straight for the water,
 and seemingly bound for a dive. Strange! Nothing will content them but
 the extremest limit of the land; loitering under the shady lee of
@@ -74,9 +74,9 @@ passenger, did you yourself feel such a mystical vibration, when first
 told that you and your ship were now out of sight of land? Why did the
 old Persians hold the sea holy? Why did the Greeks give it a
 separate deity, and own brother of Jove? Surely all this is not
-without meaning. And still deeper the meaning of that story of
+without meaning. $(And still deeper the meaning of that story of
 Narcissus, who because he could not grasp the tormenting, mild image
-he saw in the fountain, plunged into it and was drowned. But that same
+he saw in the fountain, plunged into it and was drowned.|0.3)$ But that same
 image, we ourselves see in all rivers and oceans. It is the image of
 the ungraspable phantom of life; and this is the key to it all.
   Now, when I say that I am in the habit of going to sea whenever I
@@ -160,10 +160,10 @@ of the bill must have run something like this:
                  "WHALING VOYAGE BY ONE ISHMAEL."
                  "BLOODY BATTLE IN AFFGHANISTAN."
 
-  Though I cannot tell why it was exactly that those stage managers,
+  $(Though I cannot tell why it was exactly that those stage managers,
 the Fates, put me down for this shabby part of a whaling voyage,
 when others were set down for magnificent parts in high tragedies, and
-short and easy parts in genteel comedies, and jolly parts in farces-
+short and easy parts in genteel comedies, and jolly parts in farces-|0.1)$
 though I cannot tell why this was exactly; yet, now that I recall
 all the circumstances, I think I can see a little into the springs and
 motives which being cunningly presented to me under various disguises,

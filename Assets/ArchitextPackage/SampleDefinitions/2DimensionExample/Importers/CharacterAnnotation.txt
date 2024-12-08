@@ -1,4 +1,4 @@
-Call me Ishmael. Some years ago- never mind how long precisely-
+$(Call me Ishmael.|Ishmael)$ Some years ago- never mind how long precisely-
 having little or no money in my purse, and nothing particular to
 interest me on shore, I thought I would sail about a little and see
 the watery part of the world. It is a way I have of driving off the
@@ -157,7 +157,7 @@ and solo between more extensive performances. I take it that this part
 of the bill must have run something like this:
 
   "Grand Contested Election for the Presidency of the United States.
-                 "WHALING VOYAGE BY ONE ISHMAEL."
+                 $("WHALING VOYAGE BY ONE ISHMAEL."|Ishmael)$
                  "BLOODY BATTLE IN AFFGHANISTAN."
 
   Though I cannot tell why it was exactly that those stage managers,
