@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+[CreateAssetMenu(fileName = "PathSO", menuName = "PathSO", order = 1)]
 public class PathScriptableObject : ScriptableObject
 {
     public Point[] points;
@@ -44,6 +46,7 @@ public class PathScriptableObject : ScriptableObject
         Vector3[] positions = new Vector3[points.Length];
         for (int i = 0; i < positions.Length; i++)
             positions[i] = path.GetPoints()[i].pos;
+            
 
         // fill line renderer
         lr.positionCount = positions.Length;

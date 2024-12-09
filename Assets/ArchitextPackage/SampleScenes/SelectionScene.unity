@@ -872,11 +872,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd34b5a5d6afa34fc99e11fdff8a2927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threeDPrintingVfxData: {fileID: 11400000, guid: da149b410ec753306922ce79d0d48ee4, type: 2}
+  threeDPrintingVfxData: {fileID: 11400000, guid: dfa4d2263c78c9b54b4439417667eb64, type: 2}
   randomWalkVfxData: {fileID: 0}
   randomWalkAndObjectsVfxData: {fileID: 11400000, guid: b613885541bab453188a19744171dcf9, type: 2}
   hilbertCurveVfxData: {fileID: 0}
-  fractalVfxData: {fileID: 11400000, guid: fddcc6058770fb0359e7481edcf64c79, type: 2}
+  fractalVfxData: {fileID: 11400000, guid: e08d54e9f08e229628ff6d3d467ca7f7, type: 2}
   readerSpeedTextField: {fileID: 1299246815}
   flyInSpeedTextField: {fileID: 489561677}
   currentIndexTextField: {fileID: 667705989}
@@ -2740,7 +2740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &743313387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3532,7 +3532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &922760293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3548,9 +3548,9 @@ RectTransform:
   - {fileID: 5369623}
   m_Father: {fileID: 250913150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140, y: -98.548256}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922760294
@@ -5942,7 +5942,7 @@ Transform:
   m_GameObject: {fileID: 1789260153}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -1.3, y: 5.18, z: 2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -36,3 +36,8 @@ Save the file after opening, so it is recompiled. Now the installation is Done.
 
 ### 6. Check if everything works
 Navigate to Assets/Architext/DataObjects/VFXObjects inspect one of the SciptableObjects and generated them into the scene.
+
+
+## Demo Scene
+
+Press escape in the demo scene to open the menu. You can move around with WASD, space to go up and shift to go down. Left click toggles the reading mode. The reading index is set to the index of the closest letter (within a certain range indicated by a sphere appearing) when toggeling reading mode.

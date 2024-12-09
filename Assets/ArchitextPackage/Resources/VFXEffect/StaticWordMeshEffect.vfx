@@ -16,10 +16,10 @@ MonoBehaviour:
   - title: Get GroupIndex and MeshIndex and SpawnBurst (from Letter Point Cache)
     position:
       serializedVersion: 2
-      x: -1524
-      y: 2333
+      x: -1506
+      y: 2055
       width: 867
-      height: 420
+      height: 698
     contents:
     - model: {fileID: 8926484042661615459}
       id: 0
@@ -31,9 +31,6 @@ MonoBehaviour:
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661616756}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616758}
       id: 0
       isStickyNote: 0
   - title: Get Final Position, Rotation and Scale per Particle
@@ -534,6 +531,9 @@ MonoBehaviour:
     - model: {fileID: 8926484042661619143}
       id: 0
       isStickyNote: 0
+    - model: {fileID: 8926484042661619112}
+      id: 0
+      isStickyNote: 0
   stickyNoteInfos:
   - title: distance to reading index
     position:
@@ -617,9 +617,9 @@ MonoBehaviour:
     textSize: Small
   categories:
   - name: External
-    collapsed: 0
-  - name: TextureInput
     collapsed: 1
+  - name: TextureInput
+    collapsed: 0
   - name: Basics
     collapsed: 1
   - name: MeshInput
@@ -630,9 +630,9 @@ MonoBehaviour:
     collapsed: 1
   uiBounds:
     serializedVersion: 2
-    x: -5691
+    x: -5719
     y: -1231
-    width: 17966
+    width: 17994
     height: 3984
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -933,7 +933,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 69
+      m_SerializableObject: 70
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -5109,7 +5109,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -1335, y: 2469}
+  m_UIPosition: {x: -1233, y: 2114}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -19539,7 +19539,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616757}
   m_ExposedName: Letters
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 3
   m_Category: TextureInput
   m_Min:
     m_Type:
@@ -19558,7 +19558,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661616757}
       inputSlot: {fileID: 8926484042661615462}
-    position: {x: -1462, y: 2660}
+    position: {x: -1462, y: 2201}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661616757
@@ -19634,15 +19634,6 @@ MonoBehaviour:
   m_ValueFilter: 0
   m_Tooltip: 
   m_Nodes:
-  - m_Id: 0
-    linkedSlots:
-    - outputSlot: {fileID: 8926484042661616759}
-      inputSlot: {fileID: 8926484042661615460}
-    - outputSlot: {fileID: 8926484042661616759}
-      inputSlot: {fileID: 8926484042661615461}
-    position: {x: -1499, y: 2418}
-    expandedSlots: []
-    expanded: 0
   - m_Id: 1
     linkedSlots:
     - outputSlot: {fileID: 8926484042661616759}
@@ -19674,6 +19665,10 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661619135}
     - outputSlot: {fileID: 8926484042661616759}
       inputSlot: {fileID: 8926484042661619136}
+    - outputSlot: {fileID: 8926484042661616759}
+      inputSlot: {fileID: 8926484042661615460}
+    - outputSlot: {fileID: 8926484042661616759}
+      inputSlot: {fileID: 8926484042661615461}
     position: {x: -1501, y: 1572}
     expandedSlots: []
     expanded: 0
@@ -19733,7 +19728,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 69
+      m_SerializableObject: 70
     m_Space: 2147483647
   m_Property:
     name: o
@@ -19742,8 +19737,6 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
   m_LinkedSlots:
-  - {fileID: 8926484042661615460}
-  - {fileID: 8926484042661615461}
   - {fileID: 8926484042661615198}
   - {fileID: 8926484042661615199}
   - {fileID: 8926484042661615258}
@@ -19764,6 +19757,8 @@ MonoBehaviour:
   - {fileID: 8926484042661619693}
   - {fileID: 8926484042661619814}
   - {fileID: 8926484042661619815}
+  - {fileID: 8926484042661615460}
+  - {fileID: 8926484042661615461}
 --- !u!114 &8926484042661617242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23891,7 +23886,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617926}
   m_ExposedName: NumberOfElement
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 4
   m_Category: Basics
   m_Min:
     m_Type:
@@ -23971,7 +23966,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617995}
   m_ExposedName: BaseColor
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 5
   m_Category: Basics
   m_Min:
     m_Type:
@@ -24179,7 +24174,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618007}
   m_ExposedName: LetterScale
   m_Exposed: 1
-  m_Order: 5
+  m_Order: 6
   m_Category: Basics
   m_Min:
     m_Type:
@@ -32731,7 +32726,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661618323}
       inputSlot: {fileID: 8926484042661618327}
-    position: {x: -1502, y: 1625}
+    position: {x: -1462, y: 1634}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661618323
@@ -48243,7 +48238,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661619113}
       inputSlot: {fileID: 8926484042661619117}
-    position: {x: -1512, y: 1696}
+    position: {x: -1483, y: 1824}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661619113
@@ -49895,7 +49890,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619175}
   m_ExposedName: indexTime
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 1
   m_Category: External
   m_Min:
     m_Type:
@@ -51276,7 +51271,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -1848, y: 1623}
+  m_UIPosition: {x: -1875, y: 1805}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -51972,7 +51967,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619319}
   m_ExposedName: SnapToCameraLinePercentage
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 7
   m_Category: CameraControlls
   m_Min:
     m_Type:
@@ -55719,7 +55714,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661619501}
       inputSlot: {fileID: 8926484042661619824}
-    position: {x: -5691, y: 1457}
+    position: {x: -5719, y: 1465}
     expandedSlots: []
     expanded: 0
   - m_Id: 4
@@ -62458,7 +62453,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -5496, y: 1435}
+  m_UIPosition: {x: -5545, y: 1438}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -62554,7 +62549,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -5496, y: 1552}
+  m_UIPosition: {x: -5369, y: 1552}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -67276,7 +67271,7 @@ MonoBehaviour:
   - {fileID: 8926484042661620002}
   m_ExposedName: SpawnPosition
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 2
   m_Category: Basics
   m_Min:
     m_Type:
