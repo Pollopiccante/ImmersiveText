@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/VFXScene.unity
     guid: 854ad9eb0ac575d89b9de97f1a691ff9
   - enabled: 1
-    path: Assets/Scenes/SelectionScene.unity
+    path: Assets/ArchitextPackage/SampleScenes/SelectionScene.unity
     guid: 9c24f643789de8462a6350a1991df7e7
   - enabled: 0
     path: Assets/Scenes/RandomWalkerScene.unity
