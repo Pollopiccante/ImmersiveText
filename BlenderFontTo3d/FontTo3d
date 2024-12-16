@@ -1,0 +1,69 @@
+import bpy
+import time
+from mathutils import Vector
+
+# input
+alphabeth = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\"#$%&'()*+,-0123456789:;<=>?@[\\]^_`/{|}~."
+extrusion = 0.1
+font_dir_path = "./Blender/fontd/"
+
+
+# internal
+fbx_folder_to_save_to = "./Blender/Alphabets/"
+fbx_nameing = "alphabeth_{}.fbx"
+def fbx_get_path(font_name):
+    return fbx_folder_to_save_to + fbx_nameing.format(font_name)
+
+ 
+            
+
+
+
+# letter to mesh conversion
+def create_letter_mesh(letter, font):
+    
+    # naming cases:
+    # default:
+    letter_name = letter
+    # special characters
+    if letter == "\\":
+        letter_name = "slash"
+    elif letter == ".":
+        letter_name = "period"
+    
+    # apply names
+    font_obj_name = f"obj_{letter_name}"
+    font_curve_name = f"curve_{letter_name}"
+    
+    # create obj with text curve
+    font_curve = bpy.data.curves.new(type="FONT", name=font_curve_name)
+    font_obj = bpy.data.objects.new(name=font_obj_name, object_data=font_curve)
+    
+    # set font
+    font_curve.font = font
+
+    # asign letters and extrusion
+    font_curve.body = letter
+    font_curve.extrude = extrusion
+
+    # select obj, convert to mesh
+    bpy.context.scene.collection.objects.link(font_obj)
+    bpy.context.view_layer.objects.active = bpy.data.objects[font_obj_name] # Need a reference to an `object`, not `TextCurve`, for this to work
+    bpy.context.object.select_set(True)
+    bpy.ops.object.convert(target='MESH')
+
+
+def export_alphabet_for_font(font, font_name):
+    # create alphabeth in scene
+    for letter in alphabeth:
+        create_letter_mesh(letter)
+    
+    # export
+    bpy.ops.export_scene.fbx(filepath=fbx_get_path(font_name), use_visible=True)
+
+    # delete objects
+    bpy.ops.object.delete()   
+
+
+# load font
+font = bpy.data.fonts.load(font_path)
